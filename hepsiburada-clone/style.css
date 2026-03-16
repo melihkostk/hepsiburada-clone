@@ -1,0 +1,330 @@
+*{
+    font-family:-apple-system, BlinkMacSystemFont, Arial, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 26rem;
+    margin-bottom: -1rem;
+}
+
+.links p{
+    font-size: 0.688rem;
+    color: #7B7B7B;
+    font-weight: 600;
+}
+
+.links .gk{
+    color: #ED433E;
+}   
+
+.links .hp{
+    color: #FF6000 ;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 30px;
+}
+
+.hepsi-burada{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+.hepsi-burada h3{
+    color:rgb(255, 96, 0);
+    font-size: 2rem;
+    font-weight: 750;
+   
+}
+
+.hepsi-burada .premium{
+    color:rgb(255, 96, 0);
+    font-size: 0.9rem;
+   
+}
+
+.hepsi-burada h5{
+    font-size: 0.9rem; 
+}
+
+.search-bar{
+    position: relative;
+}
+
+.search-bar input{
+    padding: 17px;
+    border: 1px solid rgb(255, 96, 0);
+    border-radius: 0.5rem;
+    width: 418px;
+    position: relative;
+    padding-left: 42px;
+}
+
+.search-bar img{
+    position: absolute;
+    top: 28%;
+    left: 1rem;
+    z-index: 1;
+}
+
+.search-bar input::placeholder{
+    color:#484848;
+    font-weight: 400;
+}
+
+.location-filter{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.location-filter .location{
+    font-size: 0.875rem;
+    font-weight: 600;
+    color:#484848;
+}
+
+.location-filter .location-select{
+    font-size:  0.75rem;
+    color:rgb(255, 96, 0);
+}
+
+.sign-button button{
+    font-size: 0.938rem;
+    color: #484848;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 9px 10px 6px 10px;
+    border:2px solid #919191;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+}
+
+.sign-button .person-icon{
+    width: 30px;
+}
+
+.sign-button .p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sign-button .signin{
+    font-size:0.625rem;
+    font-weight: 100; 
+}
+
+.basket button{
+    border: none;
+    border-radius: 5px;
+    background-color: #919191;
+    color: white;
+    font-size: 0.938rem;
+    font-weight: 600;
+    display: flex;
+    padding:13px 24px 12px 24px;
+    gap: 0.7rem;
+    align-items: center;
+    position: relative;
+}
+
+.basket button img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.basket .total-amount{
+    background-color: #fff;
+    color: #919191;
+    border: none;
+    border-radius: 100%;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 10.5px;
+    left: 38px;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+}
+
+.markalar-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: flex-start;
+    margin-top: 2.5rem;
+}
+
+.footer-main-container{
+    background-color: #fff2ea;
+}
+
+.footer-container h4{
+    font-size: 0.875rem;
+    color: #ff6000;
+}
+
+.footer-container a{
+    font-size: 0.75rem;
+    color: #484848;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-container ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-container ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.footer-container ul li img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.footer-container .kurumsal-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.footer-container .hepsi-burada-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.footer-container .bizi-takip-edin-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.footer-container .mobil-uygulamalar-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.footer-container .mobil-uygulamalar-footer span{
+    font-size: 0.75rem;
+    font-weight:600;
+}
+
+.footer-container .mobil-uygulamalar-footer p{
+    font-size: 0.75rem;
+}
+
+.mobil-uygulamalar-footer div{
+    border: 2px solid #dadada;
+    padding: 0.3rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.mobil-uygulamalar-footer .span-container{
+    display: flex;
+    flex-direction: column;
+    border:none;
+    align-items: flex-start;
+}
+
+.mobil-uygulamalar-footer div img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.footer-container .soru-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer-container .soru-footer hr{
+    width: 100%;
+    border: 1px solid #dadada;
+}
+
+.footer-container .soru-footer a{
+    font-size: 0.875rem;
+
+}
+
+.footer-container .soru-footer p{
+    font-size: 0.875rem;
+    
+}
+
+.footer-container .soru-footer .çozum-merkezi{
+    border:2px solid #dadada;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: 600;
+}
+
+.footer-container .soru-footer .phone-number{
+    font-size: 1.5rem;
+    color: #484848;
+    font-weight: 600;
+}
+
+.markalar-footer{
+    margin-top: 6rem;
+}
+
+.markalar-footer img{
+    width: 4%;
+    height: 4%;
+    mix-blend-mode: multiply;
+}
