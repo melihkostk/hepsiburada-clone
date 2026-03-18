@@ -126,6 +126,63 @@ img{
     align-items: center;
     justify-content: space-between;
     gap: 0.2rem;
+    position: relative;
+}
+
+.sign-button button:hover .sign-pop-up{
+    display: block;
+}
+
+.sign-pop-up{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 225px;
+}
+
+.sign-pop-up-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.sign-pop-up-menu .first{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-pop-up-menu .second{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-pop-up-menu .third{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-pop-up-menu .forth{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-pop-up-menu .fifth{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-pop-up-menu a{
+    color: #484848;
+    font-size:0.813rem;
+    width: max-content;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .sign-button .person-icon{
@@ -391,6 +448,10 @@ img{
     position: relative;
     height: 56px;
 }
+.main-container .category-container ul li:hover{
+    background-color: white;
+    color: #FF6000;
+}
 
 .main-container .category-container ul li:hover .pop-up {
     display: block;
@@ -402,8 +463,9 @@ img{
     background-color: white;
     position: absolute;
     padding: 20px;
-    margin-top: 20px;
-    align-self: flex-start;
+    top: 3.5rem;
+    left: auto;
+    right: auto;
 }
 
 .pop-up-menu{
