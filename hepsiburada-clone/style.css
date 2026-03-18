@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+img{
+    object-fit: cover;
+}
+
 .header-main-container{
     display: flex;
     flex-direction: column;
@@ -181,10 +185,10 @@
 
 .footer-container{
     display: flex;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 2.5rem;
+    padding-top: 40px;
 }
 
 .footer-main-container{
@@ -336,6 +340,40 @@
     
 }
 
+.main-container .color-bar{
+    display: flex;
+    height: 0.5rem;
+    justify-content: flex-start;
+    margin-bottom: -0.625rem;
+    margin-top: 1rem;
+
+}
+
+.main-container .color-bar .orange-part{
+    width: 40%;
+    background: #FF6000;
+}
+
+.main-container .color-bar .blue-part{
+    width: 15%;
+    background: #49c7ed;
+}
+
+.main-container .color-bar .purple-part{
+    width: 15%;
+    background: #7723db;
+}
+
+.main-container .color-bar .green-part{
+    width: 15%;
+    background: #57b900;
+}
+
+.main-container .color-bar .dark-purple-part{
+    width: 15%;
+    background: #5d196a;
+}
+
 .main-container .category-container ul{
     display: flex;
     justify-content: center;
@@ -380,21 +418,37 @@
 .main-container .advertising-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
 
 }
 
 .main-container .advertising-container .advertising{
     border-radius: 10px;
-    flex: 1;
-    height: 265px;
+    height: 225.11px;                                                                   /* BU SATIRI SOR*/
     position: relative;
     background-color: #ff6000;
-   
+    width: 40%;
 }
+
+.main-container .advertising-container .advertising .rek{
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px 4px 12px;
+    border-radius: 10px;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
 .main-container .advertising-container .fırsat{
-    flex: 1.2;
+    width: 60%;
 }
 
 .main-container .advertising-container .fırsat img{
@@ -413,6 +467,34 @@
     border-radius: 10px;
     gap: 1rem;
     padding: 10px;
+}
+
+.main-container .advertising-container .product-container .right-part .right-top{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.main-container .advertising-container .product-container .right-part .right-top .all-ratings .stars{
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.1rem;
+    align-items: center;
+}
+
+.main-container .advertising-container .product-container .right-part .right-top .all-ratings .stars p{
+    font-size: 0.563rem;
+    color: #7B7B7B;
+}
+
+.main-container .advertising-container .product-container .right-part .right-top .all-ratings .stars img{
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.main-container .advertising-container .product-container .right-part .right-top .discount{
+    font-size: 0.688rem;
+    color: rgb(0, 147, 25);
 }
 
 .main-container .advertising-container .product-container .cost{
@@ -439,6 +521,7 @@
     justify-content: space-between;
     height: 100%;
     flex: 1;
+    gap: 1.5rem;
 }
 
 .main-container .advertising-container .product-container .right-part button{
@@ -456,29 +539,33 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top:25px;
     justify-content: center;
 }
 
 .main-container .popular-products h3{
     font-size: 1.375rem;
     color: #484848;
+    margin-left: 9.5rem;
 }
 
 .main-container .popular-products .p-container{
     display: flex;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: 20px;
     gap: 2rem;
+    width: 80%;
+    margin: 20px auto 0 auto; 
 }
 
 .main-container .popular-products .p-product-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
     border: 1px solid #ededed;
-    border-radius: 8px;
+    border-radius: 10px;
+    gap: 3rem;
 }
 
 .main-container .popular-products .p-product-container .top img{
@@ -495,18 +582,29 @@
 }
 
 .main-container .popular-products .p-product-container .top .star{
-    width: 3%;
+    width: 5%;
 }
 
 .main-container .popular-products .p-product-container .top .all-ratings{
     display: flex;
     justify-content: flex-start;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.688rem;
+    font-weight: 700;
+    margin-top: 0.3rem;
 }
 
 .main-container .popular-products .p-product-container .bottom{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    width: 98%;
+    align-self: center;
+   
 }
 
 .main-container .popular-products .p-product-container .bottom p{
@@ -520,7 +618,7 @@
 }
 
 .main-container .popular-products .p-product-container .bottom img{
-    width: 4%;
+    width: 9%;
 }
 
 .main-container .reklam-container{
@@ -539,6 +637,9 @@
     grid-template-columns: auto auto auto;
     gap: 1.5rem;
     margin-top: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-container .tanıtım-container img{
@@ -589,27 +690,40 @@
     padding: 12px 8px 15px 12px;
     width: 143px;
     text-align: center;
+    font-weight: 600;
 }
 
 .form-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 3rem;
 }
 
 .form-container .sub-titles{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: max-content;
     font-size: 0.813rem;
     color: #484848;
+    font-weight: 700;
+    line-height: 1.8;
+    width: 9.375rem;
 }
 
 .paragrafs{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 70%;
 }
 
 .paragrafs p{
     font-size: 0.813rem;
     color: #484848;
+    line-height: 1.6;
 }
 
 .paragrafs h2{
@@ -623,6 +737,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3rem;
 }
 
 .p-searchs h3{
@@ -678,7 +793,79 @@
 .transactions .transaction-container .info p{
     font-size: 0.875rem;
     color: #484848;
+    line-height: 20px;
+    width: 14rem;
+
 }
+
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+   
+}
+
+.categories .brand-cate h4{
+    font-size: 0.875rem;
+    color: #484848;
+    font-weight: 700;
+}
+
+.categories .brand-cate li{
+    font-size: 0.75rem;
+    color: #484848;
+    font-weight: 400;
+}
+
+.categories .brand-cate ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.questions-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.questions-container h2{
+    color: #484848;
+    font-size: 1.25rem;
+    margin-left: 7rem;
+}
+
+.questions h3{
+    color: #484848;
+    font-size: 1rem;
+    border: 1px solid #e5e5e5;
+    padding: 16px;
+    position: relative;
+    width: 85%;
+}
+
+.questions h3::before{
+    content: '01';
+    position: absolute;      
+    left: 0;
+    width: 0.5px;       
+    color: #edebeb;
+}
+
+
 
 
 
