@@ -134,9 +134,9 @@ img{
 }
 
 .sign-pop-up{
-    display: none;
+    display: block;
     position: absolute;
-    top: 4rem;
+    top: 2.8rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
@@ -152,29 +152,78 @@ img{
     gap: 1rem;
 }
 
+.sign-pop-up-menu div{
+    width: 100%;
+
+}
+
 .sign-pop-up-menu .first{
+    
+    justify-content: flex-start;
+    background-color:rgb(250, 234, 240);
+    font-size: 0.75rem;
+    height: 5rem;
+    text-align: center;
+    padding-top: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+.sign-pop-up-menu .first .shower{
+    background-color: white;
+    width: 80%;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sign-pop-up-menu .first .shower img{
+    width: 10%;
+}
+
+.sign-pop-up-menu .first p{
+    display: inline;
+}
+
+.sign-pop-up-menu .first span{
+    color: rgb(223, 4, 133);
+    display: inline;
 }
 
 .sign-pop-up-menu .second{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .sign-pop-up-menu .third{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 15px 0;
 }
 
 .sign-pop-up-menu .forth{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 0 15px 0;
 }
 
 .sign-pop-up-menu .fifth{
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
 .sign-pop-up-menu a{
@@ -183,6 +232,7 @@ img{
     width: max-content;
     font-weight: 700;
     line-height: 1;
+    margin-left: 2rem;
 }
 
 .sign-button .person-icon{
