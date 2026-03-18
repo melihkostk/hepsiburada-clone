@@ -390,7 +390,88 @@ img{
     padding: 17px;
     position: relative;
     height: 56px;
-    
+}
+
+.main-container .category-container ul li:hover .pop-up {
+    display: block;
+}
+
+.pop-up{
+    display: none;
+    z-index: 100;
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.pop-up-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;   
+}
+
+.moda-pop-up-menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 8rem;  
+}
+
+.moda-pop-up-menu div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+}
+
+.moda-pop-up-menu a{
+    font-size: 0.813rem;
+    font-weight: normal;
+    color: #484848;
+}
+
+.moda-pop-up-menu .women .women-aks a{
+    font-weight: 600;  
+}
+
+.moda-pop-up-menu .man .man-aks a{
+    font-weight: 600;  
+}
+
+.moda-pop-up-menu h3{
+    color:#FF6000;
+    font-size: 0.938rem;
+    width: max-content;
+}
+
+.moda-pop-up-menu .giyim-title{
+    font-weight: 600;
+}
+
+.moda-pop-up-menu .kadın-ayakkabı{
+    font-weight: 600;
+}
+
+.moda-pop-up-menu .erkek-ayakkabı{
+    font-weight: 600;
+}
+
+.moda-pop-up-menu .baby-items a{
+    font-weight: 600;
+}
+
+.moda-pop-up-menu .shoes a{
+    font-weight: 600;
+}
+
+.moda-pop-up-menu .types a{
+    font-weight: 600;
+}
+
+.moda-pop-up-menu .size a{
+    font-weight: 600;
 }
 
 .main-container .category-container ul li::after{
