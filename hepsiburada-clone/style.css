@@ -590,14 +590,19 @@ img{
     display: none;
     position: absolute;
     top: 12.2rem;
+    width: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
 }
 
 .first-pop-up-menu{
     display: flex;
     flex-direction: column;
-    background-color: white;
     align-items: flex-start;
-    padding: 20px;
+    justify-content: flex-start;
+    gap: 0.1rem;
+
 }
 
 .main-container .category-container ul li:hover .first-pop-up{
