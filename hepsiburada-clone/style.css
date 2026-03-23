@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a{
+    cursor: pointer;
+    user-select: auto;
+}
+
 img{
     object-fit: cover;
 }
@@ -23,7 +28,7 @@ img{
     margin-bottom: -1rem;
 }
 
-.links p{
+.links a{
     font-size: 0.688rem;
     color: #7B7B7B;
     font-weight: 600;
@@ -403,6 +408,10 @@ img{
     gap: 0.7rem;
 }
 
+.footer-container li:hover{
+    text-decoration: underline;
+}
+
 .footer-container ul li img{
     width: 40px;
     height: 40px;
@@ -586,6 +595,10 @@ img{
     display: block;
 }
 
+.main-container .category-container ul li:hover .first-pop-up{
+    display: block;
+}
+
 .first-pop-up{
     display: none;
     position: absolute;
@@ -594,6 +607,7 @@ img{
     padding: 20px;
     box-sizing: border-box;
     background-color: white;
+    
 }
 
 .first-pop-up-menu{
@@ -602,11 +616,73 @@ img{
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.1rem;
-
 }
 
-.main-container .category-container ul li:hover .first-pop-up{
+.first-pop-up-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-pop-up-menu li img{
+    transform: rotate(270deg);
+    margin-left: auto;
+}
+
+.first-pop-up ul li:hover .menu{
     display: block;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 600px;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    display: none;
+    border: none;
+    z-index: 1000;
+}
+
+.pc-tablet-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0rem;
+    text-align: left;
+}
+
+.column .items{
+    width: 90%;
+}
+
+.column h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #FF6000;
+    font-weight: 600;
+}
+
+.column a {
+    margin-right: 3px;
+    font-size: 13px;
+    display: inline;
+    color: #484848;
+    font-weight: 400;
+}
+
+.column a:hover {
+    color: #FF6000;
 }
 
 .pop-up{
@@ -648,6 +724,12 @@ img{
     font-size: 0.813rem;
     font-weight: normal;
     color: #484848;
+    cursor: pointer;
+    user-select: none;
+}
+
+.moda-pop-up-menu a:hover{
+    color: #FF6000;
 }
 
 .moda-pop-up-menu .women .women-aks a{
@@ -1115,6 +1197,10 @@ img{
     font-size: 0.75rem;
     color: #484848;
     font-weight: 400;
+}
+
+.categories .brand-cate li:hover{
+    text-decoration: underline;
 }
 
 .categories .brand-cate ul{
