@@ -10,13 +10,16 @@ a{
     user-select: auto;
 }
 
-img{
-    object-fit: cover;
-}
-
 .header-main-container{
     display: flex;
     flex-direction: column;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .links{
@@ -32,6 +35,12 @@ img{
     font-size: 0.688rem;
     color: #7B7B7B;
     font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.links a:hover{
+    color: #ff6000;
 }
 
 .links .gk{
@@ -42,8 +51,12 @@ img{
     color: #FF6000 ;
 }
 
+.links .hp:hover{
+    color: #ED433E;
+}
 
-.container{
+
+.bottom-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,6 +157,16 @@ img{
     grid-template-columns: auto auto;
     align-items: center;
     gap: 0.8rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: -1.5rem;
+}
+
+.location-filter:hover{
+    background-color: #ccc;
+    transition: 1s ease;
 }
 
 .location-filter .location{
@@ -171,6 +194,23 @@ img{
     justify-content: space-between;
     gap: 0.2rem;
     position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sign-button button .arrow-icon{
+   width: 0.8rem;
+   margin-left: 0.5rem;
+}
+
+.sign-button button:hover{
+    background-color:#ccc;
+    transition: 1s ease;
+}
+
+.sign-button button:hover .arrow-icon{
+    transform: rotate(90deg);
+    transition: 0.5s ease;
 }
 
 .sign-button button:hover .sign-pop-up{
@@ -186,6 +226,7 @@ img{
     z-index: 100;
     width: 225px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
 
 .sign-pop-up-menu{
@@ -281,6 +322,10 @@ img{
     margin-left: 2rem;
 }
 
+.sign-pop-up-menu a:hover{
+    color: #ff6000;
+}
+
 .sign-button .person-icon{
     width: 30px;
 }
@@ -308,6 +353,14 @@ img{
     gap: 0.7rem;
     align-items: center;
     position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin-left: -2rem;
+}
+
+.basket button:hover{
+    background-color: #484848;
+    transition: 1.5s ease;
 }
 
 .basket button img{
@@ -327,6 +380,9 @@ img{
     width: 1rem;
     height: 1rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .markalar-footer{
@@ -341,8 +397,6 @@ img{
     height: 0.5rem;
     justify-content: flex-start;
     margin-bottom: -2.5rem;
-    margin-top: 2.5rem;
-
 }
 
 .main-container .footer-color-bar .orange-part{
@@ -372,8 +426,8 @@ img{
 
 .footer-container{
     display: flex;
-    justify-content: space-evenly;
     align-items: flex-start;
+    justify-content: space-between;
     margin-top: 2.5rem;
     padding-top: 40px;
 }
@@ -385,6 +439,7 @@ img{
 .footer-container h4{
     font-size: 0.875rem;
     color: #ff6000;
+    user-select: none;
 }
 
 .footer-container a{
@@ -392,6 +447,7 @@ img{
     color: #484848;
     text-decoration: none;
     cursor: pointer;
+    user-select: none;
 }
 
 .footer-container ul{
@@ -416,6 +472,7 @@ img{
     width: 40px;
     height: 40px;
     cursor: pointer;
+    user-select: none;
 }
 
 .footer-container .kurumsal-footer{
@@ -444,6 +501,7 @@ img{
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
+    user-select: none;
 }
 
 .footer-container .mobil-uygulamalar-footer span{
@@ -467,6 +525,11 @@ img{
     width: 100%;
 }
 
+.mobil-uygulamalar-footer > div:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
 .mobil-uygulamalar-footer .span-container{
     display: flex;
     flex-direction: column;
@@ -484,6 +547,7 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
+    user-select: none;
 }
 
 .footer-container .soru-footer hr{
@@ -506,6 +570,11 @@ img{
     border-radius: 8px;
     padding: 8px 12px;
     font-weight: 600;
+}
+
+.footer-container .soru-footer .çozum-merkezi:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .footer-container .soru-footer .phone-number{
@@ -583,6 +652,8 @@ img{
     padding: 17px;
     height: 56px;
     text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
 
 
@@ -607,6 +678,7 @@ img{
     padding: 20px;
     box-sizing: border-box;
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     
 }
 
@@ -625,8 +697,14 @@ img{
 }
 
 .first-pop-up-menu li img{
-    transform: rotate(270deg);
-    margin-left: auto;
+    width: 0.8rem;
+    margin-left: 0.5rem;
+   
+}
+
+.first-pop-up ul li:hover img{
+    transform: rotate(90deg);
+    transition: 0.5s ease;
 }
 
 .first-pop-up ul li:hover .menu{
@@ -636,14 +714,15 @@ img{
 .menu {
     position: absolute;
     top: 0;
-    left: 300px;
-    width: 600px;
+    left: 100%;
+    width: 50vw;
     background: #fff;
     border-left: 1px solid #ddd;
     padding: 20px;
     display: none;
     border: none;
     z-index: 1000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
 .pc-tablet-container {
@@ -694,7 +773,8 @@ img{
     top: 12rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 82.5%;   
+    width: 82.5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
 }
 
 .pop-up-menu{
@@ -709,7 +789,6 @@ img{
     grid-template-columns: auto auto auto;
     gap: 8rem;
     align-items: flex-start;
-
 }
 
 .moda-pop-up-menu div{
@@ -786,32 +865,35 @@ img{
 
 .main-container .sale-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
     margin-top: 25px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .main-container .sale-container img{
     width: 6%;
 }
 
+.main-container .sale-container img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
 .main-container .advertising-container{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     margin-top: 25px;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
-
-
+   
 }
 
 .main-container .advertising-container .advertising{
-    border-radius: 10px;
-    height: 14.069rem;                                                         /* BU SATIRI SOR*/
+    border-radius: 10px;                                                        
     position: relative;
     background-color: #ff6000;
     width: 40%;
@@ -835,7 +917,8 @@ img{
 
 .main-container .advertising-container .fırsat img{
     width: 100%;
-    
+    user-select: none;
+    cursor: pointer; 
 }
 
 .main-container .advertising-container .product-container{
@@ -849,6 +932,15 @@ img{
     border-radius: 10px;
     gap: 1rem;
     padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    width: 80%;
+    height: 60%;
+}
+
+.main-container .advertising-container .product-container:hover{
+    transform: scale(1.050);
+    transition: 0.5s ease;
 }
 
 .main-container .advertising-container .product-container .right-part .right-top{
@@ -892,10 +984,10 @@ img{
 }
 
 .main-container .advertising-container .product-container img{
-    width: 100%;
-    height: 104px;
+    width: 95%;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .main-container .advertising-container .product-container .right-part{
     display: flex;
@@ -904,6 +996,13 @@ img{
     height: 100%;
     flex: 1;
     gap: 1.5rem;
+}
+
+.main-container .advertising-container .product-container .left-part{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-container .advertising-container .product-container .right-part button{
@@ -915,6 +1014,12 @@ img{
     padding: 5px;
     border: 2px solid #ccc;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.main-container .advertising-container .product-container .right-part button:hover{
+    color: #ff6000;
+   
 }
 
 .main-container .popular-products{
@@ -928,35 +1033,39 @@ img{
 .main-container .popular-products h3{
     font-size: 1.375rem;
     color: #484848;
-    margin-left: 9.5rem;
 }
 
 .main-container .popular-products .p-container{
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    width: 80%;
-    margin: 20px auto 0 auto; 
+    margin: 20px auto 0 auto;
 }
 
 .main-container .popular-products .p-product-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
     border: 1px solid #ededed;
     border-radius: 10px;
     gap: 3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.main-container .popular-products .p-product-container:hover{
+    border: 1.5px solid #919191;
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .main-container .popular-products .p-product-container .top img{
-    width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
+    width: 100%; 
 }
 
 .main-container .popular-products .p-product-container .top .product-d{
-    font-size: 0.75rem; 
+    font-size: 0.75rem;
 }
 
 .main-container .popular-products .p-product-container .top .product-d span{
@@ -1005,13 +1114,17 @@ img{
 
 .main-container .reklam-container{
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
     margin-top: 25px;
 }
 
 .main-container .reklam-container img{
-    width: 25%;
+    width: 32%;
+}
+
+.main-container .reklam-container img:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .main-container .tanıtım-container{
@@ -1019,13 +1132,17 @@ img{
     grid-template-columns: auto auto auto;
     gap: 1.5rem;
     margin-top: 25px;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .main-container .tanıtım-container img{
     width: 100%;
+}
+
+.main-container .tanıtım-container img:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .main-container .r-container{
@@ -1036,34 +1153,46 @@ img{
 }
 
 .main-container .r-container img{
-    width: 25%;
+    width: 32%;
+}
+
+.main-container .r-container img:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+
 }
 
 .main-container .p-reklam{
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
     margin-top: 25px;
 }
 
 .main-container .p-reklam img{
-    width: 25%;
+   width: 32%;
+}
+
+.main-container .p-reklam img:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
 }
 
 .brands-container h3{
     font-size: 1.313rem;
     color: #333333;
-    margin-left: 1.5rem;
     margin-top: 100px;
 }
-
+.container{
+    max-width: 1228.8px;
+}
 .brands-container .brands ul{
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 25px;
     border-bottom: 2px solid #f4f4f4;
     padding-bottom: 2.5rem;
+    gap: 0.5rem;
 }
 
 .brands-container .brands ul li{
@@ -1073,33 +1202,47 @@ img{
     width: 143px;
     text-align: center;
     font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+}
+
+.brands-container .brands ul li:hover{
+   background-color: #ccc;
+   transition: 1s ease;
 }
 
 .form-container{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 3rem;
     margin-top: 3rem;
+    gap: 3rem;
 }
 
 .form-container .sub-titles{
     position: sticky;
-    top: 0;
+    top: 2rem;
     z-index: 10;
     height: max-content;
     font-size: 0.813rem;
     color: #484848;
     font-weight: 700;
     line-height: 1.8;
-    width: 9.375rem;
+    cursor: pointer;
+    padding-left: 2rem;
+    border-left: 2px solid #ccc;
+
+}
+
+.form-container .sub-titles li:hover{
+    color: #FF6000;
 }
 
 .paragrafs{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 70%;
+    
 }
 
 .paragrafs p{
@@ -1116,10 +1259,8 @@ img{
     border: 1px solid #e5e5e5;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 3rem;
+    border-radius: 0.5rem;
 }
 
 .p-searchs h3{
@@ -1133,6 +1274,8 @@ img{
     display: flex;
     list-style: none;
     justify-content: space-around;
+    gap: 2rem;
+   
 }
 
 .p-searchs ul li{
@@ -1142,16 +1285,26 @@ img{
    color: #484848;
    font-size: 0.75rem;
    background-color: #edebeb;
-  
+   user-select: none;
+   cursor: pointer;
 }
+
+.p-searchs ul li:hover{
+    background-color: #ccc;
+    transition: 1s ease;
+}
+
+
 
 .transactions{
     display: flex;
-    justify-content: space-around;
-    width: 85%;
-    padding: 36px;
+    justify-content: flex-start;
+    padding-top: 36px;
+    padding-bottom: 36px;
     border-top: 1px solid #dadada;
     border-bottom: 1px solid #dadada;
+    user-select: none;
+    gap: 1rem;
 }
 
 .main-transaction-container{
@@ -1164,40 +1317,71 @@ img{
 .transactions .transaction-container{
     display: grid;
     grid-template-columns: auto auto;
-    gap: 1rem;
+    gap: 0.5rem;
+    
 }
 
 .transactions .transaction-container .info h3{
     font-size: 1rem;
     color: #484848;
+    width: 10rem;
 }
 
 .transactions .transaction-container .info p{
     font-size: 0.875rem;
     color: #484848;
     line-height: 20px;
-    width: 14rem;
-
+    width: 11.3rem;
+    margin-top: 0.5rem;
 }
 
 .categories{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: flex-start;
     margin-top: 3rem;
-   
+    gap: 6.5rem;
 }
+.categories .brand-cate{
+    width: 18%;
+}
+
+.main-footer{
+    background-color: #fff2ea;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.footer-color-bar{
+    background-color: #fff2ea;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
 
 .categories .brand-cate h4{
     font-size: 0.875rem;
     color: #484848;
     font-weight: 700;
+    user-select: none;
 }
 
 .categories .brand-cate li{
     font-size: 0.75rem;
     color: #484848;
     font-weight: 400;
+    cursor: pointer;
+    user-select: none;
 }
+
+.categories .brand-cate li a{
+   user-select: none;
+}
+
 
 .categories .brand-cate li:hover{
     text-decoration: underline;
@@ -1225,13 +1409,11 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    width: 100%;
 }
 
 .questions-container h2{
     color: #484848;
     font-size: 1.25rem;
-    margin-left: 7rem;
 }
 
 .questions h3{
@@ -1240,7 +1422,9 @@ img{
     border: 1px solid #e5e5e5;
     padding: 16px;
     position: relative;
-    width: 85%;
+    cursor: pointer;
+    user-select: none;
+    width: 1198.4px;
 }
 
 .questions h3::before{
