@@ -2473,6 +2473,10 @@ a{
     line-height: 1.82;
 }
 
+.header-container{
+    display: flex;
+}
+
 
 
 
