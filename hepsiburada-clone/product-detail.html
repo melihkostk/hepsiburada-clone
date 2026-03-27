@@ -92,7 +92,7 @@
 
                 <div class="basket">
                     <button>
-                        <img src="icons/black-shopping-cart.png" alt="shopping cart icon">
+                        <img src="icons/shopping-cart.png" alt="shopping cart icon">
                         <div class="total-amount">0</div>
                         <p>Sepetim</p>
                     </button>
@@ -2487,6 +2487,7 @@
             </ul>
         </div>
 
+        <div class="main-container">
         <div class="container">
             <div class="product-path">
                 <img src="icons/home.png">
@@ -2508,7 +2509,7 @@
                         <div class="back-arrow">
                             <img src="icons/arrow-forward.png">
                         </div>
-                        <img src="images/lego-mavi.webp">
+                        <img src="images/go-magna.webp">
                         <div class="forward-arrow">
                             <img src="icons/arrow-forward.png">
                         </div>
@@ -2557,47 +2558,53 @@
                                 <p>Sepete Özel Fiyat</p>
                             </div>
                             <div class="stb-bottom">
-                                <p>2.590 TL</p>
+                                <p>6.987,25 TL</p>
                             </div>
                         </div>
-                        <div>
+                        <div class="initial-price">
                             <p>3.700 TL</p>
                         </div>
                         <div class="gain">
                             <p>Kazancımı gör</p>
-                            <p>1.100 TL</p>
+                            <p class="gain-price">1.100 TL</p>
                             <img src="icons/arrow-down.png">
                         </div>
                     </div>
-                    <div class="sale-info">
-                        <img class="sale-img" src="">
-                        <p>SHOPİST satıcılı ürünlerde 100 TL ve üzerine %30 indirim</p>
-                        <p>Hepsiburada Premium Worldcard,World,KuveytTürk,Axess,Paraf,Qnb Kredi Kartı,Adva...</p>
+                    <div class="sale-info">               
+                        <p class="shopist-sale-info">SHOPİST satıcılı ürünlerde 100 TL ve üzerine %30 indirim</p>
+                        <div class="ccs-i">
+                            <img src="icons/credit-cart.png">
+                            <p class="credit-cart-sale-info"><span>Peşin fiyatına 6 x <span>1.164 TL</span></span> Hepsiburada Premium Worldcard,World,KuveytTürk,Axess,Paraf,Qnb Kredi Kartı,Adva...</p>
+                        </div>
                     </div>
                     <div class="buttons">
-                        <button>
-                            <img src="icons/black-shopping-cart.png">
+                        <button class="add-to-basket">
+                            <img src="icons/shopping-cart.png">
                             Sepete Ekle
                         </button>
-                        <button>
+                        <button class="favorite-button">
                             <img src="icons/favorite.png">
                         </button>
-                        <button>
+                        <button class="bookmark-button">
                             <img src="icons/bookmark.png">
                         </button>
                     </div>
                     <div class="delivery-info">
                         <p>Teslimat Seçenekleri</p>
                         <div class="di-top">
-                            <img src="icons/bus.png">
-                            <p class="">Tahmini <span>30 Mart Pazartesi</span> günü kargoda</p>
-                            <p class="standart">Standart Teslimat</p>
-                            <img src="images/hepsijet.png">
+                            <div class="di-top-left">
+                                <img src="icons/bus.png">
+                                <p class="">Tahmini <span>30 Mart Pazartesi</span> günü kargoda</p>
+                            </div>
+                            <div class="di-top-right">
+                                <p class="standart">Standart Teslimat</p>
+                                <img src="images/yurtiçi-kargo.png">
+                            </div>
                             
                         </div>
                         <div class="di-bottom">
                             <img>
-                            <p>teslimat seçenekleri ve <b>En hızlıHepsimat noktalarını</b> görmek için <b>konumunu seç</b> ve alışverişe başla</p>
+                            <p>En hızlı teslimat seçenekleri ve <b> Hepsimat noktalarını</b> görmek için <b>konumunu seç</b> ve alışverişe başla</p>
                         </div>
                     </div>
                     <div class="product-info">
@@ -2627,8 +2634,8 @@
                         <div class="coupon">
                             <div class="top">
                                 <div class="top-left">
-                                    <p>80 TL</p>
-                                    <p>Alt limit: 800 TL</p>
+                                    <p class="coupon-price">80<span> TL</span></p>
+                                    <p class="min-limit">Alt limit: 800 TL</p>
                                 </div>
                                 <div class="top-right">
                                     <button>
@@ -2644,7 +2651,23 @@
                     </div>
                 </div>
                 <div class="card-right-part">
-
+                    <div class="first">
+                        <div class="first-top">
+                            <h3>Kampanyalar</h3>
+                            <p>SHOPİST satıcılı ürünlerde 100 TL ve üzerine %30 indirim</p>
+                        </div>
+                        <div class="first-bottom">
+                            <p>300 TL üzeri kargo bedava</p>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <img src="images/premium-new-logo.png">
+                        <p>Premium ile avantajlarını katla, anında Hepsipara kazan.</p>
+                    </div>
+                    <div class="third">
+                        <h3>Ek bilgiler</h3>
+                        <img class="security-info" src="images/guvenli-urun.webp">
+                    </div>
                 </div>
             </div>
         </div>
@@ -4301,6 +4324,7 @@
                     </div>
                 </div>
             </div>
+        </div>
              <div class="footer-color-bar">
                         <div class="orange-part"></div>
                         <div class="blue-part"></div>
@@ -4308,6 +4332,7 @@
                         <div class="green-part"></div>
                         <div class="dark-purple-part"></div>
                     </div>
+            
             <div class="main-footer">
             <div class="container">
             <footer>

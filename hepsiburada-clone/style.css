@@ -1484,6 +1484,7 @@ a{
 .card .card-mid-part{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .card .card-mid-part h1{
@@ -1498,7 +1499,7 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.5rem;
 }
 
 .card .card-mid-part .comments .score{
@@ -1526,6 +1527,7 @@ a{
 .card .card-mid-part .seller-info{
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 
@@ -1577,16 +1579,210 @@ a{
     border: 1px solid #f5f5f5;
     border-radius: 4px;
     padding: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #484848;
 }
+
+.card .card-mid-part .price-info .special-to-basket{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card .card-mid-part .price-info .special-to-basket .stb-top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.card .card-mid-part .price-info .special-to-basket .stb-top p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #008A09;
+}
+
+.card .card-mid-part .price-info .special-to-basket .stb-bottom{
+    font-size: 1.75rem;
+    color: #008A09;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.card .card-mid-part .price-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 0.3rem;
+}
+
+.card .card-mid-part .price-info .initial-price p{
+    color: #9b9b9b;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.card .card-mid-part .price-info .gain{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    color: #006A40;
+    background: #E5FFE7;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-left: 1rem;
+}
+
+.card .card-mid-part .price-info .gain .gain-price{
+    font-weight: 700;
+}
+
+.card .card-mid-part .sale-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card .card-mid-part .sale-info .shopist-sale-info{
+    color: #008A09;
+    font-size: 0.75rem;
+    background: #EDFEF1;
+    border: 1px solid #b9ecbd;
+    padding: 12px 8px;
+    border-radius: 8px;
+    width: max-content;
+}
+
+.card .card-mid-part .sale-info .ccs-i{
+    display: flex;
+    align-items: center;
+    background: #FAF7FD;
+    gap: 0.2rem;
+    padding: 6px 8px;
+    width: max-content;
+    border-radius: 2px;
+}
+
+.card .card-mid-part .sale-info .ccs-i p{
+    font-size: 0.625rem;
+    color: #454545;
+    line-height: 12px;
+}
+
+.card .card-mid-part .sale-info .ccs-i span{
+    color: #7723DB;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.card .card-mid-part .sale-info .ccs-i span span{
+    color: #fff;
+    background: #6B00D7;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.card .card-mid-part .buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.card .card-mid-part .buttons .add-to-basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #FF6000;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 68%;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.card .card-mid-part .buttons .favorite-button,
+.card .card-mid-part .buttons .bookmark-button{
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    padding: 11px;
+    border-radius: 8px;
+}
+
 
 .delivery-info{
     background: #ededed;
     border-radius: 2px;
+    width: 60%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-info p{
+    font-size: 0.688rem;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    line-height: 16px;
+    text-align: left;
 }
 
 .di-top{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.di-top .di-top-left{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.di-top .di-top-left p{
+    color: #484848;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.025em;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.di-top .di-top-left p span{
+    font-weight: 700;
+}
+
+.di-top .di-top-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.di-top .di-top-right p{
+    font-size: 0.625rem;
+    color: #FF6000;
+    background: #FFEFE5;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.di-top .di-top-right img{
+    width: 20%;
+    height: 10%;
+    display: block;
 }
 
 .di-bottom p{
@@ -1597,18 +1793,29 @@ a{
     padding: 6px 8px;
 }
 
+.product-info h2{
+    color: #484848;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    line-height: 16px;
+}
+
 .product-info .feature{
     display: flex;
-    justify-content: space-between;
-
+    justify-content: flex-start;
+    gap: 0.5rem;
+    
 }
 
 .product-info .feature div{
     display: flex;
     flex-direction: column;
-    background: #ededed;
+    background: #fafafa;
     border-radius: 8px;
     padding: 6px;
+    width: max-content;
+    justify-content: center;
 }
 
 .product-info .feature div p{
@@ -1618,18 +1825,157 @@ a{
 
 .product-info .feature .all-products{
     color: #ff6000;
+    font-size: 0.688rem;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.all-coupons h3{
+    color: #212121;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    line-height: 16px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.all-coupons .coupon{
+    background: #FFF2EB;
+    padding: 7px 12px;
+    border: 1px solid #ffbf99;
+    border-radius: 8px;
+    width: 40%;
 }
 
 .all-coupons .coupon .top{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px dashed #ff6000;
+    padding-bottom: 10px;
+}
+
+.all-coupons .coupon .top .top-left .coupon-price{
+    font-size: 0.875rem;
+    color: #212121;
+    font-weight: 600;
+}
+
+.all-coupons .coupon .top .top-left .coupon-price span{
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 12px;
+    color: #666;
+}
+
+.all-coupons .coupon .top .top-left .min-limit{
+    font-size: 0.688rem;
+    font-weight: 500;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+}
+
+.all-coupons .coupon .top .top-right button{
+    background: transparent;
+    color: #FF6000;
+    border: 2px solid #FF6000;
+    padding: 6px 8px;
+    font-weight: 600;
+    font-size: 0.813rem;
+    border-radius: 8px;
 }
 
 .all-coupons .coupon .bottom{
     display: flex;
     justify-content: space-between;
-    
+    padding-top: 10px; 
+}
+
+.all-coupons .coupon .bottom p{
+    color: #9b9b9b;
+    font-size: 0.688rem;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.all-coupons .coupon .bottom .details{
+    color: #FF6000;
+    font-weight: 600;
+}
+
+.card .card-right-part{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card .card-right-part .first{
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    padding: 12px 10px;
+    width: 100%;
+}
+
+.card .card-right-part .first h3{
+    font-size: 0.688rem;
+    color: #484848;
+    line-height: 16px;
+}
+
+.card .card-right-part .first .first-top{
+    padding-bottom: 10px;
+}
+
+.card .card-right-part .first .first-bottom{
+    border-top: 1px solid #f5f5f5;
+    padding-top: 10px;
+}
+
+.card .card-right-part .first p{
+    font-size: 0.688rem;
+    color: #484848;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+.card .card-right-part .second{
+    background: #FFEAF0;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.card .card-right-part .second img{
+    width: 60%;
+}
+
+.card .card-right-part .second p{
+    font-size: 0.688rem;
+    color: #212121;
+}
+
+.card .card-right-part .third{
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+}
+
+.card .card-right-part .third h3{
+    font-size: 0.688rem;
+    color: #484848;
+    line-height: 16px;
+}
+
+.card .card-right-part img{
+    width: 70%;
+
 }
 
 .form-links{
@@ -1638,6 +1984,7 @@ a{
     border: 1px solid #E5E7EB;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    margin-top: 3rem;
 }
 
 .form-links a{
