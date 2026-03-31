@@ -3106,8 +3106,66 @@ a{
     background: linear-gradient(0deg, #9636A3 1.2%, #5E196B 53.48%, #5D196A 53.48%);
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+    gap: 2rem;
+    align-items: center;
+}
 
+.main-container .bee-seller h1{
+    color: #fff;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.main-container .bee-seller h3{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.main-container .bee-seller .iş-ortağım-img img{
+    width: 30%;
+}
+
+.main-container .bee-seller .buttons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.main-container .bee-seller .buttons .seller{
+    color: #FF6000;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #FFEFE5;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 158px;
+    height: 48px;
+}
+
+.main-container .bee-seller .buttons .detailed-info{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #FF6000;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 158px;
+    height: 48px;
+}
+
+.main-container .bee-seller .dates p{
+    margin: 16px 0 0;
+    font-size: 0.625rem;
+    color: #FFFFFF80;
 }
 
 .main-container .container .hepsiburada-business-partner{
@@ -3116,10 +3174,28 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 6rem;
+}
+
+.main-container .container .hepsiburada-business-partner .hepsiburada-business-partner-top h2{
+    font-size: 1.75rem;
+    color: #000000DE;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.main-container .container .hepsiburada-business-partner .hepsiburada-business-partner-top h5{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 24px;
+    margin: 16px 0 0;
 }
 
 .main-container .container .hepsiburada-business-partner-bottom{
+    margin-top: 5rem;
     display: flex;
+    align-items: flex-start;
 }
 
 .main-container .container .hepsiburada-business-partner-bottom-left{
@@ -3127,6 +3203,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 .main-container .container .hepsiburada-business-partner-bottom-left h6{
     display: flex;
@@ -3141,10 +3218,12 @@ a{
 .main-container .container .hepsiburada-business-partner-bottom-left p{
     font-size: 0.875rem;
     color: #00000099;
+    margin-top: 16px;
+
 }
 
 .main-container .container .hepsiburada-business-partner-bottom-left img{
-    width: 25%;
+    width: 15%;
 }
 
 .main-container .container .hepsiburada-business-partner-bottom-right{
@@ -3152,6 +3231,7 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 .main-container .container .hepsiburada-business-partner-bottom-right h6{
@@ -3167,34 +3247,194 @@ a{
 .main-container .container .hepsiburada-business-partner-bottom-right p{
     font-size: 0.875rem;
     color: #00000099;
+    line-height: 24px;
+    margin-top: 16px;
 }
 
 .main-container .container .hepsiburada-business-partner-bottom-right img{
     width: 15%;
 }
 
+.main-container .steps{
+    width: 100%;
+    background-color: #F0F2FF;
+    border: 1px solid #DADADA;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.main-container .steps .steps-left h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: 000000DE;
+}
+
+.main-container .steps .steps-left .step-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 48px;
+}
+
+.main-container .steps .steps-left .step-buttons .step-buttons-left{
+    display: flex;
+}
+
+.main-container .steps .steps-left .step-buttons .step-buttons-left .step-number-one{
+    width: 88px;
+    height: 36px;
+    border-radius: 18px;
+    border: solid 2px #6c84fa;
+    background-image: linear-gradient(to left, #e4e9ff, #ffffff 100%);
+    text-align: right;
+    padding-right: 20px;
+    font-size: 1rem;
+    color:#6c84fa;
+    font-weight: 600;
+    z-index: 100;
+}
+
+
+.main-container .steps .steps-left .step-buttons .step-buttons-left .step-number-two{
+    z-index: 99;
+    margin-left: -1.563rem;
+    width: 88px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 1rem;
+    color: #7B7B7B;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+
+.main-container .steps .steps-left .step-buttons .step-buttons-left .step-number-three{
+    z-index: 98;
+    margin-left: -1.563rem;
+    width: 88px;
+    height: 36px;
+    border-radius: 18px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 1rem;
+    color: #7B7B7B;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+
+
+
+.main-container .steps .steps-left .step-buttons .step-buttons-right{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.main-container .steps .steps-left .step-buttons .step-buttons-right button{
+    width: 56px;
+    height: 36px;
+    border-radius: 24px;
+    border: solid 2px #6c84fa;
+    background-image: linear-gradient(to left, #e4e9ff, #ffffff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: border-color .25s ease;
+    transition: border-color .25s ease;
+}
+
+.main-container .steps .steps-left .step-descriptions{
+    margin-top: 4.5rem;
+}
+
+.main-container .steps .steps-left .step-descriptions .appeal{
+    font-size:1.375rem;
+    color: #000000DE;
+    line-height: 32px;
+    font-weight: 600;
+
+}
+
+.main-container .steps .steps-left .step-descriptions .appeal-description{
+    font-size:1.375rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 32px;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.main-container .steps .steps-left .step-descriptions .appeal-description a{
+    text-decoration: none;
+    color: #6c84fa;
+}
+
+.main-container .steps .steps-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container .steps .steps-right img{
+    width: 50%;
+}
+
 .main-container .container .what-to-except-container{
     display: flex;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.main-container .container .what-to-except h2{
+    margin-top: 6rem;
+    font-size: 1.75rem;
+    color: #000000DE;
+    line-height: 40px;
+    font-weight: 600;
+
 }
 
 .main-container .container .what-to-except-container .wte-item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
+    flex: 1;
+}
+
+.main-container .container .what-to-except-container .wte-item h6{
+    font-size: 1rem;
+    color: #00000099;
+    line-height: 24px;
 }
 
 .main-container .container .what-to-except-container img{
     width: 100%;
+    height: 80%;
 }
 
 .main-container .container .slider-container{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    margin-top: 3.375rem;
+}
+
+.main-container .video-preview{
+    margin-top: 6rem;
+}
+
+.main-container .video-preview img{
+    border-radius: 8px;
 }
 
 .main-container .container .slider-item{
@@ -3229,13 +3469,22 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 6rem;
+    overflow: auto;
 
 }
 .main-container .container .success-stories .success-stories-container{
     display: flex;
-    overflow: scroll;
-    gap: 1rem;
+    gap: 0.2rem;
     
+}
+
+.main-container .container .success-stories h2{
+    font-size: 1.75rem;
+    color: #000000DE;
+    line-height: 40px;
 }
 
 .main-container .container .success-stories .success-stories-container .success-stories-items{
@@ -3244,8 +3493,7 @@ a{
     border-radius: 8px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.04), 0px 6px 12px rgba(0, 0, 0, 0.05);
     margin: 20px 10px;
-
-    
+    width: 280px;
 }
 
 .main-container .container .success-stories .success-stories-container .success-stories-items h6{
