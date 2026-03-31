@@ -363,6 +363,11 @@ a{
     margin-left: -2rem;
 }
 
+.basket button a{
+    text-decoration: none;
+    color: white;
+}
+
 .basket button:hover{
     background-color: #484848;
     transition: 1.5s ease;
@@ -3674,6 +3679,48 @@ a{
 
 .main-container .container .product-grid .product .product-name{
     width: max-content;
+}
+
+.header-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 28px 0;
+    justify-content: space-around;
+    box-shadow: 0 2px 40px #0000000d
+}
+
+.header-container .header-right{
+    display: flex;
+    gap: 2rem;
+}
+
+.header-container .header-right .header-right-links{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-container .header-right a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.header-container .header-right .header-right-funcs{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-container .header-right .header-right-funcs .languages{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 
