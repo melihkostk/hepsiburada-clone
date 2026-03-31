@@ -37,6 +37,7 @@ a{
     font-weight: 600;
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
 }
 
 .links a:hover{
@@ -3652,6 +3653,27 @@ a{
 
 .main-container .container .brand-slider-item img{
     width: 75%;
+}
+
+.main-container .container .product-grid .product .bottom p{
+    font-size: 0.75rem;
+    color: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: max-content;
+
+}
+
+.main-container .container .product-grid .product .kupon{
+    color: #008A09;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.main-container .container .product-grid .product .product-name{
+    width: max-content;
 }
 
 
