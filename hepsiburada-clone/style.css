@@ -3723,6 +3723,506 @@ a{
     gap: 0.5rem;
 }
 
+.main-container .container .bee-business-partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #dadada;
+}
+.main-container .container .bee-business-partner .bee-business-partner-right{
+    width: 41.7%;
+}
+
+body{
+    background-color: #fafaf7;
+}
+
+.main-container .container .for-business-partners{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 500;
+}
+
+.main-container .container .for-business-partners span{
+    display: block;
+    color: #FF6000;
+    font-weight: 700;
+
+}
+
+.main-container .container .bee-business-partner .bee-business-partner-left{
+    width: 41.7%;
+}
+
+.main-container .container .bee-business-partner .bee-business-partner-right h3{
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.main-container .container .bee-business-partner .bee-business-partner-right p{
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #212529;
+    line-height: 1.3rem;
+}
+
+.main-container .container .bee-business-partner .bee-business-partner-right .hrefs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main-container .container .bee-business-partner .bee-business-partner-right .hrefs a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+}
+
+.main-container .container .bee-business-partner .bee-business-partner-left img{
+    width: 100%;
+    height: auto;
+}
+
+.main-container .container .send-with-hepsijet{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #dadada;
+    
+}
+
+.main-container .container .hepsij-logo{
+    width: 25%;
+    mix-blend-mode: multiply;
+}
+
+.main-container .container .hepsij-title{
+    font-size: 2rem;
+    color: #212529;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.main-container .container .send-with-hepsijet p{
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #212529;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 22.4px;
+}
+
+.main-container .container .send-with-hepsijet a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+}
+
+.main-container .container .send-with-hepsijet-left-bottom{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container .container .send-with-hepsijet-left-bottom .hepsijet-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.main-container .container .send-with-hepsijet-left-bottom .hepsijet-items img{
+    width: 25%;
+    height: auto;
+}
+
+.main-container .container .send-with-hepsijet-left-bottom .hepsijet-items p{
+    color: #212529;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.main-container .container .send-with-hepsijet-left{
+    width: 41.7%;
+}
+
+.main-container .container .send-with-hepsijet-right{
+    width: 41.7%;
+}
+
+.main-container .container .send-with-hepsijet-right img{
+    width: 100%;
+    height: auto;
+}
+
+.hepsi-lojistik{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadada;
+}
+
+.hepsi-lojistik-left{
+    width: 41.7%;
+}
+
+.hepsi-lojistik-right{
+    width: 41.7%;
+}
+
+.hepsi-lojistik-right p{
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #212529;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 22.4px;
+}
+
+.hepsi-lojistik-right a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+}
+
+.hepsi-lojistik-right .hlt{
+    font-size: 2rem;
+    color: #212529;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.hepsi-lojistik-right .hll{
+    width: 60%;
+    mix-blend-mode: multiply;
+}
+
+.hepsi-lojistik-left img{
+    width: 100%;
+}
+
+.hepsiad{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadada;
+}
+
+.hepsiad-left{
+    width: 41.7%;
+}
+
+.hepsiad-left .hal{
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.hepsiad-left .hat{
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 500;
+}
+
+.hepsiad-right{
+    width: 41.7%;
+}
+
+.hepsiad p{
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #212529;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 22.4px;
+}
+
+.hepsiad a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+}
+
+.hepsiad-right img{
+    width: 100%
+}
+
+.hepsiad-advantages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hepsiad-advantages-item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.hepsiad-advantages-item img{
+    width: 20%;
+}
+
+.hepsiad-advantages-item p{
+    font-size: 0.875rem;
+    color: #212529;
+    font-weight: 600;
+}
+
+.hepsiad-advantages-item p span{
+    display: block;
+}
+
+.hepsiburada-marketting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.hepsiburada-marketting-left{
+    width: 41.7%;
+}
+
+.hepsiburada-marketting-right{
+    width: 41.7%;
+}
+
+.hepsiburada-marketting-left img{
+    width: 100%;
+}
+
+.hepsiburada-marketting-right h3{
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.hepsiburada-marketting-right h3 span{
+    display: block;
+}
+
+.hepsiburada-marketting-right p{
+    font-size: 0.875rem;
+    line-height:22.4px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hepsiburada-marketting-right a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+}
+
+.hepsiburada-supplier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.hepsiburada-supplier-left{
+    width: 41.7%;
+}
+
+.hepsiburada-supplier-right{
+    width: 41.7%;
+}
+
+.hepsiburada-supplier-right img{
+    width: 100%
+}
+
+.hepsiburada-supplier-left h3{
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.hepsiburada-supplier-left p{
+    font-size: 0.875rem;
+    line-height:22.4px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hepsiburada-supplier-left a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+}
+
+.hepsipay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+}
+
+.hepsipay .hepsipay-left{
+    width: 41.7%;
+}
+
+.hepsipay .hepsipay-left img{
+    width: 100%;
+}
+
+.hepsipay .hepsipay-right{
+    width: 41.7%;
+}
+
+.hepsipay .hepsipay-right img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.hepsipay .hepsipay-right h3{
+    font-size: 2rem;
+    color: #212529;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.hepsipay .hepsipay-right p{
+    font-size: 0.875rem;
+    line-height:22.4px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hepsipay .hepsipay-right a{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1228px;
+    margin: 40px 0 16px;
+}
+
+.icons img{
+    width: 7%;
+}
+
+.icons .mouse{
+    width: 3%;
+}
+
+.icons .lock{
+    width: 3%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer-col p{
+    font-size: 2rem;
+    color: #FF6000;
+    font-weight: 600;
+}
+
+.footer-col .cm{
+    margin-top: 2.5rem;
+}
+
+.footer-col .cm h5{
+    font-size: 0.875rem;
+    color: #212529;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.footer-col .cm a{
+    font-size: 1.5rem;
+    color: #323232;
+    font-weight: 600;
+}
+
+.footer-col .fh h5{
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #212529;
+}
+
+.footer-col a{
+    text-decoration: none;
+}
+
+.fh{
+    margin-top: 2.5rem;
+}
+
+.fh-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    
+}
+
+.fh-links-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dadada;
+    background: #fff;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.fh-links-item img{
+    width: 100%;
+}
+
+.footer-col h4{
+    font-size: 1rem;
+    color: #323232;
+    margin-bottom: 0.75rem;
+}
+
+.footer-col .as{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col a{
+    font-size: 0.875rem;
+    color: #656565;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
 
 
 
