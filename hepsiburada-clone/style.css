@@ -4220,6 +4220,83 @@ body{
     margin-bottom: 0.5rem;
 }
 
+.contact{
+    border: 1px solid #dadada;
+    padding: 40px 20px 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 3rem auto 0;
+}
+
+.contact .contact-top{
+    border-bottom: 1px solid #dadada;
+}
+
+.contact .contact-top h1{
+    color: #FF6000;
+    font-size: 1rem;
+    margin: 0 4px;
+}
+
+.contact .contact-top h2{
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 7px 7px 12px 3px;
+}
+
+.contact .contact-top h2 span{
+    color: #FF6000;
+    font-weight: 600;
+}
+
+.contact .contact-top button{
+    color: #FF6000;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 6px 25px;
+    background: transparent;
+    border: 2px solid #ff6000;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.contact-bottom{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.contact-bottom h3{
+    font-size: 0.875rem;
+    color: #484848;
+    margin: 30px 0 15px;
+}
+
+.contact-bottom p{
+    font-size: 0.813rem;
+    color: #484848;
+}
+
+.contact-bottom p a{
+    color: #ff6000;
+}
+
+.contact-bottom dt{
+    color: #484848;
+    font-size: 0.813rem;
+    font-weight: 700;
+}
+
+.contact-bottom dd{
+    font-size: 0.813rem;
+    line-height: 1.8rem;
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+
 
 
 
