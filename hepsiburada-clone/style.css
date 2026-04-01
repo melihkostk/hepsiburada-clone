@@ -3733,10 +3733,6 @@ a{
     width: 41.7%;
 }
 
-body{
-    background-color: #fafaf7;
-}
-
 .main-container .container .for-business-partners{
     margin-bottom: 3rem;
     font-size: 2rem;
@@ -4295,6 +4291,33 @@ body{
     line-height: 1.8rem;
     margin: 0 0 15px;
     font-weight: 500;
+}
+
+.health-description{
+    padding: 10px 20px;
+}
+
+.health-description h1{
+    margin-top: 1.25rem;
+    color: #F28B00;
+    font-size: 1.5rem;
+    margin-bottom: 0.313rem;
+}
+
+.health-description p{
+    font-size: 1rem;
+    color: #484848;
+    margin-bottom: 0.625rem;
+    line-height:25.6px;
+}
+
+.health-description ul{
+    list-style: none;
+}
+
+.health-description ul li{
+    font-size: 1rem;
+    color: #484848;
 }
 
 
