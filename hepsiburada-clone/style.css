@@ -4469,6 +4469,83 @@ nav a{
     line-height:24px;
 }
 
+.kvkk{
+    width: 100%;
+    background: rgb(23, 195, 123);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    margin-top: 2rem;
+    padding-bottom: 88px;
+}
+
+.kvkk .container h1{
+    color: #fff;
+    padding-top: 112px;
+    padding-bottom: 224px;
+    font-size: 3rem;
+}
+
+.kvkk-content{
+    display: flex;
+}
+
+.kvkk-content .kvkk-content-right .people{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dadada;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.kvkk-content .kvkk-content-right .people a{
+    border-bottom: 1px solid #dadada;
+    font-size: 1rem;
+    color: #484848;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 24px 80px 24px 24px;
+
+}
+
+.kvkk-content .kvkk-content-left{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.kvkk-content .kvkk-content-left a{
+    color: #484848;
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 32px
+}
+
+.kvkk-content .kvkk-content-right h2{
+    font-size: 1.75rem;
+    color: #484848;
+}
+
+.kvkk-content .kvkk-content-right p,b{
+    font-size: 1rem;
+    color: #646464;
+}
+
+.kvkk-content .kvkk-content-right p{
+    margin: 12px 0 24px;
+}
+
+.kvkk-content .kvkk-content-right p a{
+    color: #ff6000;
+}
+
+.kvkk-content .kvkk-content-right .big{
+    margin-top: 12px;
+}
+
+
+
 
 
 
