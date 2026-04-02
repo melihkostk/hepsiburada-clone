@@ -4132,6 +4132,7 @@ a{
     justify-content: space-between;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin-top: 10rem;
 }
 
 .footer-col{
@@ -4546,6 +4547,151 @@ nav a{
 
 .career{
     display: flex;
+    justify-content: space-between;
+}
+
+.career-body{
+    background-color: #fafaf7;
+}
+
+.page-path{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 2rem 0;
+}
+
+.page-path a{
+    font-size: 0.75rem;
+    color: #323232;
+}
+
+.page-path img{
+    width: 1%;
+}
+
+.career .career-left .navs{
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 40px #0000000d;
+    position: sticky;
+    top: 2rem;
+}
+
+.career .career-left .nav-links{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+.career .career-left .nav-links a{
+    text-decoration: none;
+    color: #212529;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: .5rem .75rem;
+}
+
+.career .career-left{
+    width: 25%;
+    flex: 0 0 auto;
+}
+
+.career .career-left .nav-links button{
+    background: #FF6000;
+    text-align: left;
+    color: #fff;
+    border: none;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+}
+
+.career .career-right{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    width: 75%;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+.career-right h1{
+    margin-bottom: 2rem;
+    color: #212529;
+}
+
+.career .career-right .title-img{
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.career .career-right .company-culture{
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 40px #0000000d;
+    border-radius: 1rem;
+}
+
+.career .career-right hr{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.career .career-right .company-culture h2{
+    color: #FF6000;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.career .career-right .company-culture p,strong{
+    color: #212529;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.career .career-right .career-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.career .career-right .career-card h2{
+    font-size: 2rem;
+    font-weight:500;
+    line-height: 1.2;
+}
+
+.career .career-right .career-card h2 span{
+    display: block;
+    color: #FF6000;
+}
+
+.career .career-right .career-card p{
+    font-size: 0.875rem;
+    color: #212529;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height:22.4px;
+}
+
+.career .career-right .career-card img{
+    width: 100%;
+}
+
+.career .career-right .career-card .career-card-left{
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.career .career-right .career-card .career-card-right{
+    flex: 0 0 auto;
+    width: 41.66666667%;
 }
 
 
