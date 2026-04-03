@@ -5607,6 +5607,177 @@ footer{
     margin-bottom: 10px;
 }
 
+.tt{
+    font-size: 1.625rem;
+    color: #484848;
+    font-weight: 300;
+    margin: 20px 0;
+    padding: 10px 0;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-steps-items{
+    display: flex;
+    gap: 1rem;
+    padding-left: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.step-description{
+    
+}
+
+.step-number{
+    position: absolute;
+    left: -17px;
+    top: 0.9rem;
+    background: #fff;
+    border: 2px solid #666;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.step-description strong{
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #484848;
+}
+
+.step-description p{
+    font-size: 1rem;
+    margin: 16px 0;
+    color: #484848;
+}
+
+.guide-title{
+    font-size: 1.625rem;
+    margin: 20px 0;
+    color: #484848;
+    padding: 10px 0;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.page-content{
+    padding: 30px;
+}
+
+.contract-bottom{
+    display: flex;
+    align-items: center;
+}
+
+.cb-left{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.cb-right{
+    width: 90%;
+}
+
+
+.contract-bottom img{
+    width: 60%;
+}
+
+.contract-bottom p{
+    padding: 50px 0;
+    font-size: 1rem;
+    color: #484848;
+}
+
+.order-approval-bottom{
+    display: flex;
+}
+
+.order-approval-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.order-approval-item img{
+    border: 1px solid #dadada;
+}
+
+.order-approval-item p{
+    font-size: 1rem;
+    color: #484848;
+}
+
+.error-handle-bottom{
+    display: flex;
+}
+
+.error-handle-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.error-handle-left img{
+    border: 1px solid #dadada;
+}
+
+.error-handle-right{
+    text-align: center;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.error-handle-right p{
+    font-size: 1rem;
+    color: rgb(72, 72, 72);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.error-handle-right ul{
+    list-style: none;
+}
+
+.error-handle-right ul li{
+    color: #484848;
+}
+
+.kv{
+    padding: 30px;
+}
+
+.kv p{
+    font-size: 1rem;
+    margin: 16px 0;
+    color: #484848;
+}
+
+.kv p a{
+    color: #F28B00;
+    text-decoration: none;
+}
+
+.kv strong{
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
 
 
 
