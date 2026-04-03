@@ -4401,13 +4401,15 @@ nav a{
     list-style: none;
 }
 
-.safe .safe-content li,p{
+.safe .safe-content li{
     color: #4E4E4E;
     font-size: 0.875rem;
 }
 
 .safe .safe-content p{
     margin-bottom: 10px;
+    color: #4E4E4E;
+    font-size: 0.875rem;
 }
 
 .policy{
@@ -5777,6 +5779,396 @@ footer{
     margin: 10px 0;
     font-size: 1rem;
 }
+
+.payment-wrapper{
+    background-color: #112378;
+    padding-bottom: 80px;
+    margin-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.payment-wrapper h1{
+    color: #fff;
+    font-size: 1.625rem;
+    padding-top: 80px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.payment-wrapper p{
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.hepsipay-balance{
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 30px;
+}
+
+.hepsipay-balance h2{
+    font-size: 1.75rem;
+    color: #212121;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hepsipay-balance .subtitle{
+    color: #7723db;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21.33px;
+    letter-spacing: -2.5%;
+    margin-bottom: 8px;
+}
+
+.hepsipay-balance p{
+    font-size: 1rem;
+    color: #484848;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.hepsipay-balance a{
+    background-color: #FFEFE5;
+    color: #ff6000;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.bank-card h2{
+    font-size: 1.75rem;
+    color: #212121;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bank-card .subtitle{
+    color: #7723db;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21.33px;
+    letter-spacing: -2.5%;
+    margin-bottom: 8px;
+}
+
+.bank-card p{
+    font-size: 1rem;
+    color: #484848;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.credit-card-brands{
+    background-color: #F9F9F9;
+    padding: 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.credit-card-top p{
+    font-size: 0.875rem;
+    color: #212121;
+    font-weight: 600;
+}
+
+.credit-card-bottom{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.credit-card-bottom img{
+    width: 7%;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+}
+
+.bank-card b{
+    font-size: 0.875rem;
+    color: #212121;
+    font-weight: 600;
+}
+
+.bank-card a{
+    background-color: #FFEFE5;
+    color: #ff6000;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.bank-card{
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.hepsiburada-limit{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.hepsiburada-limit h2{
+    font-size: 1.75rem;
+    color: #212121;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hepsiburada-limit .subtitle{
+    color: #7723db;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21.33px;
+    letter-spacing: -2.5%;
+    margin-bottom: 8px;
+}
+
+.hepsiburada-limit p{
+    font-size: 1rem;
+    color: #484848;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.hepsiburada-limit a{
+    background-color: #FFEFE5;
+    color: #ff6000;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.hepsi-finans{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.hepsi-finans h2{
+    font-size: 1.75rem;
+    color: #212121;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hepsi-finans .subtitle{
+    color: #7723db;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21.33px;
+    letter-spacing: -2.5%;
+    margin-bottom: 8px;
+}
+
+.hepsi-finans p{
+    font-size: 1rem;
+    color: #484848;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.hepsi-finans a{
+    background-color: #FFEFE5;
+    color: #ff6000;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.shopping-credit{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.shopping-credit h2{
+    font-size: 1.75rem;
+    color: #212121;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.shopping-credit .subtitle{
+    color: #7723db;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21.33px;
+    letter-spacing: -2.5%;
+    margin-bottom: 8px;
+}
+
+.shopping-credit p{
+    font-size: 1rem;
+    color: #484848;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.shopping-credit a{
+    background-color: #FFEFE5;
+    color: #ff6000;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.multiple-credit-card{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.multiple-credit-card h2{
+    font-size: 1.75rem;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.multiple-credit-card p{
+    font-size: 1rem;
+    color: #484848;
+}
+
+.instant-transfer{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.instant-transfer h2{
+    font-size: 1.75rem;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.instant-transfer p{
+    font-size: 1rem;
+    color: #484848;
+}
+
+.instant-transfer ul{
+    list-style: none;
+    padding-left: 16px;
+    color: #484848;
+    line-height: 24px;
+}
+
+.eft{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.eft-text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #484848;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -2.5%;
+    margin-bottom: 8px;
+}
+
+.eft h2{
+    font-size: 1.75rem;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.eft p{
+    font-size: 1rem;
+    color: #484848;
+    line-height: 24px;
+}
+
+.eft ul{
+    list-style: none;
+    padding-left: 16px;
+    color: #484848;
+    line-height: 24px;
+}
+
+.dijital-wallet{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.dijital-wallet h2{
+    font-size: 1.75rem;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.dijital-wallet p{
+    font-size: 1rem;
+    color: #484848;
+    line-height: 24px;
+}
+
+.dijital-wallet-bottom{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.first-dijital-wallet-item{
+    flex: 1;
+    padding: 24px;
+    background-color: #F9F4F9;
+    border-radius: 10px;
+}
+
+.second-dijital-wallet-item{
+    flex: 1;
+    padding: 24px;
+    background-color: #F3FBF9;
+    border-radius: 10px;
+}
+
+.first-dijital-wallet-item img{
+    mix-blend-mode: multiply;
+    width: 20%;
+    object-fit: cover;
+}
+
+.second-dijital-wallet-item img{
+    mix-blend-mode: multiply;
+    width: 20%;
+    object-fit: cover;
+}
+
+
+.deta{
+    margin-top: 1rem;
+}
+
+
 
 
 
