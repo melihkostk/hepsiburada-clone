@@ -2486,14 +2486,15 @@ a{
 
 .header-container{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    border-bottom: 1px solid #dadada;
+    gap: 2rem;
 }
 
 .header-container h3{
     color: #FF6000;
     font-size: 2rem;
+    
 }
 
 .header-container h3 .first-span{
@@ -2507,26 +2508,32 @@ a{
 }
 
 .header-container .het{
-    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.header-container .cate-header{
+.header-container .header-left{
+    display: flex;
+    gap: 1rem;
+}
+
+.header-container .header-left img{
+    width: 20px;
+}
+
+.cate-header{
     display: flex;
     align-items: center;
     gap: 1rem;
-    flex: 1;
+    width: 100%;
 }
 
-.header-container .cate-header img{
-    width: 5%;
+.header-container .header-mid{
+   flex: 1;
 }
 
-.header-container .search-input{
-    display: flex;
-    flex: 1;
-}
 
-.header-container .search-input input{
+.header-container .header-mid input{
     width: 100%;
     height: 40px;
     border-radius: 100px;
@@ -2536,30 +2543,26 @@ a{
     font-weight: 600;
     line-height: 16px;
     background: #f0f0f0;
-    min-width:300px;
 }
 
-.header-container .my-basket{
+.header-container .header-right{
+    padding-right: 20px;
+}
+
+.header-container .header-left{
+    padding-left: 20px;
+}
+
+.my-order{
     display: flex;
     align-items: center;
     gap: 1rem;
-    flex: 1;
 }
 
-.header-container .my-basket img{
-    width: 5%;
-}
-
-.header-container .my-order{
+.my-account{
     display: flex;
     align-items: center;
-    flex: 1;
-}
-
-.header-container .my-account{
-    display: flex;
-    align-items: center;
-    flex: 1;
+    gap: 1rem;
 }
 
 
@@ -2603,7 +2606,13 @@ a{
     font-size: 0.75rem;
     font-weight: 500;
     background-color: #ffefd3;
-    
+
+}
+
+.cs-content{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .main-container .container .greeting{
@@ -4531,7 +4540,12 @@ nav a{
     color: #484848;
 }
 
-.kvkk-content .kvkk-content-right p,b{
+.kvkk-content .kvkk-content-right p{
+    font-size: 1rem;
+    color: #646464;
+}
+
+.kvkk-content .kvkk-content-right b{
     font-size: 1rem;
     color: #646464;
 }
@@ -6589,8 +6603,6 @@ footer{
     padding-left: 12px;
 }
 
-
-
 .p-filter{
     display: flex;
     margin-top: 1.5rem;
@@ -6667,6 +6679,109 @@ footer{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 2rem;
+}
+
+.compare-product{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.compare-product h2{
+    font-size: 1.313rem;
+    color: #484848;
+    margin-bottom: 0.25rem;
+}
+
+.similar-products{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-top: 1rem;
+    min-width: 1228.8px;
+    padding: 23px 16px 16px 24px;
+}
+
+.similar-products h2{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.24;
+    margin-bottom: 16px;
+}
+
+.similar-products .similar-products-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.similar-products .similar-products-items a{
+    font-size: 0.938rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 22px;
+    width: 143px;
+    padding: 12px 8px 15px 12px;
+    text-align: center;
+}
+
+.p-searches{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin-top: 1rem;
+    min-width: 1228.8px;
+    padding: 23px 16px 16px 24px;
+}
+
+.p-searches h2{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.24;
+    margin-bottom: 16px;
+}
+
+.p-searches-items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.p-searches-items a{
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: #484848;
+    background-color: #eee;
+    border-radius: 22px;
+    padding: 10px 15px;
+}
+
+.find{
+    display: flex;
+    justify-content: flex-start;
+    padding: 17px 14px;
+    align-items: center;
+    gap: 1rem;
+    min-width: 1228.8px
+}
+
+.find p{
+    font-size: 0.938rem;
+    color: #484848;
+    font-weight: 600;
+}
+
+.find button{
+    height: 32px;
+    margin-right: 13px;
+    width: 49px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #919191;
+    color:#919191;
 }
 
 
