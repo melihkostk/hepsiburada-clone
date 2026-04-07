@@ -1,0 +1,441 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "Old Spice Captain Deo Stick 50 ml + Duş Jeli 250 ml Giftpack",
+            "price": 299.99,
+            "image": "images/old-spice.webp",
+            "category": "giyim",
+            "score":4.8,
+            "comment":"(543)"
+        },
+        {
+            "id": 2,
+            "name": "Playever Sticker Puzzle - Safari, Çıkartmalı Yapboz Etkinlik kitabı",
+            "price": 180,
+            "image": "images/puzzle.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(82)"
+        },
+        {
+            "id": 3,
+            "name": "Eraks Silecek Lastiği 70 cm 4 Adet",
+            "price": 199.50,
+            "image": "images/silecek.webp",
+            "category": "giyim",
+            "score":4.8,
+            "comment":"(20)"
+        },
+        {
+            "id": 4,
+            "name": "Happiness İstanbul Pliseli Kısa Süet Ceket LFN0136 Lacivert",
+            "price": 606,
+            "image": "images/ceket.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(20)"
+        },
+        {
+            "id": 5,
+            "name": "Tuğba Kuruyemiş Cevizli Incir 370 gr",
+            "price": 229,
+            "image": "images/kuruyemiş.webp",
+            "category": "giyim",
+            "score":4.7,
+            "comment":"(342)"
+        },
+        {
+            "id": 6,
+            "name": "Melwiss Chocolate Sütlü Tatlı Sosu 330 Gr - Waffle Krep Pankek Sosu",
+            "price": 199.90,
+            "image": "images/tatlı-sos.webp",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı",
+            "score":4.4,
+            "comment":"(1092)"
+        },
+        {
+            "id": 7,
+            "name": "Gillette Sensor3 Tıraş Makinesi - 3 Bıçaklı, Kayganlaştırıcı Bant ve Oynar Başlık ile, 1 Adet + 6 Yedek Bıçak",
+            "price": 219,
+            "image": "images/gillette.webp",
+            "category": "giyim",
+            "score":4.6,
+            "comment":"(10064)"
+        },
+        {
+            "id": 8,
+            "name": "Bilgeoğuz Yayınları Kur'an Bana Ne Diyor? Iniş Sırası Üzerinden Açıklamalı Meal",
+            "price": 1498,
+            "image": "images/kuran.webp",
+            "category": "kitap",
+            "score":4.9,
+            "comment":"(1250)"
+        },
+        {
+            "id": 9,
+            "name": "Familia Plus Natural Penguen Gofrajlı 16'lı Havlu Kağıdı",
+            "price": 320,
+            "image": "images/familia.webp",
+            "category": "giyim",
+            "score":4.7,
+            "comment":"(2978)"
+        },
+        {
+            "id": 10,
+            "name": "Apple 20 W USB-C Güç Adaptörü Hızlı Şarj ile Uyumlu iPhone Modelleri için İdeal Ev Şarjı",
+            "price": 299,
+            "image": "images/usb.webp",
+            "category": "ayakkabı",
+            "score":4.7,
+            "comment":"(3126)"
+        },
+        {
+            "id": 11,
+            "name": "Kavlak Zeytin Kavlak Seçme Siyah",
+            "price": 499.85,
+            "image": "images/zeytin.webp",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim",
+            "score":3,
+            "comment":"(2)"
+
+        },
+        {
+            "id": 12,
+            "name": "Uykusu Gelen Minikler",
+            "price": 99.90,
+            "image": "images/minikler.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(1332)"
+        },
+        {
+            "id": 13,
+            "name": "Maylo Puf Mendil 150'li 6 Paket",
+            "price": 290,
+            "image": "images/maylo.webp",
+            "category": "giyim",
+            "score":4.7,
+            "comment":"(435)"
+
+        },
+        {
+            "id": 14,
+            "name": "Xiamoi Redmi Pad 2 8GB 256GB 11",
+            "price": 8459.06,
+            "image": "images/redmi.webp",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı",
+            "score":4.2,
+            "comment":"(420)"
+        },
+        {
+            "id": 15,
+            "name": "Solo Bambu Kağıtlı Havlu 16'lı",
+            "price": 285.21,
+            "image": "images/solo.webp",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim",
+            "score":4.7,
+            "comment":"(13878)"
+        },
+        {
+            "id": 16,
+            "name": "Philips Sonicare Kompakt Ağız Duşu 2li Yedek Başlık, N2 Comfort, N1 Standart başlık, HX3072/00",
+            "price": 799,
+            "image": "images/philips.webp",
+            "category": "ayakkabı",
+            "score":4,
+            "comment":"(8)"
+        },
+        {
+            "id": 17,
+            "name": "Yataş Essentials 3'lü El / Yüz / Baş Havlu Seti - 50X90 cm",
+            "price": 849.90,
+            "image": "images/yataş.webp",
+            "category": "giyim",
+            "score":4.8,
+            "comment":"(17)"
+        },
+        {
+            "id": 18,
+            "name": "Torima Bluetooth Hoparlör Rgb Işıklı Mikrofonlu Taşınabilir Speaker D41 Siyah",
+            "price": 699,
+            "image": "images/torima.webp",
+            "category": "ayakkabı",
+            "score":4.5,
+            "comment":"(253)"
+        },
+        {
+            "id": 19,
+            "name": "L'Oréal Paris Lumi Blush Likit Allık 627 Glowy Warm Peach Yüksek Pigmentasyon ve Işıltılı Bitiş",
+            "price": 629,
+            "image": "images/lumi.webp",
+            "category": "giyim",
+            "score":4.3,
+            "comment":"(49)"
+        },
+        {
+            "id": 20,
+            "name": "Ally M2037 6000R Portatif Vakumlu Üflemeli Mini Araç Süpürgesi - Toz ve Kül Tem - ARL1846-1866",
+            "price": 79.50,
+            "image": "images/ally.webp",
+            "category": "ayakkabı",
+            "score":3.6,
+            "comment":"(13)"
+        },
+        {
+            "id": 21,
+            "name": "Servet Ala Türk Kahvesi 100g 3'lü Paket",
+            "price": 311.20,
+            "image": "images/kahve.webp",
+            "category": "giyim",
+            "score":4.4,
+            "comment":"(4306)"
+        },
+        {
+            "id": 22,
+            "name": "Yasomi Perimax YV509 Kumandalı Smart Uygulamalı Su Püskürtme...",
+            "price": 9.799,
+            "image": "images/yasomi.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(191)"
+        },
+        {
+            "id": 23,
+            "name": "Xiamoi Redmi Pad 2 8GB 256GB 11",
+            "price": 8459.06,
+            "image": "images/redmi.webp",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı",
+            "score":4.2,
+            "comment":"(420)"
+        },
+        {
+            "id": 24,
+            "name": "Paw Petrol Sky Nickelodeon Özel Sulu Kalem ile Sihirli Boyama Kitabı",
+            "price": 99,
+            "image": "images/paw.webp",
+            "category": "ayakkabı",
+            "score":4.1,
+            "comment":"(1197)"
+        },
+        {
+            "id": 25,
+            "name": "Ferrero Rocher Çikolata 16'lı",
+            "price": 274,
+            "image": "images/ferrero.webp",
+            "category": "giyim",
+            "score":4.7,
+            "comment":"(2397)"
+        },
+        {
+            "id": 26,
+            "name": "LG StanbyMe 2 27LX6TDGA 27 70 Ekran WebOS Smart Dokunmatik...",
+            "price": 42.296,
+            "image": "images/lg-stan.webp",
+            "category": "ayakkabı",
+            "score":4.9,
+            "comment":"(8)"
+        },
+        {
+            "id": 27,
+            "name": "TCL 50T6C 50 127 Ekran Uydu Alıcılı 4K Ultra HD Google QLED TV",
+            "price": 23.999,
+            "image": "images/tcl.webp",
+            "category": "giyim",
+            "score":4.4,
+            "comment":"(200)"
+        },
+        {
+            "id": 28,
+            "name": "LG 65QNED70A6A 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart webOS QN...",
+            "price": 42.757,
+            "image": "images/lg.webp",
+            "category": "ayakkabı",
+            "score":4.6,
+            "comment":"(383)"
+        },
+        {
+            "id": 29,
+            "name": "Onvo 65VQ90F3UA 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart Google Smar...",
+            "price": 25.999,
+            "image": "images/onvo.webp",
+            "category": "giyim",
+            "score":4.3,
+            "comment":"(371)"
+        },
+        {
+            "id": 30,
+            "name": "iFFALCON 65VQ90F3UA 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart Google MiniLED TV",
+            "price": 55.999,
+            "image": "images/iffalcon.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(155)"
+        },
+        {
+            "id": 31,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 32,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 33,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 34,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 35,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 36,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 37,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 38,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 39,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 40,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 41,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 42,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 43,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 44,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 45,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 46,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 47,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 48,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        },
+        {
+            "id": 49,
+            "name": "Klasik Beyaz T-Shirt",
+            "price": 25.99,
+            "image": "images/white-tshirt.jpg",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": "giyim"
+        },
+        {
+            "id": 50,
+            "name": "Siyah Spor Ayakkabı",
+            "price": 79.50,
+            "image": "images/black-sneakers.jpg",
+            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
+            "category": "ayakkabı"
+        }
+    ]
+}
