@@ -54,6 +54,37 @@ loginForm.addEventListener("click", (e) => {
 });*/
 
 //HOME PAGE//
+let productContainers = document.querySelectorAll(".p-product-container");
+
+fetch("product.json")
+    .then(res => res.json())
+    .then(data => {
+
+        productContainers.forEach((item, index) => {
+            const product = data.products[index];
+
+            item.innerHTML = `
+                <div class="top">
+                    <img src="${product.image}">
+                    <p class="product-d">${product.name}</p>
+                    <div class="all-ratings">
+                        <img class="star" src="icons/star.png">
+                        <p class="rating">${product.score}</p>
+                        <p class="comment-number">${product.comment}</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="p-cost">${product.price} <span>TL</span></p>
+                    <img class="shop-card" src="icons/black-shopping-cart.png">
+                </div>
+            `;
+        });
+
+    });
+
+
+
+
 let productCard = document.querySelectorAll(".top");
 
 productCard.forEach(item => {
@@ -128,6 +159,7 @@ shoppingCard.forEach(item => {
 
     })
 })
+
 
 //BASKET//
 /*let pro = JSON.parse(localStorage.getItem("Products")) || [];

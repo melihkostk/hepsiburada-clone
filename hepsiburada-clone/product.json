@@ -279,163 +279,184 @@
         },
         {
             "id": 31,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Solo Asılabilir Kağıt Havlu 1 Paket = 7 Rulo Hijyenik ve Pratik Kullanım İçin Uygun",
+            "price": 249,
+            "image": "images/solo2.webp",
+            "category": "giyim",
+            "score":4.4,
+            "comment":"(1418)"
         },
         {
             "id": 32,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Ariel Hepsi1Arada PODS® Kapsül Çamaşır Deterjanı Dağ Esintisi 35 Yıkama Zorlu Lekeleri Giderir",
+            "price": 180,
+            "image": "images/ariel.webp",
+            "category": "ayakkabı",
+            "score":4.7,
+            "comment":"(146)"
         },
         {
             "id": 33,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Momordica Coconut Mix - 250 ml Şurup, Hindistan Cevizi Aroma ve Doğal Tatlandırıcı İçerir",
+            "price": 350,
+            "image": "images/momordica.webp",
+            "category": "giyim",
+            "score":4.1,
+            "comment":"(373)"
         },
         {
             "id": 34,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Bebelac Gold Konfor 1 Bebek Sütü 0-6 Ay 800 Gr x 2 Adet 1600 Gr",
+            "price": 1479,
+            "image": "images/bebelac.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(2799)"
         },
         {
             "id": 35,
-            "name": "Klasik Beyaz T-Shirt",
+            "name": "Perwoll Renkliler ve Siyahlar Için Hızlı Yıkama 2l (36 Yıkama)",
             "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "image": "images/perwoll.webp",
+            "category": "giyim",
+            "score":4.5,
+            "comment":"(484)"
         },
         {
             "id": 36,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Samsung Galaxy A26 5g 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
+            "price": 14.299,
+            "image": "images/a26.webp",
+            "category": "ayakkabı",
+            "score":4.6,
+            "comment":"(897)"
+            
         },
         {
             "id": 37,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Samsung Galaxy A56 5g 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
+            "price": 24.649,
+            "image": "images/a56.webp",
+            "category": "giyim",
+            "score":4.8,
+            "comment":"(1437)"
         },
         {
             "id": 38,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Samsung Galaxy S24 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
+            "price": 32.499,
+            "image": "images/s24.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(1618)"
         },
         {
             "id": 39,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Samsung Galaxy A07 128 GB 4 GB Ram (Samsung Türkiye Garantili) Siyah",
+            "price": 7.703,
+            "image": "images/a07.webp",
+            "category": "giyim",
+            "score":4.8,
+            "comment":"(256)"
         },
         {
             "id": 40,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "HONOR Magic 8 Lite 256 GB 8 GB Ram (Honor Türkiye Garantili) Siyah",
+            "price": 19.499,
+            "image": "images/magic.webp",
+            "category": "ayakkabı",
+            "score":4.4,
+            "comment":"(399)"
         },
         {
             "id": 41,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Michael Kors Jet Set Çapraz Askılı Kadın Çanta Kahverengi Brown",
+            "price": 9.990,
+            "image": "images/michael.webp",
+            "category": "giyim",
+            "score":5,
+            "comment":"(1)"
         },
         {
             "id": 42,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Kadın Taba Uzun Asklı Nubuk Omuz Çantası 25ABD2105V3",
+            "price": 5.249,
+            "image": "images/taba.webp",
+            "category": "ayakkabı",
+            "score":4.9,
+            "comment":"(19)"
         },
         {
             "id": 43,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Vakko Mini Boy Zincir Askılı Şık Deri Omuz Çantası | Kadın Çanta Günlük...",
+            "price": 800,
+            "image": "images/vakko.webp",
+            "category": "giyim",
+            "score":3.1,
+            "comment":"(12)"
         },
         {
             "id": 44,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Mavi Mavi Logo Denim Tote Çanta 1913377-82770",
+            "price": 1.295,
+            "image": "images/denim.webp",
+            "category": "ayakkabı",
+            "score":5,
+            "comment":"(1)"
         },
         {
             "id": 45,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Just Polo Yeni Sezon Kolon Askılı 4 Bölmeli Kadın Omuz Çantası 21x16c...",
+            "price": 2.167,
+            "image": "images/just.webp",
+            "category": "giyim",
+            "score":4.7,
+            "comment":"(10)"
         },
         {
             "id": 46,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Muazzam Dünya: Beş Duyunun Ötesine Yolculuk - Ed Yong",
+            "price": 426,
+            "image": "images/muazzam.webp",
+            "category": "ayakkabı",
+            "score":4,
+            "comment":"(2)"
         },
         {
             "id": 47,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "ChefTime Paslanmaz Çelik Derin Çırpma ve Karıştırma Kasesi | 24CM",
+            "price": 185,
+            "image": "images/chef.webp",
+            "category": "giyim",
+            "score":4.6,
+            "comment":"(7)"
         },
         {
             "id": 48,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "MEN Erkek Sprey Deodorant Black&White 150ml ve Mini Roll-on Omuz Çantası | Kadın Çanta Günlük...",
+            "price": 233,
+            "image": "images/nivea.webp",
+            "category": "ayakkabı",
+            "score":4.8,
+            "comment":"(40)"
         },
         {
             "id": 49,
-            "name": "Klasik Beyaz T-Shirt",
-            "price": 25.99,
-            "image": "images/white-tshirt.jpg",
-            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim"
+            "name": "Baby Me Sıvı Bebek Çamaşır Deterjanı Hipoalerjenik Formül 5000 ml",
+            "price": 355,
+            "image": "images/babyme.webp",
+            "category": "giyim",
+            "score":4.6,
+            "comment":"(1198)"
         },
         {
             "id": 50,
-            "name": "Siyah Spor Ayakkabı",
-            "price": 79.50,
-            "image": "images/black-sneakers.jpg",
-            "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı"
+            "name": "Ttec Smartcharger Gan 45W AVS Pd Seyahat Hızlı Şarj Aleti + Usb-C-Usb...",
+            "price": 2.167,
+            "image": "images/ttec.webp",
+            "category": "ayakkabı",
+            "score":4.7,
+            "comment":"(10)"
         }
     ]
 }
