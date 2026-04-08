@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Old Spice Captain Deo Stick 50 ml + Duş Jeli 250 ml Giftpack",
-            "price": 299.99,
+            "price": 300,
             "image": "images/old-spice.webp",
             "category": "giyim",
             "score":4.8,
@@ -392,7 +392,7 @@
             "price": 800,
             "image": "images/vakko.webp",
             "category": "giyim",
-            "score":3.1,
+            "score":3,
             "comment":"(12)"
         },
         {

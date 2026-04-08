@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="lp">
     <div class="main-container">
         <div class="container">
             <div class="login-form-container">
@@ -16,9 +16,26 @@
                     <p class="login">Giriş Yap</p>
                     <p class="signin">Üye Ol</p>
                 </div>
+                <div class="invalid-password">
+                    <div class="invalid-password-top">
+                        <div class="invalid-password-img">
+                            <img src="icons/error-message.png">
+                        </div>
+                        <div class="invalid-password-d">
+                            Girdiğiniz şifre eksik veya hatalı.
+                        </div>
+                        <div class="invalid-password-c">
+                            <img class="close-invalid-password" src="icons/cross.png">
+                        </div>
+                    </div>
+                    <div class="invalid-password-bottom">
+                        Kontrol edip tekrar deneyin.
+                    </div>
+                </div>
                 <div class="login-inputs">
-                    <input type="email" placeholder="E-posta adresi">
-                    <input type="password" placeholder="Şifre">
+                    <input class="email-input" type="email" placeholder="E-posta adresi">
+                    <p class = "invalid-email">Geçerli bir e-posta girmelisiniz</p>
+                    <input class="password-input" type="password" placeholder="Şifre">
                 </div>
                 <div class="forgot-password">
                     <a class="forgot-password-link">Şifremi unuttum</a>
@@ -54,9 +71,6 @@
                 <p class="company">© Copyright 1998 - 2026 D-Market Elektronik Hizmetler Tic. A.Ş.</p>
             </div>
         </div>
-
-        
-
     </div>
     <script src="script.js"></script>
 </body>
