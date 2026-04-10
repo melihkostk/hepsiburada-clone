@@ -1395,6 +1395,7 @@ a{
    background-color: #edebeb;
    user-select: none;
    cursor: pointer;
+   text-align: center;
 }
 
 .p-searchs ul li:hover{
@@ -2130,6 +2131,12 @@ a{
     font-size: 0.75rem;
     font-weight: 500;
     padding: 15px 50px;
+    text-wrap: nowrap;
+}
+
+.form-links .clicked{
+    border-bottom: 2px solid #ff6000;
+    color: #212121;
 }
 
 .form-links a span{
@@ -2340,6 +2347,7 @@ a{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     width:100%;
+    min-width: 1228.8px;
 }
 
 .popular-searches .top{
@@ -7225,6 +7233,362 @@ footer{
 
 .bp{
     background: #f5f5f5;;
+}
+
+.return-col{
+    border-bottom: 1px solid #dadada;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
+}
+
+.return-col h5{
+    margin: 0 0 4px 0;
+}
+
+.return-col p{
+    font-size: 0.75rem;
+    color: #666666;
+
+}
+
+.return-col .iade-link{
+    font-size: 1rem;
+    color: #FF6000;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: #FF6000;
+    text-decoration: none;
+    margin-top: 0.875rem;
+}
+
+.hepsifinans-title{
+    margin-bottom: 1.5rem;
+}
+
+.hepsifinans-title h3{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    color: #212121;
+}
+
+.hepsifinans-title p{
+    font-size: 0.75rem;
+    color: #5a2ec9;
+    font-weight: 700;
+}
+
+.hepsifinans-bottom{
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #fbfbfb;
+    border-radius: 10px;
+}
+
+.hepsifinans-bottom h3{
+    font-size: 1rem;
+    color:#484848;
+    margin-bottom: 0.75rem;
+}
+
+.hepsifinans-bottom li{
+    margin-bottom: 6px;
+    line-height: 1.4;
+    padding-left: 14px;
+    font-size: 0.875rem;
+}
+
+.hepsifinans-table table td{
+    font-size: 0.75rem;
+    padding: 8px 4px 8px 4px;
+    text-align: center;
+}
+
+.hepsifinans-table table .table-title td{
+    font-weight: 600;
+}
+
+.p-d{
+    padding: 1.5rem;
+}
+
+.p-d .p-d-top{
+    padding: 5px 16px;
+}
+
+.p-d .p-d-top h3{
+    font-size: 0.875rem;
+    color: #484848;
+}
+
+.p-d .p-d-top p{
+    font-size: 0.875rem;
+    color: #484848;
+    padding: 4px 0;
+}
+
+.p-feature-list{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.p-feature h3{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -.025em;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.p-feature-item{
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    color: #484848;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+}
+
+.p-feature-item p{
+    color: #484848;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.other{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.report{
+    justify-self: flex-end;
+    font-size: 0.75rem;
+    color: #666666;
+    margin-top: 1rem;
+}
+
+.reviews-top{
+    padding: 20px;
+}
+
+.reviews-top h1{
+    font-size: 1rem;
+    color: #484848;
+}
+
+.reviews-bottom{
+    display: flex;
+    gap: 6rem;
+}
+
+.reviews-bottom-left{
+    width: 30%;
+}
+
+.reviews-bottom-left img{
+    width: 100%;
+}
+
+.reviews-bottom-right{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.reviews-bottom-right-top h3{
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -.45px;
+    color: #484848;
+}
+
+.reviews-bottom-right-top p{
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -.28px;
+    color: #646464;
+    width: 60%;
+}
+
+.reviews-bottom-right-bottom{
+    display: flex;
+    flex-direction: column;
+}
+.reviews-bottom-right-bottom button{
+    background-color: #ff6000;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin: 16px 0;
+    width: 20%;
+    height: 3rem;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.reviews-bottom-right-bottom a{
+    font-size: 0.875rem;
+    color: #FF6000;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.reviews-bottom-right-bottom p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -.28px;
+    color: #646464;
+}
+
+.qa{
+    padding: 1.5rem;
+}
+
+.qa-filter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qa-filter-left {
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+.qa-filter-left input{
+    padding: 12px 40px 12px 40px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.qa-filter-left label{
+    font-size: 0.875rem;
+    color: #484848;
+    font-weight: 600;
+}
+
+.qa-filter-left select{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: -.28px;
+    color: #ff6000;
+    padding: 12px 0 12px 16px;
+    border: 1px solid #dadada;
+    border-radius: 0.5rem;
+}
+
+.qa-filter-left .sort-select{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.qa-filter-right button{
+    color: #fff;
+    background-color: #FF6000;
+    font-weight: 600;
+    border: none;
+    height: 3rem;
+    padding: 0 24px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.dislike{
+    transform: rotateX(180deg);
+}
+
+.answer-evaluate{
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.like-unlike{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.like-unlike img{
+    width: 1.5rem;
+}
+
+.answer-date{
+    display: flex;
+   justify-self: flex-end;
+   margin-bottom: 0.625rem;
+}
+
+.asked-question-container{
+    margin-top: 1rem;
+}
+
+.asked-question-container h5{
+    font-size: 0.875rem;
+    color: #646464;
+    margin: 0px 0px 8px 24px;
+}
+
+.asked-questions{
+    background-color: rgb(245, 245, 245);
+    color: rgb(100, 100, 100);
+    padding: 1rem;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.gived-answer-container h5{
+    font-size: 0.875rem;
+    color: #646464;
+    margin: 0px 0px 8px 24px;
+}
+
+.gived-answer-container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.gived-answer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(100, 100, 100);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 10px 0px;
+    padding: 1rem;
+    width: 70%;
+}
+
+.answer-date{
+    font-size: 0.688rem;
+    color:#646464;
+}
+
+.answer-evaluate p{
+    font-size: 0.813rem;
+    color: #484848;
+    margin-right: 1rem;
 }
 
 

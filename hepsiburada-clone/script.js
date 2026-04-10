@@ -153,7 +153,7 @@ if (document.body.className.includes("hp")) {
 
             productCard.forEach((item,index) => {
                 item.addEventListener("click",function(){
-                    window.location.href = `product-detail.html?id=${index+1}`;
+                    window.location.href = `product-detail.html?id=${index}`;
                 })
             })
 
@@ -356,10 +356,669 @@ if(document.body.className.includes("pd")){
             for (let i = ıntScore; i < 5; i++){
                 stars.innerHTML += `<img src="icons/empty-star.png">`;
             } 
-
-            
-
         })
+
+        let formLinksContainer = document.querySelector(".form-links")
+        let formLinks = formLinksContainer.querySelectorAll("a");
+        let creditCard = document.querySelector(".credit-carts")
+        
+        formLinksContainer.addEventListener("click",(e)=>{
+            
+            if(e.target.textContent === "İptal ve İade Koşulları"){
+                creditCard.innerHTML = `
+                    <div class="return">
+                        <h4>Kolay iade süreci nasıl başlatılır?</h4>
+                        <div class = "return-col">
+                            <img src="images/iadetalebi.svg">
+                            <h5>İade talebi oluştur</h5>
+                            <p>
+                                Siparişlerim sayfasından iade etmek istediğin 
+                                ürünü bul ve İade ve diğer talepler'e tıkla.
+                            </p>
+                            <div class="iade-link">
+                                <a>Kolay İade nedir?</a>
+                            </div>
+                        </div>
+                        <div class = "return-col">
+                            <img src="images/iadeyontemi.svg">
+                            <h5>İade yöntemini seç</h5>
+                            <p>
+                                İade etmek istediğin ürünü kapında iade ile kolayca iade et ya da Hepsimat 
+                                noktasına iade ve kargoya teslim seçeneklerinden birini seç.
+                            </p>
+                            <div class="iade-link">
+                                <a>Kapıda İade nedir?</a>
+                            </div> 
+                        </div>
+                        <div class = "return-col">
+                            <img src="images/kargokodu.svg">
+                            <h5>Kargo kodunu not et</h5>
+                            <p>
+                                Yönlendirmeleri tamamla ve ekranda çıkan 
+                                kargo gönderi kodunu not et.
+                            </p>
+                            <div class="iade-link">
+                                <a>Kargo koduna nasıl ulaşırım?</a>
+                            </div>
+                        </div>
+                        <div class = "return-col">
+                            <img src="images/urunteslimi.svg">
+                            <h5>Ürünü teslim et</h5>
+                            <p>
+                                Ürünü tüm aparatlarıyla eksiksiz bir şekilde paketle ve 
+                                kargo gönderi koduyla teslim et.
+                            </p>
+                            <div class="iade-link">
+                                <a>Ürünü nereye teslim edebilirim?</a>
+                            </div>
+                        </div>
+                        <div class = "return-col">
+                            <img src="images/iadeonayi.svg">
+                            <h5 class = "green-title">İadeniz onaylansın</h5>
+                            <p>
+                                Ürünü tüm aparatlarıyla eksiksiz bir şekilde paketle ve 
+                                kargo gönderi koduyla teslim et.
+                            </p>
+                        </div>
+                        <div class = "return-col">
+                            <p>
+                                * Bu üründen toplu/çoklu sipariş verilmesi, 
+                                siparişin ticari alım olduğunun tespit edilmesi veya 
+                                farklı kullanıcı adı, rumuz, kimlik ve iletişim 
+                                bilgileri ile verilen siparişlerde fatura adresi, 
+                                teslimat adresi, ödeme bilgisi, ticari unvanı, 
+                                vergi numarası gibi unsurların aynı olması durumunda 
+                                Hepsiburada siparişleri iptal etme hakkını saklı tutar.
+                            </p>
+                        </div>
+                `;
+            }
+
+            if(e.target.textContent === "Hepsifinans"){
+                creditCard.innerHTML = `
+                    <div class="hepsifinans-table">
+                        <div class = "hepsifinans-top">
+                            <div class = "hepsifinans-title">
+                                <h3>Hepsifinans</h3>
+                                <p>Hepsifinans ile 12 aya varan taksit</p>
+                            </div>
+                            <div class="hepsifinans-table">
+                                <table>
+                                    <tbody>
+                                        <tr class = "table-title">
+                                            <td>Taksit</td>
+                                            <td>Aylık Tutar</td>
+                                            <td>Toplam Tutar</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>3 taksit </td>
+                                            <td>616,14 TL</td>
+                                            <td>1.848,42 TL</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>6 taksit </td>
+                                            <td>334,23 TL</td>
+                                            <td>2.005,36 TL</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>12 taksit </td>
+                                            <td>195,29 TL</td>
+                                            <td>2.343,53 TL</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>36 taksit </td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class = "hepsifinans-bottom">
+                            <h3>Önemli Bilgiler</h3>
+                            <ul>
+                                <li>
+                                    Ödeme planı sepetteki ürünlere ve sepet tutarına 
+                                    göre farklılık gösterebilir.
+                                </li>
+                                <li>
+                                    Maksimum vade; bilgisayarlarda 12, tabletlerde 6 aydır. 
+                                    20.000 TL ve altındaki cep telefonlarında maksimum vade 
+                                    12 ay, 20.000 TL üzerindeki cep telefonlarında 3 aydır.
+                                </li>
+                                <li>
+                                    Ödeme planı sepetteki ürünlere ve sepet tutarına göre 
+                                    farklılık gösterebilir.
+                                </li>
+                                <li>
+                                    Örneğin, sepetinizde 20.600 TL ve 19.500 TL değerinde 
+                                    iki ayrı telefon varsa kullanabileceğiniz maksimum vade 3 aydır.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                
+                
+                `;
+            }
+
+            if(e.target.textContent === "Ürün Açıklaması"){
+                creditCard.innerHTML = `
+                    <div class = "p-d">
+                        <div class = "p-d-top">
+                            <h3>
+                                Yüksek Kalite Kadın Kol Çantası M (Yurt Dışından)
+                            </h3>
+                            <p>
+                                Çantamız yüksek kaliteli çantadır. 
+                            </p>
+                        </div>
+                        <div class="p-feature">
+                            <h3>Ürün özellikleri</h3>
+                            <div class = "p-feature-list">
+                                <div class = "p-feature-item">
+                                    <p>Kumaş Teknolojisi</p>
+                                    <p>Su Dayanıklı</p>
+                                </div>
+                                <div class = "p-feature-item">
+                                    <p>İçindeki Parçalar</p>
+                                    <p>Ayarlanabilir Askılı</p>
+                                </div>
+                                <div class = "p-feature-item">
+                                    <p>Stok Adedi</p>
+                                    <p>50 adetten az</p>
+                                </div>
+                                <div class = "p-feature-item">
+                                    <p>Ürün Aksesuarı</p>
+                                    <p>Charm</p>
+                                </div>
+                                <div class = "p-feature-item">
+                                    <p>Menşei</p>
+                                    <p>TR - ( Türkiye )</p>
+                                </div>
+                            </div>
+                            <h3>Diğer</h3>
+                            <div class="other">
+                                <div class="p-feature-item"">
+                                    <p>Yurt Dışı Satış</p>
+                                    <p>Yok</p>
+                                </div>
+                                <div class="p-feature-item"">
+                                    <p>Stok Kodu</p>
+                                    <p>HBCV0000C7WMWZ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "report">
+                            Hatalı içerik bildir
+                        </div>
+                    </div>
+                `;
+            }
+
+            if(e.target.innerHTML === "Değerlendirmeler<span>1112</span>"){
+
+                let product = document.querySelector(".photo").src
+                creditCard.innerHTML = `
+                    <div class = "reviews">
+                        <div class = "reviews-top">
+                            <h1>Yüksek Kalite Kadın  Kol Çantası M (Yurt Dışından)  Değerlendirmeleri</h1>
+                        </div>
+                        <div class = "reviews-bottom">
+                            <div class = "reviews-bottom-left">
+                                <img src= "${product}">
+                            </div>
+                            <div class = "reviews-bottom-right">
+                                <div class = "reviews-bottom-right-top">
+                                    <h3>Henüz değerlendirme yok</h3>
+                                    <p>
+                                        Siz de değerlendirmenizle milyonlarca 
+                                        Hepsiburada müşterisinin karar vermesine 
+                                        yardımcı olmaya ne dersiniz?
+                                    </p>
+                                </div>
+                                <div class = "reviews-bottom-right-bottom">
+                                    <button>
+                                        <img src="icons/evaluate.png">
+                                        Değerlendir
+                                    </button>
+                                    <a>Yorum Yayınlama Kriterleri</a>
+                                    <p>Değerlendirme yapabilmek için bu ürünü satın almış olmalısınız.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if(e.target.innerHTML === "Soru Cevap<span>586</span>"){
+                creditCard.innerHTML = `
+                    <div class = "qa">
+                        <div class = "qa-filter">
+                            <div class = "qa-filter-left">
+                                <input class="search-qa" type = "text" placeholder = "Soru ve cevaplarda ara">
+                                <div class="sort-select">
+                                    <label for="sort" class="sort-labels">Sırala</label>
+                                    <select name = "sort" class="sort">
+                                        <option value="varsayılan">Varsayılan</option>
+                                        <option value="saab">En faydalı soru & cevap</option>
+                                        <option value="mercedes">En yeni soru & cevap</option>
+                                        <option value="audi">En eski soru & cevap</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="qa-filter-right">
+                                <button>
+                                    Satıcıya Sor
+                                </button>
+                            </div>
+                        </div>
+                        <div class="asked-question-container">
+                            <h5>Soru</h5>
+                            <div class="asked-questions">
+                                Medium ebatı için ölçüler nedir
+                            </div>
+                        </div>
+                        <div class="gived-answer-container">
+                            <h5>Cevap</h5>
+                            <div class="gived-answer">
+                                Merhaba 27/25 yaklaşık olarak
+                            </div>
+                            <div class="answer-info">
+                                <div class="answer-date">
+                                    17 Ocak • 39 dakika  içerisinde cevapladı
+                                </div>
+                                <div class="answer-evaluate">
+                                    <p>Bu cevap faydalı mı?</p>
+                                    <div class="like-unlike">
+                                        <img src="icons/like.png">
+                                        <p class = "like-number">0</p>
+                                        <img class="dislike" src="icons/like.png">
+                                        <p class = "dislike-number">0</p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if(e.target.textContent === "Kredikartı Taksitleri"){
+                creditCard.innerHTML = `
+                <div class="credit-cart-title">
+                <img src="icons/credit-cart.png">
+                <div class="">
+                    <p class="kk">Kredi Kartı</p>
+                    <p class="py">Peşin fiyatına 3 x <span> 863 TL</span></p>
+                </div>
+            </div>
+            <div class="credit-cart-warning">
+                <img src="icons/info.png">
+                <p>Peşin fiyatına 9 taksit seçeneği, Premium üyelere ve Premium Worldcard ödemelerine özeldir.</p>
+            </div>
+            <div class="credit-cart-installment">
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/yapı-kredi.png">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>530,09 TL</td>
+                                <td>3.180,52 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>382,74 TL</td>
+                                <td>3.444,70 TL</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/yapı-kredi.png">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>530,09 TL</td>
+                                <td>3.180,52 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>382,74 TL</td>
+                                <td>3.444,70 TL</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/kuveyt.png">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>471,38 TL</td>
+                                <td>2.828,28 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/indir.png">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>473,11 TL</td>
+                                <td>2.838,64 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/paraf.png">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>480,36 TL</td>
+                                <td>2.882,15 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/maximum.png">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.429,55 TL</td>
+                                <td>2.859,10 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>977,64 TL</td>
+                                <td>2.932,92 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>526,63 TL</td>
+                                <td>3.159,80 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>380,73 TL</td>
+                                <td>3.426,57 TL</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/qnb.png">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>507,86 TL</td>
+                                <td>3.047,14 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>363,18 TL</td>
+                                <td>3.268,58 TL</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/advantage.png">
+                    </div>
+                    <div class="bottom">
+                          <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>507,86 TL</td>
+                                <td>3.047,14 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>363,18 TL</td>
+                                <td>3.268,58 TL</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/ziraat.png">
+                    </div>
+                    <div class="bottom">
+                          <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>1.295,00 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>968,66 TL</td>
+                                <td>2.905,98 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>528,15 TL</td>
+                                <td>3.168,87 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>361,59 TL</td>
+                                <td>3.254,34 TL</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="credit-cart-item">
+                    <div class="top">
+                        <img src="images/bonus-card.jpg">
+                    </div>
+                    <div class="bottom">
+                        <table>
+                            <tr>
+                                <th>Taksit</th>
+                                <th>Aylık Tutar</th>
+                                <th>Toplam Tutar</th>
+                            </tr>
+                            <tr>
+                                <td>2 taksit</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>3 taksit</td>
+                                <td>863,33 TL</td>
+                                <td>2.590,00 TL</td>
+                            </tr>
+                            <tr>
+                                <td>6 taksit</td>
+                                <td>532,25 TL</td>
+                                <td>3.193,47 TL</td>
+                            </tr>
+                            <tr>
+                                <td>9 taksit</td>
+                                <td>383,61 TL</td>
+                                <td>3.452,47 TL</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="important-info">
+                <h3>Önemli Bilgiler</h3>
+                <ul>
+                    <li><p>Yapı Kredi Bankası için vade tutarları ortalama değerlerdir, ödeme adımında değişkenlik gösterebilir.</p></li>
+                    <li><p>Kredi kartı ile peşin fiyatına yapılabilecek en yüksek taksit sayısı, ürün kategorilerine ilişkin yasal sınırlamalara ve sepet tutarı üzerinden ilgili banka tarafından sunulan taksit seçeneklerine göre değişiklik gösterebilir.</p></li>
+                    <li><p>Bazı vade tutarları ortalama değerlerdir, ödeme adımında ürünlerin KDV’lerinin farklılıklarından dolayı değişkenlik gösterebilir.</p></li>
+                    <li><p>Vade tutarları, ödeme adımında satıcı bazlı değişkenlik gösterebilir.</p></li>
+                    <li><p>Güncel taksit baremlerine buradan ulaşabilirsiniz.</p></li>
+                </ul>
+            </div>
+                
+                `;
+            }
+        })
+        
+
 
 
 }
