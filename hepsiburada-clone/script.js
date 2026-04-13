@@ -11,12 +11,12 @@ if(document.body.className.includes("lp")){
                             <p class="signin">Üye Ol</p>
                         </div>
                         <div class="signin-inputs">
-                            <input type="password" placeholder="E-posta adresi veya GSM numarası">
+                            <input type="text" placeholder="E-posta adresi veya GSM numarası">
                         </div>
                         <div class="forgot-password">
                         </div>
                         <div class="signin-buttons">
-                            <button class="login-button">Devam Et</button>
+                            <button class="continue-button">Devam Et</button>
                         </div>
                         <div class = "login-d">
                             Kişisel verileriniz, Aydınlatma Metni kapsamında işlenmektedir. 
@@ -62,6 +62,7 @@ if(document.body.className.includes("lp")){
                         <button class="phone-login">Telefon numarası ile giriş yap</button>
                     </div>
                 `;
+
             return;
         }
 
@@ -80,6 +81,8 @@ if(document.body.className.includes("lp")){
 
             if (!email || !email.includes("@")) {
                 emailMessage.style.display = "block";
+                emailInput.style.border = "3px solid rgba(249, 0, 0, 0.08)"
+                
             } 
             else if(email === "melih1kostak@gmail.com"){
                 emailMessage.style.display = "none";
@@ -88,6 +91,12 @@ if(document.body.className.includes("lp")){
 
             if (!password) {
                 passwordMessage.style.display = "block";
+                passwordInput.style.border = "3px solid rgba(249, 0, 0, 0.08)"
+                
+                let close = document.querySelector(".close-invalid-password");
+                close.addEventListener("click",()=>{
+                    passwordMessage.style.display = "none";
+                })
             } 
             else if(password === "Kostak") {
                 passwordMessage.style.display = "none";
@@ -97,9 +106,9 @@ if(document.body.className.includes("lp")){
             if(emailValid && passwordValid){
                 window.location.href = "index.html"
             }
-
-
         }
+
+
 
     }); 
 }
@@ -190,7 +199,7 @@ if (document.body.className.includes("hp")) {
                     const productPrice = this.closest(".p-product-container").querySelector(".p-cost").textContent;
                     const productImage = this.closest(".p-product-container").querySelector("img").src;
                     const productBottom = this.closest(".p-product-container").querySelector(".bottom")
-
+                   
                     let products = JSON.parse(localStorage.getItem("Products")) || [];
 
                     products.push({
@@ -220,13 +229,18 @@ if (document.body.className.includes("hp")) {
                     }, 3000);
 
                    const originalBottomText = productBottom.innerHTML;
+                   const originalBottomColor = productBottom.style.backgroundColor;
 
                     productBottom.innerHTML = `
                         <p class="basket-added-info">Sepete Eklendi</p>
                     `;
 
+                    productBottom.style.backgroundColor = "#e6ffe6"
+
+
                     setTimeout(() => {
                         productBottom.innerHTML = originalBottomText;
+                        productBottom.style.backgroundColor = originalBottomColor;
                     }, 3000);
             })
         })    
@@ -265,64 +279,190 @@ if (document.body.className.includes("hp")) {
 
 //BASKET//
 if(document.body.className.includes("bp")){
+
     let pro = JSON.parse(localStorage.getItem("Products")) || [];
     const basketInfo = document.querySelector(".basket-info");
-
+    const originalHTML = basketInfo.innerHTML;
+    
+   
     if(pro.length > 0){
-        basketInfo.innerHTML = `
-            <div class="cupon-area">
-                <div class="cupon-area-left">
-                    <img src="icons/coupon.png">
-                    <span class="cupon-t">Kuponlarım</span>
-                </div>
-                <div class="cupon-area-right">
-                    <a>Kupon kodu ekle</a>
-                    <img class="plus" src="icons/add.png">
+
+        let header = document.querySelector("header")
+        header.innerHTML += `
+            <div class = "info-header">
+                <div class = "info-header-container">
+                    <div class = "info-header-left">
+                        Sepetim <span>(${pro.length} ürün)</span>
+                    </div>
+                    <div class = "info-header-right">
+                        Ürünleri Sil
+                        <img src = "icons/delete.png">
+                    </div>
                 </div>
             </div>
-            <div class="product-area">
-                <div class="product-area-top">
-                    <div class="product-top-left">
-                        <span class="slr">Satıcı:</span>
-                        <span class = "slr-c">Royal Mum</span>
+        `;
+
+        let trash = document.querySelector(".info-header-right");
+        trash.addEventListener("click",()=>{
+            document.querySelector(".confirm").style.display = "flex"
+        })
+
+        let cancel = document.querySelector(".cancel");
+        cancel.addEventListener("click",()=>{
+            document.querySelector(".confirm").style.display = "none"
+        })
+
+        let deleteAll = document.querySelector(".delete-all")
+        deleteAll.addEventListener("click",()=>{
+            let allProducts = document.querySelectorAll(".product-area");
+            let overall = document.querySelector(".overall");
+            overall.remove()
+            
+            allProducts.forEach(item => {
+                item.remove()
+            })
+
+            let header = document.querySelector(".info-header")
+            header.remove()
+            
+            localStorage.clear();
+
+            document.querySelector(".confirm").style.display = "none"
+
+        })
+
+        basketInfo.innerHTML = ""
+        
+        pro.forEach(item=>{
+            basketInfo.innerHTML += `
+
+                <div class="product-area">
+                    <div class="product-area-top">
+                        <div class="product-top-left">
+                            <span class="slr">Satıcı:</span>
+                            <span class = "slr-c">Royal Mum</span>
+                        </div>
+                        <div class="product-top-right">
+                            <div>
+                                <span>Kargonuzun bedava olması için <b>171 TL'lik</b>  ürün daha ekleyin.</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-top-right">
-                        <div>
-                            <span>Kargonuzun bedava olması için <b>171 TL'lik</b>  ürün daha ekleyin.</span>
+                    <div class="product-area-bottom">
+                        <div class="shipping">
+                            <img src="icons/bus.png">
+                            <span>Yarın kargoda</span>
+                        </div>
+                        <div class="basket-product">
+                            <div class="basket-product-left">
+                                <input type="checkbox">
+                                <img src=${item.photo}>
+                            </div>
+                            <div class="basket-product-right">
+                                <div class="basket-product-top">
+                                    <a>${item.name}</a>
+                                    <span>Beyaz - Sabun - Kokusu/3 Adet</span>
+                                </div>
+                                <div class="basket-product-bottom">
+                                    <div class="quantity">
+                                        <img class="delete-product" src ="icons/delete.png">
+                                        <span class = "product-quantity">1</span>
+                                        <img class="add-quantity" src="icons/add.png">
+                                    </div>
+                                    <div>
+                                        <span class = "product-cost">${item.price}</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-area-bottom">
-                    <div class="shipping">
-                        <img src="icons/bus.png">
-                        <span>Yarın kargoda</span>
+        `;
+        })
+
+        let overallCost = 0;
+
+        pro.forEach(item=>{
+            overallCost += parseInt(item.price);  
+        })
+
+        let basket = document.querySelector(".basket-container")
+        basket.innerHTML += `
+            <div class = "overall">
+                <div class = "overall-top">
+                    <span class = "selected-products">SEÇİLEN ÜRÜNLER (${pro.length})</span>
+                    <span class = "overall-cost">${overallCost}<span class = "tl">TL</span></span>
+                    <button>Alışverişi Tamamla</button>
+                </div>
+                <div class = "overall-mid">
+                    <img src="images/premium-new-logo.png">
+                    <p>Premium'a geç, kargo bedava ve Hepsipara avantajları ile tasarruf et.</p>
+                    <button>Şimdi Geç</button>
+                </div>
+                <div class = "overall-bottom">
+                    <div class = "bottom-item">
+                        <p>Ürünler</p>
+                        <p>300 TL</p>
                     </div>
-                    <div class="basket-product">
-                        <div class="basket-product-left">
-                            <input type="checkbox">
-                            <img src="images/çay.webp">
-                        </div>
-                        <div class="basket-product-right">
-                            <div class="basket-product-top">
-                                <a>Royal Mum Beyaz Sabun Kokulu Kese</a>
-                                <span>Beyaz - Sabun - Kokusu/3 Adet</span>
-                            </div>
-                            <div class="basket-product-bottom">
-                                <div class="quantity">
-                                    <img src ="icons/delete.png">
-                                    <span>1</span>
-                                    <img src="icons/add.png">
-                                </div>
-                                <div>
-                                    <span>129TL</span>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class = "bottom-item">
+                        <p>Kargo</p>
+                        <p>100 TL</p>
                     </div>
                 </div>
             </div>
         
-        `;
+        
+        `; 
+
+        let add = document.querySelectorAll(".add-quantity")
+
+        add.forEach((item)=>{
+            item.addEventListener("click",()=>{
+
+                const container = item.parentElement;
+                const quantity = container.querySelector(".product-quantity");
+                
+                let value = parseInt(quantity.textContent) + 1;
+                quantity.textContent = value;
+                
+                if(parseInt(quantity.textContent) > 1){
+
+                    container.innerHTML = `
+                            <img class="decrease-quantity" src="icons/minus.png">
+                            <span class = "product-quantity">${value}</span>
+                            <img class="add-quantity" src="icons/add.png">
+                    `;
+                }
+
+                else{
+                    container.innerHTML = `
+                            <img class="delete-product" src ="icons/delete.png">
+                            <span class = "product-quantity">1</span>
+                            <img class="add-quantity" src="icons/add.png">
+                        `;
+                    
+                }
+            })
+        })
+
+        let deleteProduct = document.querySelectorAll(".delete-product")
+        
+        deleteProduct.forEach((item) =>{
+            item.addEventListener("click",()=>{
+                let product = item.closest(".product-area")
+                let index = [...product.parentNode.children].indexOf(product); 
+                product.remove()
+                pro.splice(index,1)
+                localStorage.setItem("Products", JSON.stringify(pro));
+                
+            })
+        })
+    }
+
+    else{
+        basketInfo.innerHTML = originalHTML;
+        
     }
 }
 
