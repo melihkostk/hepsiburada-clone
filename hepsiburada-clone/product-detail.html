@@ -94,19 +94,51 @@
                     <button>
                         <img src="icons/shopping-cart.png" alt="shopping cart icon">
                         <div class="total-amount">0</div>
-                        <p>Sepetim</p>
+                        <a href="basket.html">Sepetim</a>
                     </button>
                 </div>
             </div>
         </div>
     </header>
     <div class="main-container">
+
+        <div class="added-info" style="visibility: hidden;">
+            <div class="added-info-left">
+                <img src="icons/green-check.png">
+            </div>
+            <div class="added-info-mid">
+                <p>Ürün sepete eklendi</p>
+                <a href="basket.html">Sepete git</a>
+            </div>
+            <div class="added-info-right">
+                <img class="close-added-info" src="icons/cross.png" alt="">
+            </div>
+        </div>
+
         <div class="color-bar">
             <div class="orange-part"></div>
             <div class="blue-part"></div>
             <div class="purple-part"></div>
             <div class="green-part"></div>
             <div class="dark-purple-part"></div>
+        </div>
+        <div class = "a-seller">
+            <img class="close-a-seller" src="icons/cross.png">
+            <h1>Satıcıya Sor</h1>
+                <p class="a-seller-title">Satıcı</p>
+                <p class = "a-seller-name">Hepsiburada</p>
+                <div class = "a-seller-mid">
+                    <label>Detayları satıcı ile paylaşın</label>
+                    <input type="text" placeholder="Konuyla ilgili detayları burada belirtebilirsiniz.">
+                    <div class = "hw">
+                        <img src="icons/warning.png">
+                        Güvenli alışveriş için ödemelerinizi yalnızca Hepsiburada üzerinden gerçekleştirin. Satıcılara doğrudan IBAN ile ödeme yapmayın.
+                    </div>
+                    <p class = "aym">Sorularınız <a>Aydınlatma Metni'nde</a> belirtilen kapsamda işlenmektedir.</p>
+                </div>
+                <div class = "a-seller-bottom">
+                    <button>Soru Sor</button>
+                </div>
         </div>
         <div class="category-container">
             <ul class="category-list">
@@ -2548,7 +2580,7 @@
                             <a>Takip et</a>
                         </div>
                         <div class="ask-seller">
-                            <a>Satıcıya Sor (25)</a>
+                            <a href="#form-links">Satıcıya Sor (25)</a>
                         </div>
                     </div>
                     <div class="price-info">
@@ -2673,7 +2705,7 @@
         </div>
 
         <div class="container">
-            <div class="form-links">
+            <div id = "form-links" class="form-links">
                 <a>Ürün Açıklaması</a>
                 <a>Değerlendirmeler<span>1112</span></a>
                 <a>Soru Cevap<span>586</span></a>

@@ -24,7 +24,18 @@ if(document.body.className.includes("lp")){
                             Sözleşmesi’ni ve Gizlilik Politikası’nı okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.
                         </div> 
                 `;
-            return;
+            
+
+            let email = document.querySelector(".signin-inputs input")
+            let continueBottom = document.querySelector(".continue-button") 
+            
+            continueBottom.addEventListener("click",()=>{
+                let mail = email.value;
+                if(mail === "melih1kostak@gmail.com"){
+                    window.location.href = "create-acount.html"
+                }
+                
+            })
         }
 
         if (e.target.classList.contains("login")) {
@@ -111,6 +122,44 @@ if(document.body.className.includes("lp")){
 
 
     }); 
+}
+
+let loged = false
+//CREATE ACCOUNT//
+if(document.body.className.includes("ca")){
+    let createAccountButton = document.querySelector(".create-account-bottom button")
+    
+    createAccountButton.addEventListener("click",()=>{
+        let nameInput = document.querySelector(".name-i");
+        let surnameInput = document.querySelector(".surname-i");
+        let passwordInput = document.querySelector(".password-i");
+        let back = document.querySelector(".return")
+
+        if(nameInput.value && surnameInput.value && passwordInput.value){
+            let users = JSON.parse(localStorage.getItem("Users")) || [];
+
+            users.push({
+                name:nameInput.value,
+                surname:surnameInput.value,
+                password:passwordInput.value
+            });
+
+            localStorage.setItem("Users", JSON.stringify(users));
+            loged = true;
+            window.location.href = "index.html"
+        }
+
+        else{
+            return
+        }
+    })
+
+    let back = document.querySelector(".return")
+    back.addEventListener("click",()=>{
+        window.location.href = "login.html"
+    })
+
+
 }
 
 //HOME PAGE//
@@ -206,7 +255,8 @@ if (document.body.className.includes("hp")) {
                         name: productName,
                         rating: productRating,
                         price: productPrice,
-                        photo: productImage
+                        photo: productImage,
+                        quantity:1
                     });
 
                     localStorage.setItem("Products", JSON.stringify(products));
@@ -274,6 +324,21 @@ if (document.body.className.includes("hp")) {
             window.location.href = `category.html?${item.textContent}`
         })
     })
+
+    let popUpMenu = document.querySelectorAll(".moda-pop-up-menu")
+    
+    popUpMenu.forEach(menu=>{
+        let links = menu.querySelectorAll("a")
+        links.forEach(item=>{
+            item.addEventListener("click",()=>{
+                let cate = item.textContent;
+                console.log(cate)
+                window.location.href = `category.html?category=${cate.trim()}`
+            })
+        })
+
+    })
+
 }
 
 
@@ -282,9 +347,7 @@ if(document.body.className.includes("bp")){
 
     let pro = JSON.parse(localStorage.getItem("Products")) || [];
     const basketInfo = document.querySelector(".basket-info");
-    const originalHTML = basketInfo.innerHTML;
     
-   
     if(pro.length > 0){
 
         let header = document.querySelector("header")
@@ -383,7 +446,7 @@ if(document.body.className.includes("bp")){
         let overallCost = 0;
 
         pro.forEach(item=>{
-            overallCost += parseInt(item.price);  
+            overallCost += parseInt(item.price) * parseInt(item.quantity);  
         })
 
         let basket = document.querySelector(".basket-container")
@@ -415,55 +478,72 @@ if(document.body.className.includes("bp")){
         
         `; 
 
-        let add = document.querySelectorAll(".add-quantity")
+        document.addEventListener("click", (e) => {
+            if (e.target.classList.contains("add-quantity")) {
 
-        add.forEach((item)=>{
-            item.addEventListener("click",()=>{
+                let product = e.target.closest(".product-area")
+                let index = [...product.parentNode.children].indexOf(product); //bu satırı kendim yazmadım
 
-                const container = item.parentElement;
+                const container = e.target.parentElement;
                 const quantity = container.querySelector(".product-quantity");
-                
-                let value = parseInt(quantity.textContent) + 1;
-                quantity.textContent = value;
-                
-                if(parseInt(quantity.textContent) > 1){
 
+                let value = parseInt(quantity.textContent);
+                value++;
+                pro[index].quantity = value;
+                localStorage.setItem("Products", JSON.stringify(pro));
+
+                if (value >= 2) {
+                    
                     container.innerHTML = `
-                            <img class="decrease-quantity" src="icons/minus.png">
-                            <span class = "product-quantity">${value}</span>
-                            <img class="add-quantity" src="icons/add.png">
+                        <img class="decrease-quantity" src="icons/minus.png">
+                        <span class="product-quantity">${pro[index].quantity}</span>
+                        <img class="add-quantity" src="icons/add.png">
+                        <img class="delete-product" src="icons/delete.png">
                     `;
                 }
-
-                else{
+                
+                else {
                     container.innerHTML = `
-                            <img class="delete-product" src ="icons/delete.png">
-                            <span class = "product-quantity">1</span>
-                            <img class="add-quantity" src="icons/add.png">
-                        `;
-                    
+                        <img class="delete-product" src="icons/delete.png">
+                        <span class="product-quantity">${pro[index].quantity}</span>
+                        <img class="add-quantity" src="icons/add.png">
+                    `;
                 }
-            })
-        })
+            }
 
-        let deleteProduct = document.querySelectorAll(".delete-product")
-        
-        deleteProduct.forEach((item) =>{
-            item.addEventListener("click",()=>{
-                let product = item.closest(".product-area")
+            if(e.target.classList.contains("decrease-quantity")){
+
+                let product = e.target.closest(".product-area")
+                let index = [...product.parentNode.children].indexOf(product);
+                
+                const container = e.target.parentElement;
+                const quantity = container.querySelector(".product-quantity");
+
+                if(quantity.textContent >= 2){
+                    let value = parseInt(quantity.textContent) - 1;
+                    quantity.textContent = value;
+                    pro[index].quantity = value;
+                    localStorage.setItem("Products", JSON.stringify(pro)); 
+                }
+                else{
+                    quantity.textContent = 1;
+                }
+
+            }
+
+            if(e.target.classList.contains("delete-product")){
+                
+                let product = e.target.closest(".product-area")
                 let index = [...product.parentNode.children].indexOf(product); 
                 product.remove()
                 pro.splice(index,1)
                 localStorage.setItem("Products", JSON.stringify(pro));
-                
-            })
-        })
+            }
+    });
+   
     }
 
-    else{
-        basketInfo.innerHTML = originalHTML;
-        
-    }
+    
 }
 
 //PRODUCT DETAIL//
@@ -476,8 +556,49 @@ if(document.body.className.includes("pd")){
     let productScore = document.querySelector(".score")
     let commentNumber = document.querySelector(".c-num")
     let stars = document.querySelector(".stars")
+    let productPrice = document.querySelector(".stb-bottom")
+    let initialPrice = document.querySelector(".initial-price")
+    initialPrice.remove()
+    let gain = document.querySelector(".gain")
+    gain.remove()
+    let addedInfo = document.querySelector(".added-info")
+
+    let addToBasket = document.querySelector(".add-to-basket")
+    addToBasket.addEventListener("click",()=>{
+        
+        let products = JSON.parse(localStorage.getItem("Products")) || [];
+
+        let productName = document.querySelector(".product-name").textContent;
+        let productRating = document.querySelector(".score").textContent;
+        let productPrice = document.querySelector(".stb-bottom").textContent;
+        let productImage = document.querySelector(".photo").src;
     
-    
+        products.push({
+            name: productName,
+            rating: productRating,
+            price: productPrice,
+            photo: productImage,
+            quantity:1
+        });
+
+        localStorage.setItem("Products", JSON.stringify(products));
+        addedInfo.style.visibility = "visible"
+
+        setTimeout(()=>{
+            addedInfo.style.visibility = "hidden"
+        },3000)
+    })
+
+    let pro = JSON.parse(localStorage.getItem("Products")) || [];
+
+    let totalAmount = document.querySelector(".total-amount");
+    totalAmount.textContent = pro.length;
+
+    if(pro.length > 0){
+        totalAmount.style.backgroundColor = "#FF6000"
+        totalAmount.style.color = "#fff"
+    }
+
     fetch("product.json")
         .then(res => res.json())
         .then(data=>{
@@ -485,6 +606,8 @@ if(document.body.className.includes("pd")){
             productName.textContent = data.products[productId].name;
             productScore.textContent = data.products[productId].score;
             commentNumber.textContent = data.products[productId].comment
+            productPrice.textContent = data.products[productId].price + "TL"
+
             
             ıntScore = Math.floor(data.products[productId].score);
             stars.innerHTML =""
@@ -499,7 +622,6 @@ if(document.body.className.includes("pd")){
         })
 
         let formLinksContainer = document.querySelector(".form-links")
-        let formLinks = formLinksContainer.querySelectorAll("a");
         let creditCard = document.querySelector(".credit-carts")
         
         formLinksContainer.addEventListener("click",(e)=>{
@@ -734,6 +856,7 @@ if(document.body.className.includes("pd")){
             }
 
             if(e.target.innerHTML === "Soru Cevap<span>586</span>"){
+           
                 creditCard.innerHTML = `
                     <div class = "qa">
                         <div class = "qa-filter">
@@ -758,7 +881,7 @@ if(document.body.className.includes("pd")){
                         <div class="asked-question-container">
                             <h5>Soru</h5>
                             <div class="asked-questions">
-                                Medium ebatı için ölçüler nedir
+                                ${localStorage.getItem("Question")}
                             </div>
                         </div>
                         <div class="gived-answer-container">
@@ -773,7 +896,7 @@ if(document.body.className.includes("pd")){
                                 <div class="answer-evaluate">
                                     <p>Bu cevap faydalı mı?</p>
                                     <div class="like-unlike">
-                                        <img src="icons/like.png">
+                                        <img class = "like" src="icons/like.png">
                                         <p class = "like-number">0</p>
                                         <img class="dislike" src="icons/like.png">
                                         <p class = "dislike-number">0</p> 
@@ -783,6 +906,69 @@ if(document.body.className.includes("pd")){
                         </div>
                     </div>
                 `;
+
+                const qForm = document.querySelector(".a-seller")
+                const askSeller = document.querySelector(".qa-filter-right button");
+                
+                askSeller.addEventListener("click",()=>{
+                    qForm.style.display = "block"
+                })
+
+                const close = qForm.querySelector(".close-a-seller");
+                close.addEventListener("click",()=>{
+                    qForm.style.display = "none"
+                })
+
+                const submitQuestion = document.querySelector(".a-seller-bottom button")
+                
+                submitQuestion.addEventListener("click",()=>{
+                    let qInput = document.querySelector(".a-seller-mid input")
+                    let userQ = qInput.value;
+                    localStorage.setItem("Question", userQ)
+                    
+                    const question = document.createElement("div");
+
+                    question.classList.add("asked-question-container");
+                    question.innerHTML = `
+                        <h5>Soru</h5>
+                        <div class="asked-questions">
+                            ${localStorage.getItem("Question")}
+                        </div>
+                    `;
+
+                    document.querySelector(".qa").appendChild(question);
+                })
+
+                let likeButton = document.querySelector(".like")
+                let likeNumber = document.querySelector(".like-number")
+                let liked = false
+                let disliked = false;
+                
+                likeButton.addEventListener("click",()=>{
+                    if (!liked && !disliked){
+                        likeNumber.textContent++;
+                        liked = true
+                    }
+                    else{
+                        return
+                    }
+                })
+
+                let dislikeButton = document.querySelector(".dislike")
+                let dislikeNumber = document.querySelector(".dislike-number")
+                
+                dislikeButton.addEventListener("click",()=>{
+                    if(liked || disliked){
+                        return
+                        
+                    }
+
+                    else{
+                        dislikeNumber.textContent++;
+                        disliked = true
+                    }
+                })
+
             }
 
             if(e.target.textContent === "Kredikartı Taksitleri"){

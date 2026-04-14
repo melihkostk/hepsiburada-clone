@@ -26,6 +26,7 @@
             "category": "giyim",
             "score":4.8,
             "comment":"(20)"
+
         },
         {
             "id": 4,
@@ -62,7 +63,7 @@
             "image": "images/gillette.webp",
             "category": "giyim",
             "score":4.6,
-            "comment":"(10064)"
+            "comment":"(10064)"  
         },
         {
             "id": 8,
@@ -110,6 +111,7 @@
             "category": "ayakkabı",
             "score":4.8,
             "comment":"(1332)"
+
         },
         {
             "id": 13,
@@ -119,6 +121,7 @@
             "category": "giyim",
             "score":4.7,
             "comment":"(435)"
+
 
         },
         {
@@ -130,6 +133,7 @@
             "category": "ayakkabı",
             "score":4.2,
             "comment":"(420)"
+ 
         },
         {
             "id": 15,
@@ -140,6 +144,7 @@
             "category": "giyim",
             "score":4.7,
             "comment":"(13878)"
+    
         },
         {
             "id": 16,
@@ -149,6 +154,7 @@
             "category": "ayakkabı",
             "score":4,
             "comment":"(8)"
+        
         },
         {
             "id": 17,
@@ -158,6 +164,7 @@
             "category": "giyim",
             "score":4.8,
             "comment":"(17)"
+    
         },
         {
             "id": 18,
