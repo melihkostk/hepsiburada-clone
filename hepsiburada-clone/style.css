@@ -8126,6 +8126,7 @@ footer{
     margin-top: 2.5rem; 
     gap: 1rem;
     align-items: flex-start;
+    min-width:1228.8px;
 }
 
 .buy-product-left{
@@ -8346,6 +8347,16 @@ footer{
     border: none;
     height: 3rem;
     font-size: 1rem;
+  
+}
+
+.pay-top button:hover{
+   
+    background-color: #fff;
+    color: #FF6000;
+    border: 1px solid #FF6000;
+    transition: 1s ease;
+    
   
 }
 

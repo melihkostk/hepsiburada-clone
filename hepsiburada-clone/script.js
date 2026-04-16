@@ -1430,7 +1430,46 @@ if(document.body.className==="cap"){
         })
 }
 
-//EN-WOMEN//
+//BUY//
+if(document.body.className.includes("buy")){
+    let pro = JSON.parse(localStorage.getItem("Products")) || [];
+    let buyedItemContainer = document.querySelector(".item-container")
+    let totalPrice = document.querySelector(".pay-cost")
+    buyedItemContainer.innerHTML = ""
+
+    pro.forEach(item=>{
+        buyedItemContainer.innerHTML += `
+            <div class="buyed-item">
+                <div class="buyed-item-top">
+                    <img src="${item.photo}" alt="">
+                    <p class="buyed-item-name">${item.name}</p>
+                </div>
+                <div class="buyed-item-bottom">
+                    <p class="st">Standart Teslimat</p>
+                    <p class="tat">
+                        Tahmini teslim
+                        <b>18 Nisan</b>
+                    </p>
+                </div>
+            </div>
+        `
+
+        pro.forEach(item=>{
+            overallCost += parseInt(item.price) * parseInt(item.quantity);  
+        })
+
+        totalPrice.textContent = overallCost
+
+    })
+
+    
+
+
+   
+
+
+
+}
 
 
 
