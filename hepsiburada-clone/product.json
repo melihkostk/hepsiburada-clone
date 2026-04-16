@@ -5,7 +5,7 @@
             "name": "Old Spice Captain Deo Stick 50 ml + Duş Jeli 250 ml Giftpack",
             "price": 300,
             "image": "images/old-spice.webp",
-            "category": "giyim",
+            "category": "Giyim",
             "score":4.8,
             "comment":"(543)"
         },
@@ -14,7 +14,7 @@
             "name": "Playever Sticker Puzzle - Safari, Çıkartmalı Yapboz Etkinlik kitabı",
             "price": 180,
             "image": "images/puzzle.webp",
-            "category": "ayakkabı",
+            "category": "Elbise",
             "score":4.8,
             "comment":"(82)"
         },
@@ -23,7 +23,7 @@
             "name": "Eraks Silecek Lastiği 70 cm 4 Adet",
             "price": 199.50,
             "image": "images/silecek.webp",
-            "category": "giyim",
+            "category": "Triko",
             "score":4.8,
             "comment":"(20)"
 
@@ -33,7 +33,7 @@
             "name": "Happiness İstanbul Pliseli Kısa Süet Ceket LFN0136 Lacivert",
             "price": 606,
             "image": "images/ceket.webp",
-            "category": "ayakkabı",
+            "category": "Kaban, Mont",
             "score":4.8,
             "comment":"(20)"
         },
@@ -42,17 +42,18 @@
             "name": "Tuğba Kuruyemiş Cevizli Incir 370 gr",
             "price": 229,
             "image": "images/kuruyemiş.webp",
-            "category": "giyim",
+            "category": "Sweatshirt",
             "score":4.7,
             "comment":"(342)"
         },
+        
         {
             "id": 6,
             "name": "Melwiss Chocolate Sütlü Tatlı Sosu 330 Gr - Waffle Krep Pankek Sosu",
             "price": 199.90,
             "image": "images/tatlı-sos.webp",
             "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı",
+            "category": "Bluz",
             "score":4.4,
             "comment":"(1092)"
         },
@@ -61,7 +62,7 @@
             "name": "Gillette Sensor3 Tıraş Makinesi - 3 Bıçaklı, Kayganlaştırıcı Bant ve Oynar Başlık ile, 1 Adet + 6 Yedek Bıçak",
             "price": 219,
             "image": "images/gillette.webp",
-            "category": "giyim",
+            "category": "Gömlek",
             "score":4.6,
             "comment":"(10064)"  
         },
@@ -70,7 +71,7 @@
             "name": "Bilgeoğuz Yayınları Kur'an Bana Ne Diyor? Iniş Sırası Üzerinden Açıklamalı Meal",
             "price": 1498,
             "image": "images/kuran.webp",
-            "category": "kitap",
+            "category": "Pantolon",
             "score":4.9,
             "comment":"(1250)"
         },
@@ -79,7 +80,7 @@
             "name": "Familia Plus Natural Penguen Gofrajlı 16'lı Havlu Kağıdı",
             "price": 320,
             "image": "images/familia.webp",
-            "category": "giyim",
+            "category": "Kot Etek, Kadın Kot Ceket",
             "score":4.7,
             "comment":"(2978)"
         },
@@ -88,7 +89,7 @@
             "name": "Apple 20 W USB-C Güç Adaptörü Hızlı Şarj ile Uyumlu iPhone Modelleri için İdeal Ev Şarjı",
             "price": 299,
             "image": "images/usb.webp",
-            "category": "ayakkabı",
+            "category": "T-Shirt",
             "score":4.7,
             "comment":"(3126)"
         },
@@ -98,7 +99,7 @@
             "price": 499.85,
             "image": "images/zeytin.webp",
             "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim",
+            "category": "Ceket",
             "score":3,
             "comment":"(2)"
 
@@ -108,7 +109,7 @@
             "name": "Uykusu Gelen Minikler",
             "price": 99.90,
             "image": "images/minikler.webp",
-            "category": "ayakkabı",
+            "category": "Etek",
             "score":4.8,
             "comment":"(1332)"
 
@@ -118,7 +119,7 @@
             "name": "Maylo Puf Mendil 150'li 6 Paket",
             "price": 290,
             "image": "images/maylo.webp",
-            "category": "giyim",
+            "category": "Tayt",
             "score":4.7,
             "comment":"(435)"
 
@@ -130,7 +131,7 @@
             "price": 8459.06,
             "image": "images/redmi.webp",
             "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı",
+            "category": "Trençkot",
             "score":4.2,
             "comment":"(420)"
  
@@ -141,7 +142,7 @@
             "price": 285.21,
             "image": "images/solo.webp",
             "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "giyim",
+            "category": "Spor Giyim",
             "score":4.7,
             "comment":"(13878)"
     
@@ -151,7 +152,7 @@
             "name": "Philips Sonicare Kompakt Ağız Duşu 2li Yedek Başlık, N2 Comfort, N1 Standart başlık, HX3072/00",
             "price": 799,
             "image": "images/philips.webp",
-            "category": "ayakkabı",
+            "category": "Hamile Giyim",
             "score":4,
             "comment":"(8)"
         
@@ -161,7 +162,7 @@
             "name": "Yataş Essentials 3'lü El / Yüz / Baş Havlu Seti - 50X90 cm",
             "price": 849.90,
             "image": "images/yataş.webp",
-            "category": "giyim",
+            "category": "Büyük Beden",
             "score":4.8,
             "comment":"(17)"
     
@@ -171,7 +172,7 @@
             "name": "Torima Bluetooth Hoparlör Rgb Işıklı Mikrofonlu Taşınabilir Speaker D41 Siyah",
             "price": 699,
             "image": "images/torima.webp",
-            "category": "ayakkabı",
+            "category": "Tesettür Giyim",
             "score":4.5,
             "comment":"(253)"
         },
@@ -180,7 +181,7 @@
             "name": "L'Oréal Paris Lumi Blush Likit Allık 627 Glowy Warm Peach Yüksek Pigmentasyon ve Işıltılı Bitiş",
             "price": 629,
             "image": "images/lumi.webp",
-            "category": "giyim",
+            "category": "İç Giyim",
             "score":4.3,
             "comment":"(49)"
         },
@@ -189,7 +190,7 @@
             "name": "Ally M2037 6000R Portatif Vakumlu Üflemeli Mini Araç Süpürgesi - Toz ve Kül Tem - ARL1846-1866",
             "price": 79.50,
             "image": "images/ally.webp",
-            "category": "ayakkabı",
+            "category": "Plaj Giyim",
             "score":3.6,
             "comment":"(13)"
         },
@@ -198,7 +199,7 @@
             "name": "Servet Ala Türk Kahvesi 100g 3'lü Paket",
             "price": 311.20,
             "image": "images/kahve.webp",
-            "category": "giyim",
+            "category": "Kadın Ev Rahatlığı",
             "score":4.4,
             "comment":"(4306)"
         },
@@ -207,7 +208,7 @@
             "name": "Yasomi Perimax YV509 Kumandalı Smart Uygulamalı Su Püskürtme...",
             "price": 9.799,
             "image": "images/yasomi.webp",
-            "category": "ayakkabı",
+            "category": "Kadın Pijama",
             "score":4.8,
             "comment":"(191)"
         },
@@ -217,7 +218,7 @@
             "price": 8459.06,
             "image": "images/redmi.webp",
             "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "ayakkabı",
+            "category": "Saat",
             "score":4.2,
             "comment":"(420)"
         },
@@ -226,7 +227,7 @@
             "name": "Paw Petrol Sky Nickelodeon Özel Sulu Kalem ile Sihirli Boyama Kitabı",
             "price": 99,
             "image": "images/paw.webp",
-            "category": "ayakkabı",
+            "category": "Güneş Gözlüğü",
             "score":4.1,
             "comment":"(1197)"
         },
@@ -235,7 +236,7 @@
             "name": "Ferrero Rocher Çikolata 16'lı",
             "price": 274,
             "image": "images/ferrero.webp",
-            "category": "giyim",
+            "category": "Takı",
             "score":4.7,
             "comment":"(2397)"
         },
@@ -244,7 +245,7 @@
             "name": "LG StanbyMe 2 27LX6TDGA 27 70 Ekran WebOS Smart Dokunmatik...",
             "price": 42.296,
             "image": "images/lg-stan.webp",
-            "category": "ayakkabı",
+            "category": "Mücevher",
             "score":4.9,
             "comment":"(8)"
         },
@@ -253,7 +254,7 @@
             "name": "TCL 50T6C 50 127 Ekran Uydu Alıcılı 4K Ultra HD Google QLED TV",
             "price": 23.999,
             "image": "images/tcl.webp",
-            "category": "giyim",
+            "category": "Yağmurluk",
             "score":4.4,
             "comment":"(200)"
         },
@@ -262,7 +263,7 @@
             "name": "LG 65QNED70A6A 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart webOS QN...",
             "price": 42.757,
             "image": "images/lg.webp",
-            "category": "ayakkabı",
+            "category": "Eşofman",
             "score":4.6,
             "comment":"(383)"
         },
@@ -271,7 +272,7 @@
             "name": "Onvo 65VQ90F3UA 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart Google Smar...",
             "price": 25.999,
             "image": "images/onvo.webp",
-            "category": "giyim",
+            "category": "Polo T-shirt",
             "score":4.3,
             "comment":"(371)"
         },
@@ -280,7 +281,7 @@
             "name": "iFFALCON 65VQ90F3UA 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart Google MiniLED TV",
             "price": 55.999,
             "image": "images/iffalcon.webp",
-            "category": "ayakkabı",
+            "category": "Şort",
             "score":4.8,
             "comment":"(155)"
         },
@@ -289,7 +290,7 @@
             "name": "Solo Asılabilir Kağıt Havlu 1 Paket = 7 Rulo Hijyenik ve Pratik Kullanım İçin Uygun",
             "price": 249,
             "image": "images/solo2.webp",
-            "category": "giyim",
+            "category": "Takım Elbise",
             "score":4.4,
             "comment":"(1418)"
         },
@@ -298,7 +299,7 @@
             "name": "Ariel Hepsi1Arada PODS® Kapsül Çamaşır Deterjanı Dağ Esintisi 35 Yıkama Zorlu Lekeleri Giderir",
             "price": 180,
             "image": "images/ariel.webp",
-            "category": "ayakkabı",
+            "category": "Erkek Kot Gömlek, Erkek Denim Pantolonlar",
             "score":4.7,
             "comment":"(146)"
         },
@@ -307,7 +308,7 @@
             "name": "Momordica Coconut Mix - 250 ml Şurup, Hindistan Cevizi Aroma ve Doğal Tatlandırıcı İçerir",
             "price": 350,
             "image": "images/momordica.webp",
-            "category": "giyim",
+            "category": "Outdoor Giyim",
             "score":4.1,
             "comment":"(373)"
         },
@@ -316,7 +317,7 @@
             "name": "Bebelac Gold Konfor 1 Bebek Sütü 0-6 Ay 800 Gr x 2 Adet 1600 Gr",
             "price": 1479,
             "image": "images/bebelac.webp",
-            "category": "ayakkabı",
+            "category": "Klasik Giyim",
             "score":4.8,
             "comment":"(2799)"
         },
@@ -325,7 +326,7 @@
             "name": "Perwoll Renkliler ve Siyahlar Için Hızlı Yıkama 2l (36 Yıkama)",
             "price": 25.99,
             "image": "images/perwoll.webp",
-            "category": "giyim",
+            "category": "Pijama",
             "score":4.5,
             "comment":"(484)"
         },
@@ -334,7 +335,7 @@
             "name": "Samsung Galaxy A26 5g 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 14.299,
             "image": "images/a26.webp",
-            "category": "ayakkabı",
+            "category": "Aksesuar",
             "score":4.6,
             "comment":"(897)"
             
@@ -344,7 +345,7 @@
             "name": "Samsung Galaxy A56 5g 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 24.649,
             "image": "images/a56.webp",
-            "category": "giyim",
+            "category": "Kadın Ayakkabı",
             "score":4.8,
             "comment":"(1437)"
         },
@@ -353,7 +354,7 @@
             "name": "Samsung Galaxy S24 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 32.499,
             "image": "images/s24.webp",
-            "category": "ayakkabı",
+            "category": "Günlük Ayakkabı",
             "score":4.8,
             "comment":"(1618)"
         },
@@ -362,7 +363,7 @@
             "name": "Samsung Galaxy A07 128 GB 4 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 7.703,
             "image": "images/a07.webp",
-            "category": "giyim",
+            "category": "Spor Ayakkabı",
             "score":4.8,
             "comment":"(256)"
         },
@@ -371,7 +372,7 @@
             "name": "HONOR Magic 8 Lite 256 GB 8 GB Ram (Honor Türkiye Garantili) Siyah",
             "price": 19.499,
             "image": "images/magic.webp",
-            "category": "ayakkabı",
+            "category": "Klasik Ayakkabı",
             "score":4.4,
             "comment":"(399)"
         },
@@ -380,7 +381,7 @@
             "name": "Michael Kors Jet Set Çapraz Askılı Kadın Çanta Kahverengi Brown",
             "price": 9.990,
             "image": "images/michael.webp",
-            "category": "giyim",
+            "category": "Topuklu Ayakkabı",
             "score":5,
             "comment":"(1)"
         },
@@ -389,7 +390,7 @@
             "name": "Kadın Taba Uzun Asklı Nubuk Omuz Çantası 25ABD2105V3",
             "price": 5.249,
             "image": "images/taba.webp",
-            "category": "ayakkabı",
+            "category": "Kadın Çizme, Kadın Bot",
             "score":4.9,
             "comment":"(19)"
         },
@@ -398,7 +399,7 @@
             "name": "Vakko Mini Boy Zincir Askılı Şık Deri Omuz Çantası | Kadın Çanta Günlük...",
             "price": 800,
             "image": "images/vakko.webp",
-            "category": "giyim",
+            "category": "Kadın Sandalet, Kadın Terlik",
             "score":3,
             "comment":"(12)"
         },
@@ -407,7 +408,7 @@
             "name": "Mavi Mavi Logo Denim Tote Çanta 1913377-82770",
             "price": 1.295,
             "image": "images/denim.webp",
-            "category": "ayakkabı",
+            "category": "Outdoor Ayakkabı",
             "score":5,
             "comment":"(1)"
         },
@@ -416,7 +417,7 @@
             "name": "Just Polo Yeni Sezon Kolon Askılı 4 Bölmeli Kadın Omuz Çantası 21x16c...",
             "price": 2.167,
             "image": "images/just.webp",
-            "category": "giyim",
+            "category": "Bot",
             "score":4.7,
             "comment":"(10)"
         },
@@ -425,7 +426,7 @@
             "name": "Muazzam Dünya: Beş Duyunun Ötesine Yolculuk - Ed Yong",
             "price": 426,
             "image": "images/muazzam.webp",
-            "category": "ayakkabı",
+            "category": "Erkek Sandalet, Erkek Terlik",
             "score":4,
             "comment":"(2)"
         },
@@ -434,7 +435,7 @@
             "name": "ChefTime Paslanmaz Çelik Derin Çırpma ve Karıştırma Kasesi | 24CM",
             "price": 185,
             "image": "images/chef.webp",
-            "category": "giyim",
+            "category": "Erkek Sandalet",
             "score":4.6,
             "comment":"(7)"
         },
@@ -443,7 +444,7 @@
             "name": "MEN Erkek Sprey Deodorant Black&White 150ml ve Mini Roll-on Omuz Çantası | Kadın Çanta Günlük...",
             "price": 233,
             "image": "images/nivea.webp",
-            "category": "ayakkabı",
+            "category": "Sneaker",
             "score":4.8,
             "comment":"(40)"
         },
@@ -452,7 +453,7 @@
             "name": "Baby Me Sıvı Bebek Çamaşır Deterjanı Hipoalerjenik Formül 5000 ml",
             "price": 355,
             "image": "images/babyme.webp",
-            "category": "giyim",
+            "category": "Koşu Ayakkabısı",
             "score":4.6,
             "comment":"(1198)"
         },
@@ -461,7 +462,7 @@
             "name": "Ttec Smartcharger Gan 45W AVS Pd Seyahat Hızlı Şarj Aleti + Usb-C-Usb...",
             "price": 2.167,
             "image": "images/ttec.webp",
-            "category": "ayakkabı",
+            "category": "Kadın Çanta",
             "score":4.7,
             "comment":"(10)"
         }

@@ -126,14 +126,14 @@ if(document.body.className.includes("lp")){
 
 let loged = false
 //CREATE ACCOUNT//
-if(document.body.className.includes("ca")){
+if(document.body.className==="ca"){
     let createAccountButton = document.querySelector(".create-account-bottom button")
     
     createAccountButton.addEventListener("click",()=>{
         let nameInput = document.querySelector(".name-i");
         let surnameInput = document.querySelector(".surname-i");
         let passwordInput = document.querySelector(".password-i");
-        let back = document.querySelector(".return")
+        let back = document.querySelector(".return-to")
 
         if(nameInput.value && surnameInput.value && passwordInput.value){
             let users = JSON.parse(localStorage.getItem("Users")) || [];
@@ -164,7 +164,7 @@ if(document.body.className.includes("ca")){
 
 //HOME PAGE//
 if (document.body.className.includes("hp")) {
-    let productContainers = document.querySelectorAll(".p-product-container");
+    
 
     const fırsat = document.querySelector(".fırsat");
     const backBtn = document.querySelector(".fırsat-back-button button");
@@ -183,6 +183,8 @@ if (document.body.className.includes("hp")) {
         fırsat.scrollBy({ left: 727, behavior: "smooth" });
     });
 
+   let productContainers = document.querySelectorAll(".p-product-container");
+   
     fetch("product.json")
         .then(res => res.json())
         .then(data => {
@@ -339,6 +341,18 @@ if (document.body.className.includes("hp")) {
 
     })
 
+    const goToTop = document.querySelector(".go-to-top")
+
+    window.addEventListener("scroll",()=> {
+    if (window.scrollY >= 600) {
+        goToTop.style.display = "block";
+    } 
+    
+    else {
+        goToTop.style.display = "none";
+    }
+});
+
 }
 
 
@@ -450,33 +464,39 @@ if(document.body.className.includes("bp")){
         })
 
         let basket = document.querySelector(".basket-container")
-        basket.innerHTML += `
-            <div class = "overall">
-                <div class = "overall-top">
-                    <span class = "selected-products">SEÇİLEN ÜRÜNLER (${pro.length})</span>
-                    <span class = "overall-cost">${overallCost}<span class = "tl">TL</span></span>
-                    <button>Alışverişi Tamamla</button>
-                </div>
-                <div class = "overall-mid">
-                    <img src="images/premium-new-logo.png">
-                    <p>Premium'a geç, kargo bedava ve Hepsipara avantajları ile tasarruf et.</p>
-                    <button>Şimdi Geç</button>
-                </div>
-                <div class = "overall-bottom">
-                    <div class = "bottom-item">
-                        <p>Ürünler</p>
-                        <p>300 TL</p>
-                    </div>
 
-                    <div class = "bottom-item">
-                        <p>Kargo</p>
-                        <p>100 TL</p>
+            basket.innerHTML += `
+                <div class = "overall">
+                    <div class = "overall-top">
+                        <span class = "selected-products">SEÇİLEN ÜRÜNLER (${pro.length})</span>
+                        <span class = "overall-cost">${overallCost}<span class = "tl">TL</span></span>
+                        <button>Alışverişi Tamamla</button>
+                    </div>
+                    <div class = "overall-mid">
+                        <img src="images/premium-new-logo.png">
+                        <p>Premium'a geç, kargo bedava ve Hepsipara avantajları ile tasarruf et.</p>
+                        <button>
+                            Şimdi Geç
+                        </button>
+                    </div>
+                    <div class = "overall-bottom">
+                        <div class = "bottom-item">
+                            <p>Ürünler</p>
+                            <p>300 TL</p>
+                        </div>
+
+                        <div class = "bottom-item">
+                            <p>Kargo</p>
+                            <p>100 TL</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        
-        
-        `; 
+            `;
+
+        let continueShopping = document.querySelector(".overall-top button")
+        continueShopping.addEventListener("click",()=>{
+            window.location.href = "buy.html";
+        })
 
         document.addEventListener("click", (e) => {
             if (e.target.classList.contains("add-quantity")) {
@@ -865,10 +885,10 @@ if(document.body.className.includes("pd")){
                                 <div class="sort-select">
                                     <label for="sort" class="sort-labels">Sırala</label>
                                     <select name = "sort" class="sort">
-                                        <option value="varsayılan">Varsayılan</option>
-                                        <option value="saab">En faydalı soru & cevap</option>
-                                        <option value="mercedes">En yeni soru & cevap</option>
-                                        <option value="audi">En eski soru & cevap</option>
+                                        <option value="Varsayılan">Varsayılan</option>
+                                        <option value="En faydalı soru & cevap">En faydalı soru & cevap</option>
+                                        <option value="En yeni soru & cevap">En yeni soru & cevap</option>
+                                        <option value="En eski soru & cevap">En eski soru & cevap</option>
                                     </select>
                                 </div>
                             </div>
@@ -1343,11 +1363,75 @@ if(document.body.className.includes("pd")){
                 `;
             }
         })
-        
-
-
-
 }
+
+//CATEGORY PAGE//
+if(document.body.className==="cap"){
+    
+    let returnHome = document.querySelector(".return-home")
+
+    let URL = new URLSearchParams(window.location.search);
+    let productCategory = URL.get("category")
+    let cateProduct = document.querySelector(".en-container");
+
+    let cateNameContainer = document.querySelector(".cate-name-left")
+    let cateName = cateNameContainer.querySelector("h1")
+
+    let productNumber = document.querySelector(".product-number");
+    
+    returnHome.addEventListener("click",()=>{
+        window.location.href = "index.html";
+    })
+
+    
+    fetch("product.json")
+        .then(res => res.json())
+        .then(data => {
+            cateProduct.innerHTML = "";
+
+            data.products.forEach(item => {
+                
+                if (productCategory.trim() === item.category.trim()) {
+
+                    cateName.textContent = `${item.category}`;
+
+                    cateProduct.innerHTML += `
+                    <div class="p-product-container">
+                        <div class="top">
+                            <img src="${item.image}">
+                            <p class="product-d">${item.name}</p>
+                            <div class="all-ratings">
+                                <img class="star" src="icons/star.png">
+                                <p class="rating">${item.score}</p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <p class="p-cost">${item.price}<span> TL</span></p>
+                            <img src="icons/black-shopping-cart.png">
+                        </div>
+                    </div>
+                    `;
+                }
+
+            });
+        });
+
+        const brandSliderContainer = document.querySelector(".b-slider");
+        const backButton = brandSliderContainer.querySelector(".back-button button");
+        const forwardButton = brandSliderContainer.querySelector(".forward-button button")
+        const brandSlider = document.querySelector(".s-items")
+        
+        backButton.addEventListener("click",()=>{
+            brandSlider.scrollBy(-700,0)
+        })
+
+        forwardButton.addEventListener("click",()=>{
+            brandSlider.scrollBy(700,0)
+        })
+}
+
+//EN-WOMEN//
+
 
 
 
