@@ -81,7 +81,101 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="adress-input-area">
+                <h2>Adres Ekle</h3>
+                <div class="adress-input-top">
+                    <h3 class="input-top-title">Kişisel Bilgileriniz</h3>
+                    <div class="personal-inputs">
+                        <p>Teslim alacak kişinin bilgileri</p>
+                        <div class="taker">
+                            <input class="buy-name" type="text" placeholder="Ad">
+                            <input class="buy-surname" type="text" placeholder="Soyad">
+                        </div>
+                        <p>Telefon</p>
+                        <div>
+                            <input class="buy-tel" type="tel" value="+90">
+                        </div>
+                    </div>
+                </div>
+                <div class="adress-input-mid">
+                    <h3>Adres Bilgileriniz</h3>
+                    <div class="home-business">
+                        <button>
+                            <div></div>
+                            Ev
+                        </button>
+                        <button>
+                            <div></div>
+                            İş Yeri
+                        </button>
+                    </div>
+                    <div>
+                        <input class="buy-adress" type="text" placeholder="Bina,site,iş yeri,kurum ismi vb.">
+                    </div>
+                    <div class="city-select">
+                        <p>Şehir</p>
+                        <select name="city" id="cites">
+                            <option value="Konya">Konya</option>
+                            <option value="İstanbul">İstanbul</option>
+                            <option value="Ankara">Ankara</option>
+                            <option value="İzmir">İzmir</option>
+                        </select>
+                    </div>
+                    <div class="district">
+                        <p>İlçe</p>
+                        <input class="district-name" type="text" placeholder="İlçe">
+                    </div>
+                    <div class="neighbourhood">
+                        <p>Mahalle</p>
+                        <input class="neighbourhood-name" type="text" placeholder="Mahalle">
+                    </div>
+                    <div class="give-name">
+                        <p>Bu adrese bir ad verin</p>
+                        <input class="adress-name" type="text" placeholder="Örnek: Evim, İş yerim vb.">
+                    </div>
+                    <div class="use-adress">
+                        <input class="check" type="checkbox">
+                        <p>
+                            <span>Bu adresi fatura bilgilerimde de kullan</span>
+                            <br>
+                            Fatura için seçilen adres sadece bilgi amaçlıdır. Ürünlerimiz “Teslimat adresi” bölümünde seçtiğiniz adrese teslim edilir.
+                        </p>
+                    </div>
+                </div>
+                <div class="adress-input-bottom">
+                    <button class="cancel-adress-input">
+                        Vazgeç
+                    </button>
+                    <button class="save-adress">
+                        Adresi Kaydet
+                    </button>
+                </div>
+            </div>
+            <div class="edit-adress">
+                <div class="edit-adress-top">
+                    <img class="edit-close" src="icons/cross.png">
+                </div>
+                <div class="edit-adress-mid">
+                    <h2>Adreslerim</h2>
+                    <button class="new-adress">
+                        <img src="icons/add.png">
+                        Yeni adres
+                    </button>
+                </div>
+                <div class="edit-adress-bottom">
+                    <div class="edit-adress-left">
+                        <p>asdasd (Varsayılan)</p>
+                        <p>asdasd ADALAR / İstanbul</p>
+                    </div>
+                    <div class="edit-adress-right">
+                        <img class="edit-icon" src="icons/more.png" alt="">
+                    </div>
+                </div>
+                <div class="hidden-edit">
+                    <img src="icons/edit.png" alt="">
+                    Düzenle
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

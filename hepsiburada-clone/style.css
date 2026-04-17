@@ -8380,6 +8380,353 @@ footer{
     margin-top: 1rem;
 }
 
+.adress-input-area{
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 450px;
+    display: none;
+    background: #f5f5f5;
+    height: 100%;
+    padding:60px 72px 40px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04), 0 1px 3px rgba(0, 0, 0, .08);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.adress-input-bottom{
+    display: flex;
+}
+
+.cancel-adress-input{
+    border: none;
+    background: transparent;
+    color: #484848;
+    font-size: 1rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+.cancel-adress-input:hover{
+    color: #FF6000;
+    transition: 1s ease;
+    
+}
+
+.save-adress{
+    background-color: #FF6000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    height: 3rem;
+    border-radius: 8px;
+    padding: 6px 20px 6px 20px;
+    flex: 1;
+}
+
+.save-adress:hover{
+    background-color: transparent;
+    color: #ff6000;
+    transition: 1s ease;
+    
+}
+
+.use-adress{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+
+.use-adress p{
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #9b9b9b;
+}
+
+.use-adress p span{
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: 700;
+    color: #666;
+}
+
+.adress-input-mid{
+    margin-bottom: 2.25rem;
+    margin-top: 2.25rem;
+}
+
+.adress-input-area input{
+    background-color: #fff;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: rgb(155, 155, 155);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Arial, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+    outline: 0px;
+    padding: 10px 14px;
+    width: 100%;
+}
+
+.use-adress input{
+    width: 10%;
+}
+
+.adress-input-area h3{
+    color: #6C84FA;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.adress-input-area h2{
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .33px;
+    color: #646464;
+}
+
+.home-business{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.home-business button{
+    flex: 1;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    letter-spacing: -0.32px;
+    line-height: 1.5;
+    padding: 10px 14px;
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 8px;
+
+    color: rgb(155, 155, 155);
+}
+
+.home-business button div{
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 50%;
+}
+
+.taker{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.personal-inputs{
+    margin-top: 1rem;
+}
+
+.personal-inputs p{
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: -.25px;
+    color: #484848;
+    margin-bottom: 4px;
+    margin-left: 8px;
+}
+
+.city-select{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+}
+.city-select p{
+    margin-bottom: 4px;
+    margin-left: 8px;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: -.25px;
+    color: #484848;
+}
+
+.city-select select{
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 8px;
+    color: rgb(155, 155, 155);
+    padding: 10px 14px;
+    font-size: 1rem;
+}
+
+.give-name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+}
+
+.give-name p{
+    margin-bottom: 4px;
+    margin-left: 8px;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    letter-spacing: -.25px;
+    color: #484848;
+}
+
+.added-adress-container{
+    border: 1px solid #dadada;
+    margin-bottom: 0.3rem;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    width: 50%;
+
+}
+
+.added-adress-top{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.added-adress-top-right{
+    color: #FF6000;
+    cursor: pointer;
+}
+
+.added-adress-bottom{
+    font-weight: 500;
+}
+
+.neighbourhood p{
+    margin-bottom: 4px;
+    margin-left: 8px;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: #484848;
+}
+
+.district p{
+    margin-bottom: 4px;
+    margin-left: 8px;
+    font-size: 0.875rem;
+    line-height: 1.71;
+    color: #484848;
+}
+
+.neighbourhood{
+    margin-top: 1rem;
+}
+
+.district{
+    margin-top: 1rem;
+}
+
+.edit-adress{
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 500px;
+    display: none;
+    background: #f5f5f5;
+    height: 100%;
+    padding:40px 30px 40px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04), 0 1px 3px rgba(0, 0, 0, .08);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.edit-adress-top img{
+    width: 7%;
+    cursor: pointer;
+}
+
+.edit-adress-mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-adress-mid h2{
+    font-family: Inter, BlinkMacSystemFont, Arial, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    text-align: left;
+}
+
+.edit-adress-mid button{
+    border: 2px solid #FF6000;
+    color: #ff6000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.edit-adress-bottom{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    padding: 12px 18px 12px 18px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 1rem;
+}
+
+.edit-adress-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-icon{
+    width: 2rem;
+    cursor: pointer;
+}
+
+.hidden-edit{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #fff;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    gap: 0.3rem;
+    color: #FF6000;
+    cursor: pointer;
+}
+
+.hidden-edit img{
+    width: 1rem;
+}
+
+
+
 
 
 

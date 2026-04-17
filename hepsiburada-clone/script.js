@@ -334,7 +334,6 @@ if (document.body.className.includes("hp")) {
         links.forEach(item=>{
             item.addEventListener("click",()=>{
                 let cate = item.textContent;
-                console.log(cate)
                 window.location.href = `category.html?category=${cate.trim()}`
             })
         })
@@ -351,7 +350,18 @@ if (document.body.className.includes("hp")) {
     else {
         goToTop.style.display = "none";
     }
-});
+    });
+
+    let cateFilter = document.querySelectorAll(".brand-cate")
+    
+    cateFilter.forEach(item=>{
+        let cateLink = item.querySelectorAll("li")
+        cateLink.forEach(link => {
+            link.addEventListener("click",()=>{
+                window.location.href = `category.html?category=${link.textContent}`
+            })
+        })
+    })
 
 }
 
@@ -443,7 +453,7 @@ if(document.body.className.includes("bp")){
                                 <div class="basket-product-bottom">
                                     <div class="quantity">
                                         <img class="delete-product" src ="icons/delete.png">
-                                        <span class = "product-quantity">1</span>
+                                        <span class = "product-quantity">${item.quantity}</span>
                                         <img class="add-quantity" src="icons/add.png">
                                     </div>
                                     <div>
@@ -901,7 +911,7 @@ if(document.body.className.includes("pd")){
                         <div class="asked-question-container">
                             <h5>Soru</h5>
                             <div class="asked-questions">
-                                ${localStorage.getItem("Question")}
+                                
                             </div>
                         </div>
                         <div class="gived-answer-container">
@@ -944,19 +954,29 @@ if(document.body.className.includes("pd")){
                 submitQuestion.addEventListener("click",()=>{
                     let qInput = document.querySelector(".a-seller-mid input")
                     let userQ = qInput.value;
-                    localStorage.setItem("Question", userQ)
+                    let questions = JSON.parse(localStorage.getItem("Question")) || [];
+
+                    questions.push({
+                        content:userQ,
+                        
+                    });
+
+                    localStorage.setItem("Question", JSON.stringify(questions))
                     
                     const question = document.createElement("div");
-
+                    
                     question.classList.add("asked-question-container");
-                    question.innerHTML = `
+                    questions.forEach(item=>{
+                        question.innerHTML += `
                         <h5>Soru</h5>
                         <div class="asked-questions">
-                            ${localStorage.getItem("Question")}
+                            ${item.content}
                         </div>
                     `;
+                    })
+                    
 
-                    document.querySelector(".qa").appendChild(question);
+                    document.querySelector(".asked-question-container").appendChild(question);
                 })
 
                 let likeButton = document.querySelector(".like")
@@ -1435,6 +1455,10 @@ if(document.body.className.includes("buy")){
     let pro = JSON.parse(localStorage.getItem("Products")) || [];
     let buyedItemContainer = document.querySelector(".item-container")
     let totalPrice = document.querySelector(".pay-cost")
+    let addAdressButton = document.querySelector(".add-adress button")
+    let adressInput = document.querySelector(".adress-input-area")
+   
+
     buyedItemContainer.innerHTML = ""
 
     pro.forEach(item=>{
@@ -1453,21 +1477,139 @@ if(document.body.className.includes("buy")){
                 </div>
             </div>
         `
+        let overallCost = 0;
 
         pro.forEach(item=>{
             overallCost += parseInt(item.price) * parseInt(item.quantity);  
         })
 
-        totalPrice.textContent = overallCost
+        totalPrice.textContent = overallCost + " TL"
 
     })
 
+    addAdressButton.addEventListener("click",()=>{
+        adressInput.style.display = "block"
+    })
+
+    adressInput.addEventListener("click",(e)=>{
+        
+        if(e.target.className === "cancel-adress-input"){
+            adressInput.style.display = "none"
+        }
+
+        if(e.target.className === "save-adress"){
+            let nameInput = document.querySelector(".buy-name")
+            let surnameInput = document.querySelector(".buy-surname")
+            let telInput = document.querySelector(".buy-tel")
+            let adressInput = document.querySelector(".buy-adress")
+            let cityInput = document.querySelector("#cites")
+            let adressNameInput = document.querySelector(".adress-name")
+            let neighbourhoodInput = document.querySelector(".neighbourhood-name")
+            let districtInput = document.querySelector(".district-name")
+
+            let name = nameInput.value;
+            let surname = surnameInput.value;
+            let tel = telInput.value;
+            let adress = adressInput.value;
+            let city = cityInput.value
+            let adressName = adressNameInput.value;
+            let neighbourhood = neighbourhoodInput.value
+            let district = districtInput.value
+
+            let userAdress = {
+                name: name,
+                surname: surname,
+                tel: tel,
+                adress: adress,
+                city:city,
+                adressName: adressName,
+                neighbourhood:neighbourhood,
+                district:district
+            };
+
+            localStorage.setItem("Adresses", JSON.stringify(userAdress));
+            window.location.reload();
+        }
+    })
+
+    let userAdress = JSON.parse(localStorage.getItem("Adresses"));
+
+    if (userAdress) {
+        let addedAdress = document.createElement("div");
+        addedAdress.className = "added-adress-container";
+
+        addedAdress.innerHTML = `
+            <div class="added-adress-top">
+                <div class="added-adress-top-left">
+                    ${userAdress.city} / ${userAdress.district}
+                </div>
+                <div class="added-adress-top-right">
+                    Ekle / Değiştir
+                </div>
+            </div>
+            <div class="added-adress-bottom">
+                ${userAdress.adressName}
+            </div>
+        `;
+        document.querySelector(".add-adress").appendChild(addedAdress);
+        document.querySelector(".add-adress button").remove()
+
+        let bill = document.createElement("div")
+        bill.className = "add-bill-container"
+            bill.innerHTML = `
+                <button>
+                    <img src = "icons/add.png">
+                    Fatura adresi ekle 
+                </button>
+            `;
+
+        document.querySelector(".add-adress").appendChild(bill);
+    }
     
+    let editPage = document.querySelector(".edit-adress")
+    let edit = document.querySelector(".added-adress-top-right");
+    let editLink = document.querySelector(".edit-adress-right")
+    let hiddenEdit = document.querySelector(".hidden-edit")
+    
+    edit.addEventListener("click",()=>{
+        editPage.style.display = "block"
+    })
+
+    editPage.addEventListener("click",(e)=>{
+        
+        if(e.target.className === "edit-close"){
+            editPage.style.display = "none"
+        }
+
+        if(e.target.className === "new-adress"){
+            editPage.style.display = "none"
+            adressInput.style.display = "block"
+        }
+
+        if(e.target.className === "edit-icon"){
+            if(hiddenEdit.style.display = "none"){
+                hiddenEdit.style.display = "flex"
+            }
+            else{
+                hiddenEdit.style.display = "none"
+            }
+        }
+
+        if(e.target.className === "hidden-edit"){
+            editPage.style.display = "none"
+            adressInput.style.display = "block"
+        }
 
 
-   
 
 
+    })
+
+
+
+    
+       
+    
 
 }
 
