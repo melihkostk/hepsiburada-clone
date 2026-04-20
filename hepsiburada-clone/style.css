@@ -8880,6 +8880,15 @@ footer{
     font-weight: 600;
 
 }
+.ca-li.clicked a{
+    color: #212121 !important;
+    font-weight: 600;
+
+}
+
+.ca-li.clicked{
+    border-bottom: 2px solid #ff6000;
+}
 
 
 

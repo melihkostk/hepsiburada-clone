@@ -2702,7 +2702,14 @@ if(document.body.className.includes("op")){
 
     offerCate.addEventListener("click",(e)=>{
 
+        const clickedItem = e.target.closest(".ca-li");
         
+        document.querySelectorAll(".ca-li").forEach(item => {
+            item.classList.remove("clicked");
+        });
+
+        clickedItem.classList.add("clicked");
+
         if(e.target.textContent === "Tümü"){
             fetch("product.json")
                 .then(res=>res.json())
@@ -2760,6 +2767,36 @@ if(document.body.className.includes("op")){
             })
         })
         }
+    })
+
+    let searchInput = document.querySelector(".search-offer-product");
+    searchInput.addEventListener("input",()=>{
+        fetch("product.json")
+                .then(res=>res.json())
+                .then(data=>{
+
+            productGrid.innerHTML = ""
+            data.products.forEach(item=>{
+                if(item.name.toLowerCase().includes(searchInput.value.toLowerCase())){
+                    productGrid.innerHTML += `
+                        <div class="product">
+                            <div class="left">
+                                <img src="${item.image}">
+                            </div>
+                            <div class="right">
+                                <div class="right-top">
+                                    <p class="product-name">${item.name}</p>
+                                    <p class="kupon">300 TL'ye 100 TL Kupon !!</p>
+                                </div>
+                                <div class="bottom">
+                                    <p>Kampanyalı ürünleri keşfet</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            })
+        })
     })
 
 
