@@ -14,7 +14,7 @@
             "name": "Playever Sticker Puzzle - Safari, Çıkartmalı Yapboz Etkinlik kitabı",
             "price": 180,
             "image": "images/puzzle.webp",
-            "category": "Elbise",
+            "category": ["Elbise", "Elektronik"],
             "score":4.8,
             "comment":"(82)"
         },
@@ -23,7 +23,7 @@
             "name": "Eraks Silecek Lastiği 70 cm 4 Adet",
             "price": 199.50,
             "image": "images/silecek.webp",
-            "category": "Triko",
+            "category": ["Triko", "Moda"],
             "score":4.8,
             "comment":"(20)"
 
@@ -33,7 +33,7 @@
             "name": "Happiness İstanbul Pliseli Kısa Süet Ceket LFN0136 Lacivert",
             "price": 606,
             "image": "images/ceket.webp",
-            "category": "Kaban, Mont",
+            "category": ["Kaban, Mont", "Kozmetik"],
             "score":4.8,
             "comment":"(20)"
         },
@@ -42,10 +42,11 @@
             "name": "Tuğba Kuruyemiş Cevizli Incir 370 gr",
             "price": 229,
             "image": "images/kuruyemiş.webp",
-            "category": "Sweatshirt",
+            "category": ["Sweatshirt", "Ev Yaşam"],
             "score":4.7,
             "comment":"(342)"
         },
+        
         
         {
             "id": 6,
@@ -53,7 +54,7 @@
             "price": 199.90,
             "image": "images/tatlı-sos.webp",
             "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "Bluz",
+            "category": ["Bluz", "Yapı Market & Oto Aksesuar"],
             "score":4.4,
             "comment":"(1092)"
         },
@@ -62,7 +63,7 @@
             "name": "Gillette Sensor3 Tıraş Makinesi - 3 Bıçaklı, Kayganlaştırıcı Bant ve Oynar Başlık ile, 1 Adet + 6 Yedek Bıçak",
             "price": 219,
             "image": "images/gillette.webp",
-            "category": "Gömlek",
+            "category": ["Gömlek", "Süpermarket"],
             "score":4.6,
             "comment":"(10064)"  
         },
@@ -71,7 +72,7 @@
             "name": "Bilgeoğuz Yayınları Kur'an Bana Ne Diyor? Iniş Sırası Üzerinden Açıklamalı Meal",
             "price": 1498,
             "image": "images/kuran.webp",
-            "category": "Pantolon",
+            "category": ["Pantolon", "Girişimci Kadınlar"],
             "score":4.9,
             "comment":"(1250)"
         },
@@ -80,7 +81,7 @@
             "name": "Familia Plus Natural Penguen Gofrajlı 16'lı Havlu Kağıdı",
             "price": 320,
             "image": "images/familia.webp",
-            "category": "Kot Etek, Kadın Kot Ceket",
+            "category": ["Kot Etek, Kadın Kot Ceket", "Anne Çocuk"],
             "score":4.7,
             "comment":"(2978)"
         },

@@ -2668,8 +2668,99 @@ if(document.body.className.includes("csp")){
             `;
         }  
     })
+}
 
+//OFFERS PAGE//
+if(document.body.className.includes("op")){
+    let productGrid = document.querySelector(".product-grid");
+    let offerCate = document.querySelector(".product-category-links");
     
+    fetch("product.json")
+        .then(res=>res.json())
+        .then(data=>{
+            productGrid.innerHTML = ""
+            data.products.forEach(item=>{
+
+                productGrid.innerHTML += `
+                    <div class="product">
+                        <div class="left">
+                            <img src="${item.image}">
+                        </div>
+                        <div class="right">
+                            <div class="right-top">
+                                <p class="product-name">${item.name}</p>
+                                <p class="kupon">300 TL'ye 100 TL Kupon !!</p>
+                            </div>
+                            <div class="bottom">
+                                <p>Kampanyalı ürünleri keşfet</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            })
+        })
+
+    offerCate.addEventListener("click",(e)=>{
+
+        
+        if(e.target.textContent === "Tümü"){
+            fetch("product.json")
+                .then(res=>res.json())
+                .then(data=>{
+
+                productGrid.innerHTML = ""
+                data.products.forEach(item=>{
+
+                    productGrid.innerHTML += `
+                        <div class="product">
+                            <div class="left">
+                                <img src="${item.image}">
+                            </div>
+                            <div class="right">
+                                <div class="right-top">
+                                    <p class="product-name">${item.name}</p>
+                                    <p class="kupon">300 TL'ye 100 TL Kupon !!</p>
+                                </div>
+                                <div class="bottom">
+                                    <p>Kampanyalı ürünleri keşfet</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                
+            })
+        })
+        }
+
+        else{
+            fetch("product.json")
+                .then(res=>res.json())
+                .then(data=>{
+
+            productGrid.innerHTML = ""
+            data.products.forEach(item=>{
+                if(item.category.includes(e.target.textContent)){
+                    productGrid.innerHTML += `
+                        <div class="product">
+                            <div class="left">
+                                <img src="${item.image}">
+                            </div>
+                            <div class="right">
+                                <div class="right-top">
+                                    <p class="product-name">${item.name}</p>
+                                    <p class="kupon">300 TL'ye 100 TL Kupon !!</p>
+                                </div>
+                                <div class="bottom">
+                                    <p>Kampanyalı ürünleri keşfet</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+            })
+        })
+        }
+    })
 
 
 }

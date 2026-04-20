@@ -3194,11 +3194,9 @@ a{
 
 .main-container .container .product-category .product-category-links{
     display: flex;
-    max-height: 800px;
-    min-width: 700px;
     gap: 1rem;
-    border-bottom: 1px solid #9B9B9B;
-    overflow: scroll;
+    border-bottom: 1px solid #dadada;
+
 }
 
 .main-container .container .product-category .product-category-links div{
@@ -3229,7 +3227,7 @@ a{
 
 .main-container .container .product-grid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -3323,6 +3321,10 @@ a{
 .main-container .container .product-grid .product .product-name{
     color: #454545;
     font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 164.08px;
 }
 
 .main-container .bee-seller{
