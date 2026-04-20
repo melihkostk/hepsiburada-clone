@@ -1847,6 +1847,25 @@ if(document.body.className.includes("csp")){
                     q.textContent = e.target.textContent;
                 })
             })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
+            })
         }
 
         if(e.target.textContent === "Sipariş ve ödeme"){
@@ -1977,6 +1996,25 @@ if(document.body.className.includes("csp")){
                     q.textContent = e.target.textContent;
                 })
             })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
+            })
         }
 
         if(e.target.textContent === "Hepsipay"){
@@ -2074,6 +2112,25 @@ if(document.body.className.includes("csp")){
                     q.textContent = e.target.textContent;
                 })
             })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
+            })
         }
 
         if(e.target.textContent === "Servis ve teknik destek"){
@@ -2150,6 +2207,25 @@ if(document.body.className.includes("csp")){
                     q.textContent = e.target.textContent;
                 })
             })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
+            })
         }
 
         if(e.target.textContent === "Üyelik ve hesap"){
@@ -2223,6 +2299,25 @@ if(document.body.className.includes("csp")){
                     q.textContent = e.target.textContent;
                 })
             })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
+            })
         }
 
         if(e.target.textContent === "Ürün bilgisi"){
@@ -2274,6 +2369,25 @@ if(document.body.className.includes("csp")){
                     chat.style.display = "flex";
                     q.textContent = e.target.textContent;
                 })
+            })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
             })
         }
 
@@ -2345,6 +2459,25 @@ if(document.body.className.includes("csp")){
                     q.textContent = e.target.textContent;
                 })
             })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
+            })
         }
 
         if(e.target.textContent === "Oyunlar"){
@@ -2375,6 +2508,24 @@ if(document.body.className.includes("csp")){
                     chat.style.display = "flex";
                     q.textContent = e.target.textContent;
                 })
+            })
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
             })
         }
 
@@ -2434,6 +2585,24 @@ if(document.body.className.includes("csp")){
                     chat.style.display = "flex";
                     q.textContent = e.target.textContent;
                 })
+            })
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
             })
         }
 
