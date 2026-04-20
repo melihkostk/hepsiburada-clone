@@ -1599,18 +1599,800 @@ if(document.body.className.includes("buy")){
             editPage.style.display = "none"
             adressInput.style.display = "block"
         }
-
-
-
-
     })
+}
+
+//CUSTOMER SERVICE
+if(document.body.className.includes("csp")){
+    let content = document.querySelector(".content")
+
+    let subTitles = document.querySelector(".sub-sections");
+    subTitles.addEventListener("click",(e)=>{
+        
+        const clickedItem = e.target.closest(".sub-section-item");
+        
+        document.querySelectorAll(".sub-section-item").forEach(item => {
+            item.classList.remove("active");
+        });
+
+        clickedItem.classList.add("active");
+        
+        if(e.target.textContent === "İptal / İade ve Diğer Talepler"){
+            content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>İptal ve iade talebi</h3>
+                        <div class = "sub-cate-item">
+                            Kurumsal iade faturası nasıl kesebilirim ?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünümü iptal edebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünüm için iade/değişim talebinde nasıl bulunabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            İade/değişim koşulları nelerdir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kapında iade nedir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            İade talebimden vazgeçebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            İptal işlemini geri alabilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Servis / arıza başvurusunu nasıl yapabilirim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>İptal ve iade talebi</h3>
+                        <div class = "sub-cate-item">
+                            Siparişim neden iptal edildi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Bilgim olmadan ürünüm iptal edilmiş.
+                        </div>
+                        <div class = "sub-cate-item">
+                            İade talebim neden reddedildi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            İade/değişim talebimin durumunu nasıl öğrenebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            İade / iptal ettiğim bir ürünün para iadesi nasıl yapılır?
+                        </div>
+                        <div class = "sub-cate-item">
+                            İade/değişim talebimden vazgeçebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hakem heyeti raporum var. Ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargo elime ulaşmadan iadeye düştü.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hesabıma eksik para iadesi yapıldı.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Taksitle aldığım ürünün geri ödemesi neden taksitle yapılıyor?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Kargo işlemleri</h3>
+                        <div class = "sub-cate-item">
+                            Kargo firması iade/değişim gönderimi almaya gelmiyor
+                        </div>
+                        <div class = "sub-cate-item">
+                            İade/değişim/arıza talebi için verilen kargo gönderi koduyla ilgili sorun yaşıyorum
+                        </div>
+                    </div> 
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Teslimat ve kargo"){
+            content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Kargo Takibi</h3>
+                        <div class = "sub-cate-item">
+                            Ürünüm ne zaman kargoya verilir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargom ne zaman gelir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargom bana ulaşmadı ancak teslim edildi görünüyor
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişim geldi ancak teslim edildi görünmüyor.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Teslimat adresimi değiştirebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargo takip numaramı nasıl görüntüleyebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişimi nasıl takip edebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargo şirketi kapıya teslim yapmıyor.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Bugün kapında olarak verdiğim siparişim aynı gün içerisinde neden teslim edilmedi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünümün teslimatı yanlış adrese / kişiye yapılmış.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargo teslimat adresinde beni bulamazsa ne olur?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Adresime kargo dağıtımı yapılıyor mu?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargomu teslim alırken nelere dikkat etmeliyim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Eksik / hatalı teslimat</h3>
+                        <div class = "sub-cate-item">
+                            İptal edildi/Teslim edilemedi görünen ürün teslim edildi
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişimde eksik ürün var.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünüm hasarlı olarak geldi.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Sipariş ettiğim ürün yerine farklı bir ürün geldi.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünün aparatı / aksesuarı eksik.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Satın aldığım ürünün orijinal olmadığını düşünüyorum, ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hediye ürünüm gelmedi, ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Fazla ürün gönderilmiş, iade etmek istiyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Fazla ürün gönderilmiş, parasını ödemek istiyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kullanılmış ürün gönderilmiş.
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Teslimat seçenekleri</h3>
+                        <div class = "sub-cate-item">
+                           Gecikme telafisi hakkında bilgi almak istiyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Teslimat tarihini değiştirebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Siparişim belli bir saat aralığı / tarihte teslim edilebilir mi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            "Hepsimat teslimat noktası" nedir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Teslimatımı yapacak kargo firmasını değiştirebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Yarın kapında nedir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Randevulu Bugün Kapında / Randevulu Yarın Kapında nedir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargomu şubeden teslim alabilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişimdeki ürünler farklı adreslere teslim edilebilir mi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ayrı siparişlerim aynı kargoyla topluca gönderilebilir mi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişimdeki ürünler aynı anda teslim edilebilir mi?
+                        </div>
+                    </div>
+                    
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Sipariş ve ödeme"){
+             content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Sipariş oluşturma</h3>
+                        <div class = "sub-cate-item">
+                            Nasıl sipariş verebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Sipariş verirken nelere dikkat etmeliyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Sipariş numaramı nasıl öğrenebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Satın aldığım ürüne hediye paketi yaptırabilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Sepetime yeni ürün ekleyemiyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Üye olmadan sipariş verebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişimi müşteri temsilcisi aracılığıyla verebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişimi müşteri temsilcisi aracılığıyla verebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hesabımdan bilgim dışında sipariş oluşturulmuş.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ön sipariş nedir?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Ödeme</h3>
+                        <div class = "sub-cate-item">
+                            Ödeme aşamasında "İşleminiz Onaylanmadı."hatası alıyorum
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ödeme aşamasında siparişi onayla butonu çalışmıyor
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ödeme ekranında hata alıyorum, ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kredi kartımdan çekim yapılmış ancak siparişim görünmüyor.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Sipariş verirken hangi ödeme yöntemlerini kullanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kredi kartımdan bilgim dışında çekim yapılmış.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Siparişim neden “Ödeme Bekliyor” durumunda görünüyor?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kredi kartımdan fazla para çekilmiş.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Sepetimdeki ürünlere neden taksit seçeneği çıkmıyor?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kredi kartı taksit sayım yanlış görünüyor, ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Alışverişimi sonradan taksitlendirebilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Doğrulama kodum gelmiyor, ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Alışveriş kredisi nedir? Nasıl kullanırım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            KDV muafiyetinden nasıl yararlanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Yanlış kartla ödeme yaptım, nasıl değiştirebilirim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Fatura</h3>
+                        <div class = "sub-cate-item">
+                           Faturalarıma nasıl ulaşırım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Fatura bilgilerimi yanlış girdim. Değişiklik yapabilir miyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Faturamda hata var
+                        </div>
+                        <div class = "sub-cate-item">
+                            Faturam gelmedi, sevk irsaliyesi fatura yerine geçer mi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Faturamın teslim edileceği adresi değiştirmek istiyorum.
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Yurt dişi siparişleri</h3>
+                        <div class = "sub-cate-item">
+                           Yurt dışına nasıl sipariş verebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Yurt dışı siparişlerimde gümrükte sorun yaşar mıyım?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Hepsiburada Market ve Su</h3>
+                        <div class = "sub-cate-item">
+                           Hepsiburada Market ve Su hakkında bilgi almak istiyorum.
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Hepsipay"){
+             content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Hesap ve Giriş İşlemleri</h3>
+                        <div class = "sub-cate-item">
+                            Hepsipay kampanya bildirim tercihlerimi nasıl değiştirebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsipay nedir? Hepsipay'in avantajları nelerdir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsipay nasıl kullanılır? Nerelerde kullanılır?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsipay'e giriş işleminde sorun yaşıyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsipay'imi nasıl kapatabilirim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>İptal ve İade</h3>
+                        <div class = "sub-cate-item">
+                           İptal /iade ettiğim bir ürünün para iadesi Hepsipay hesabıma nasıl aktarılır?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Para Transferi</h3>
+                        <div class = "sub-cate-item">
+                           Geri Gönderilebilir Bakiye Nedir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsipay'e nasıl para yükleyebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsipay ile nasıl para gönderebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Transfer ettiğim tutar Hepsipay hesabıma geçmedi. Ne yapmalıyım?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Hepsiburada Limiti</h3>
+                        <div class = "sub-cate-item">
+                           Hepsifinans nedir? Hepsifinans kredisini kimler kullanabilir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsifinans'a kayıtlı telefon numaramı nasıl değiştirebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsifinans kredisini nasıl kullanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsifinans kimlik doğrulama sürecinde nelere dikkat etmeliyim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsifinans Kredi taksitim için ödeme yaptım ancak kredi tutarımdan düşmedi. Ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsifinans ödemelerimi nasıl yaparım ve nereden takip edebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsiburada Limiti nedir? Limitimi nasıl öğrenebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Findeks Nedir? Telefon numaramı doğrulama adımında sorun yaşıyorum.
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Hepsipay Kart</h3>
+                        <div class = "sub-cate-item">
+                           Hepsipay Kartımı neden kullanamıyorum?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsipay Kart nedir? Avantajları nelerdir?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsipay Kartımı nasıl oluştururum? Nasıl kullanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Hepsipay Kart’ı nasıl kapatabilirim?
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Servis ve teknik destek"){
+            content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Ürün Kurulumu</h3>
+                        <div class = "sub-cate-item">
+                            Ücretsiz ürün kurulumu nasıl yaptırabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ücretsiz kurulum için benden ücret talep edildi.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürün montajı nasıl yaptırabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Montaj bedeli ödedim ancak kurulum yapılmadı.
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Garanti Belgesi</h3>
+                        <div class = "sub-cate-item">
+                           Ürünümün garanti belgesi teslim edilmedi.
+                        </div>
+                        <div class = "sub-cate-item">
+                           Ürünümün garanti belgesinin üzerinde kaşe yok / tarih yanlış.
+                        </div>
+                        <div class = "sub-cate-item">
+                           Garanti belgesini kaybettim.
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Servis / arıza başvurusu</h3>
+                        <div class = "sub-cate-item">
+                           En yakın yetkili servise nasıl ulaşabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Telefonumun IMEI numarası ile ilgili sorun yaşıyorum.
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Servis / arıza takibi</h3>
+                        <div class = "sub-cate-item">
+                            Ürünün servis durumu hakkında nasıl bilgi alabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Servis / arıza başvuru talebim neden reddedildi?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Servis, değişim / iade raporu vermiyor.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Yetkili servis değişim / iade raporum var. Ne yapmalıyım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Servise gönderdiğim ürünümün aparatları eksik geldi.
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Hepsiburada Koruma Paketi</h3>
+                        <div class = "sub-cate-item">
+                           Hepsiburada Koruma Paketi nedir ve neleri kapsar?
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Üyelik ve hesap"){
+             content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Hesap / giriş işlemleri</h3>
+                        <div class = "sub-cate-item">
+                            Beni arayan numara Hepsiburada’ya mı ait?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Influencer Projesi hakkında bilgi almak istiyorum
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kişisel verilerime ilişkin başvurularımı nasıl yapabilirim ?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsiburada’ya nasıl üye olabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Müşteri hizmetlerine ulaşmak istiyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Soru, talep ve kayıtlarıma nasıl ulaşabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Mesajlar bölümü nedir, nasıl işlem yapabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Üyelik / giriş işleminde sorun yaşıyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Bana ait olmayan siparişe ait e-posta / sms / bildirim alıyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsiburada üyelik bilgilerimi nasıl değiştirebilirim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Üyelik iptali</h3>
+                        <div class = "sub-cate-item">
+                           Hepsiburada üyeliğimi nasıl iptal edebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Üyeliğim bilgim dışında iptal edilmiş.
+                        </div>
+                        <div class = "sub-cate-item">
+                           İptal olan üyeliğimi yeniden nasıl aktif ederim?
+                        </div>
+                        <div class = "sub-cate-item">
+                           Premium üyeliğimi nasıl iptal edebilirim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Ürün Yorumlarım</h3>
+                        <div class = "sub-cate-item">
+                           Yorumum neden yayınlanmadı?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Yorumumu nasıl silebilirim?
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Ürün bilgisi"){
+            content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Ürün özellikleri / Fiyat</h3>
+                        <div class = "sub-cate-item">
+                            Bakım Paketi nedir ve nasıl kullanılır? 
+                        </div>
+                        <div class = "sub-cate-item">
+                            Dijital ürün koduma nasıl ulaşabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürün özellikleriyle ilgili detaylı bilgiye nereden ulaşabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünler orijinal midir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünlerin garantisi var mı?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Aradığım ürünü sitede nasıl bulabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Ürünü satın aldıktan sonra fiyatı düştü
+                        </div>
+                        <div class = "sub-cate-item">
+                            Sitede ürün görüntüleme esnasında sorun yaşıyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsiburada satıcılı sıfırdan farksız ürün ne demek?
+                        </div>
+                        <div class = "sub-cate-item">
+                            İncelediğim üründeki bilgilerin hatalı olduğunu düşünüyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Teşhir ürün satılıyor mu?
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Kampanya ve kuponlar"){
+            content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Kampanya ve Kupon</h3>
+                        <div class = "sub-cate-item">
+                            Kuponlarımı nasıl kullanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsiburada kampanyaları hakkında bilgi almak istiyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Peşin fiyatına X taksit nedir? Nasıl yararlanırım?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Efsane Gençlik kampanyasından nasıl yararlanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Vodafone İşbirliği nedir? Avantajları nelerdir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Öğrencilere özel vergi iadesi için faturamı nasıl alabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kargo Bedava kampanyasından nasıl yararlanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hediye ürün sepetime neden eklenmedi?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Banka kampanyalarından nasıl yararlanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsiburada kampanya bildirim tercihlerimi nasıl değiştirebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Linkgelir kampanyası nedir, nasıl katılabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Vergi iadeli cihaz kampanyasından nasıl yararlanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Vergi iadeli cihaz iadesi için nasıl başvuru yapabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Çeyiz kampanyasından aldığım kupon kodunu nasıl kullanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Çeyiz Kampanyası başvuru şartları nelerdir, nasıl başvurabilirim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Eskiyi yenile</h3>
+                        <div class = "sub-cate-item">
+                            Eskiyi Yenile nedir, nasıl başvurabilirim?
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Oyunlar"){
+            content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Çekiliş ve Oyunlar</h3>
+                        <div class = "sub-cate-item">
+                            Tıkla Kazan oyunu nasıl oynanır?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Kazandıran Çekiliş oyunu nasıl oynanır?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Oynadıkça kazan alanını göremiyorum, oyun oynayamıyorum?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Bil Kazan oyunu nasıl oynanır?
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Premium"){
+            content.innerHTML = `
+                <div class = "sub-cate">
+                    <div class = "sub-cate-container">
+                        <h3>Hepsiburada Premium üyeliği</h3>
+                        <div class = "sub-cate-item">
+                            Hepsiburada Premium nedir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium aboneliğimi nasıl iptal edebilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium faturama/sözleşmeme nasıl ulaşabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium'a nasıl üye olabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium ücretinin çekildiği kayıtlı kartımı nasıl değiştirebilirim?
+                        </div>
+                    </div>
+                    <div class = "sub-cate-container">
+                        <h3>Premium ayrıcalıklar</h3>
+                        <div class = "sub-cate-item">
+                            Premium Hediye Max Reklamlı üyeliğin avantajları nelerdir?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium Hediye Max Reklamlı üyeliğimde sorun yaşıyorum.
+                        </div>
+                        <div class = "sub-cate-item">
+                            Hepsiburada Premium Worldcard nedir, nasıl başvurabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium ile Petrol Ofisi yakıt alımlarında 5 kat puan kampanyasından nasıl faydalanabilirim?
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium Hepsipara kazancı hakkında bilgi almak istiyorum
+                        </div>
+                        <div class = "sub-cate-item">
+                            Premium Hediye Max Reklamlı üyeliğimi nasıl oluşturabilirim? 
+                        </div>
+                        <div class = "sub-cate-item">
+                            Tıkla Gelsin ile BK Steakhouse Menü’de 50 TL indirim kampanyasından nasıl faydalanabilirim?
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        if(e.target.textContent === "Kurumsal İletişim Bilgileri"){
+            content.innerHTML = `
+                <div class="contact">
+                    <div class="contact-top">
+                        <p>
+                            İnternette güvenli alışverişin adresi Hepsiburada.com'a 
+                            aşağıdaki iletişim adreslerinden kolayca ulaşabilirsiniz.
+                        </p>
+                    </div>
+                    <div class="contact-bottom">
+                        <div class="contact-bottom-left">
+                            <h3>Hepsiburada Kariyer Olanakları</h3>
+                            <p>
+                                <a>Linkedin</a> ve <a>Kariyer.net</a> üzerinden güncel iş ilanlarımıza başvurabilirsiniz. 
+                            </p>
+                            <h3>Şirket Bilgileri</h3>
+                            <dl>
+                                <dt>Ünvanı</dt>
+                                <dd>D-Market Elektronik Hizmetler ve Tic. A.Ş.(Hepsiburada.com)</dd>
+                                <dt>Ticari Sicil Numarası</dt>
+                                <dd>436165</dd>
+                                <dt>Mersis Numarası</dt>
+                                <dd>0265017991000011</dd>
+                                <dt>Genel Müdürlük</dt>
+                                <dd>Kuştepe Mah. Mecidiyeköy Yolu Cad. Trump Towers Kule 2 Kat:2 No:12 34387 Şişli/İstanbul</dd>
+                                <dt>Operasyon Merkezi</dt>
+                                <dd>İnönü Mah. Mimar Sinan Cad. No: 3 Gebze Güzeller OSB Gebze/Kocaeli</dd>
+                                <dt>Yer Sağlayıcı</dt>
+                                <dd>
+                                    D-Market Elektronik Hizmetler ve Tic. A.Ş.
+                                    <b>Sorumlu Kişi:</b> 
+                                    Kemal Erişen
+                                </dd>
+                                <dt>Kayıtlı Elektronik Posta Adresi</dt>
+                                <dd>dmarket@hs02.kep.tr</dd>
+                                <dt>Telefon</dt>
+                                <dd>
+                                    Müşteri Destek Hattı - 0850 252 40 00
+                                    <br>
+                                    (Haftanın her günü 08:00 - 00:00 saatleri arasında çalışır.)
+                                    <br>
+                                    Satıcı Destek Hattı - 0850 214 09 15
+                                    <br>
+                                    (Hafta içi 08.00 - 21.00 &amp; Cumartesi - Pazar 09.00 – 18.30 saatleri arasında çalışır.)
+                                </dd>
+                                <dt>Tescilli Marka Adı</dt>
+                                <dd>Hepsiburada</dd>
+                            </dl>
+                            <p>
+                                Üyesi olduğumuz İstanbul Ticaret Odası’nın üyeleri için geçerli davranış kurallarına 
+                                <a> www.ito.org.tr</a>
+                                adresinden ulaşılabilir
+                            </p>
+                        </div>
+                    <div class="contact-bottom-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6016.163102920822!2d28.991192!3d41.06721!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2sus!4v1775040464609!5m2!1str!2sus" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div> 
+            `;
+        }
 
 
 
-    
-       
-    
-
+        
+    })
 }
 
 
