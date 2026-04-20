@@ -1691,6 +1691,34 @@ if(document.body.className.includes("csp")){
                     </div> 
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
+
+            let closeChat = document.querySelector(".close-chat")
+            let confirmClose = document.querySelector(".confirm-close")
+            
+            closeChat.addEventListener("click",()=>{
+                confirmClose.style.display = "flex";
+            })
+
+            confirmClose.addEventListener("click",(e)=>{
+                if(e.target.className === "yes-close"){
+                    confirmClose.style.display = "none";
+                    chat.style.display = "none";
+
+                }
+
+                if(e.target.className === "no-cancel"){
+                    confirmClose.style.display = "none";
+                }
+            })
         }
 
         if(e.target.textContent === "Teslimat ve kargo"){
@@ -1810,6 +1838,15 @@ if(document.body.className.includes("csp")){
                     
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Sipariş ve ödeme"){
@@ -1931,6 +1968,15 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Hepsipay"){
@@ -2019,6 +2065,15 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Servis ve teknik destek"){
@@ -2086,6 +2141,15 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Üyelik ve hesap"){
@@ -2150,6 +2214,15 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Ürün bilgisi"){
@@ -2193,6 +2266,15 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Kampanya ve kuponlar"){
@@ -2254,6 +2336,15 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Oyunlar"){
@@ -2276,6 +2367,15 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Premium"){
@@ -2325,6 +2425,16 @@ if(document.body.className.includes("csp")){
                     </div>
                 </div>
             `;
+
+            let titles = document.querySelectorAll(".sub-cate-item")
+            let q = document.querySelector(".chat-answer")
+            let chat = document.querySelector(".chat")
+            titles.forEach(item => {
+                item.addEventListener("click",(e)=>{
+                    chat.style.display = "flex";
+                    q.textContent = e.target.textContent;
+                })
+            })
         }
 
         if(e.target.textContent === "Kurumsal İletişim Bilgileri"){
@@ -2387,12 +2497,12 @@ if(document.body.className.includes("csp")){
                 </div>
             </div> 
             `;
-        }
-
-
-
-        
+        }  
     })
+
+    
+
+
 }
 
 
