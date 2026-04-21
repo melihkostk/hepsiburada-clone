@@ -1411,7 +1411,7 @@ if(document.body.className==="cap"){
 
             data.products.forEach(item => {
                 
-                if (productCategory.trim() === item.category.trim()) {
+                if (item.category.includes(productCategory)) {
 
                     cateName.textContent = `${item.category}`;
 
@@ -2674,6 +2674,7 @@ if(document.body.className.includes("csp")){
 if(document.body.className.includes("op")){
     let productGrid = document.querySelector(".product-grid");
     let offerCate = document.querySelector(".product-category-links");
+    productGrid.innerHTML = ""
     
     fetch("product.json")
         .then(res=>res.json())
@@ -2697,6 +2698,13 @@ if(document.body.className.includes("op")){
                         </div>
                     </div>
                 `;
+            })
+
+            let explore = document.querySelectorAll(".product")
+            explore.forEach(item=>{
+                item.addEventListener("click",(e)=>{
+                    window.location.href = `category.html`
+                })
             })
         })
 
@@ -2799,7 +2807,253 @@ if(document.body.className.includes("op")){
         })
     })
 
+    let back = document.querySelector(".ca-li-back")
+    let forward = document.querySelector(".ca-li-forward")
+    
+    back.addEventListener("click",()=>{
+         offerCate.scrollBy({
+            left: -250,
+            top: 0,
+            behavior: "smooth"
+        });
+    })
 
+    forward.addEventListener("click",()=>{
+        offerCate.scrollBy({
+            left: 250,
+            top: 0,
+            behavior: "smooth"
+        });
+    })
+
+    document.querySelector(".hepsi-burada").addEventListener("click",()=>{
+        window.location.href = "index.html"
+    })
+}
+
+//SUPER PRICE//
+if(document.body.className === "sp"){
+    let productGrid = document.querySelector(".product-grid");
+    let searchInput = document.querySelector(".search-offer-product")
+    productGrid.innerHTML = "";
+    let addedInfo = document.querySelector(".added-info")
+
+    fetch("product.json")
+        .then(res => res.json())
+        .then(data => {
+            data.products.forEach(item=>{
+                productGrid.innerHTML += `
+                    <div class="product">
+                        <div class="left">
+                            <img src=${item.image}>
+                        </div>
+                        <div class="right">
+                            <div class="right-top">
+                                <p class="product-name">${item.name}</p>
+                                <div class="all-ratings">
+                                    <img class="star" src="icons/star.png">
+                                    <p class="rating">${item.score}<span>${item.comment}</span></p>
+                                </div>
+                                <div class="peşin">
+                                    <p>Peşin fiyatına taksit</p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p class="p-cost">${item.price}<span> TL</span></p>
+                                <img class = "add-to-basket" src="icons/black-shopping-cart.png">
+                            </div>
+                        </div>
+                    </div>
+                `;
+            })
+
+            let products = document.querySelectorAll(".right-top");
+            products.forEach((item,index)=>{
+                item.addEventListener("click",()=>{
+                    window.location.href = `product-detail.html?id=${index}`
+                })
+            })
+
+            let shoppingCard = document.querySelectorAll(".add-to-basket")
+            let addedInfo = document.querySelector(".added-info")
+            
+            shoppingCard.forEach(item=>{
+                item.addEventListener("click",function(){
+                    const productName = this.closest(".product").querySelector(".product-name").textContent;
+                    const productRating = this.closest(".product").querySelector(".rating").textContent;
+                    const productPrice = this.closest(".product").querySelector(".p-cost").textContent;
+                    const productImage = this.closest(".product").querySelector(".left img").src;
+                    const productBottom = this.closest(".product").querySelector(".bottom")
+                   
+                    let products = JSON.parse(localStorage.getItem("Products")) || [];
+
+                    products.push({
+                        name: productName,
+                        rating: productRating,
+                        price: productPrice,
+                        photo: productImage,
+                        quantity:1
+                    });
+
+                    localStorage.setItem("Products", JSON.stringify(products));
+                    addedInfo.style.visibility = "visible";
+
+                    setTimeout(()=>{
+                        addedInfo.style.visibility = "hidden"
+                    },3000)
+                })
+            })
+        })
+ 
+        let offerCate = document.querySelector(".product-category-links");
+
+        offerCate.addEventListener("click",(e)=>{
+
+        const clickedItem = e.target.closest(".ca-li");
+        
+        document.querySelectorAll(".ca-li").forEach(item => {
+            item.classList.remove("clicked");
+        });
+
+        clickedItem.classList.add("clicked");
+
+        if(e.target.textContent === "Tümü"){
+            fetch("product.json")
+                .then(res=>res.json())
+                .then(data=>{
+
+                productGrid.innerHTML = ""
+                data.products.forEach(item=>{
+
+                    productGrid.innerHTML += `
+                        <div class="product">
+                        <div class="left">
+                            <img src=${item.image}>
+                        </div>
+                        <div class="right">
+                            <div class="right-top">
+                                <p class="product-name">${item.name}</p>
+                                <div class="all-ratings">
+                                    <img class="star" src="icons/star.png">
+                                    <p class="rating">${item.score}<span>${item.comment}</span></p>
+                                </div>
+                                <div class="peşin">
+                                    <p>Peşin fiyatına taksit</p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p class="p-cost">${item.price}<span> TL</span></p>
+                                <img class = "add-to-basket" src="icons/black-shopping-cart.png">
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                
+            })
+        })
+        }
+
+        else{
+            fetch("product.json")
+                .then(res=>res.json())
+                .then(data=>{
+
+            productGrid.innerHTML = ""
+            data.products.forEach(item=>{
+                if(item.category.includes(e.target.textContent)){
+                    productGrid.innerHTML += `
+                        <div class="product">
+                        <div class="left">
+                            <img src=${item.image}>
+                        </div>
+                        <div class="right">
+                            <div class="right-top">
+                                <p class="product-name">${item.name}</p>
+                                <div class="all-ratings">
+                                    <img class="star" src="icons/star.png">
+                                    <p class="rating">${item.score}<span>${item.comment}</span></p>
+                                </div>
+                                <div class="peşin">
+                                    <p>Peşin fiyatına taksit</p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p class="p-cost">${item.price}<span> TL</span></p>
+                                <img class = "add-to-basket" src="icons/black-shopping-cart.png">
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                }
+            })
+        })
+        }
+    })
+
+    searchInput.addEventListener("input",()=>{
+        fetch("product.json")
+                .then(res=>res.json())
+                .then(data=>{
+
+            productGrid.innerHTML = ""
+            data.products.forEach(item=>{
+                if(item.name.toLowerCase().includes(searchInput.value.toLowerCase())){
+                    productGrid.innerHTML += `
+                        <div class="product">
+                        <div class="left">
+                            <img src=${item.image}>
+                        </div>
+                        <div class="right">
+                            <div class="right-top">
+                                <p class="product-name">${item.name}</p>
+                                <div class="all-ratings">
+                                    <img class="star" src="icons/star.png">
+                                    <p class="rating">${item.score}<span>${item.comment}</span></p>
+                                </div>
+                                <div class="peşin">
+                                    <p>Peşin fiyatına taksit</p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p class="p-cost">${item.price}<span> TL</span></p>
+                                <img class = "add-to-basket" src="icons/black-shopping-cart.png">
+                            </div>
+                        </div>
+                    </div>
+                    `;
+
+                }
+            })
+        })
+    })
+
+    let back = document.querySelector(".ca-li-back")
+    let forward = document.querySelector(".ca-li-forward")
+    
+    back.addEventListener("click",()=>{
+         offerCate.scrollBy({
+            left: -250,
+            top: 0,
+            behavior: "smooth"
+        });
+    })
+
+    forward.addEventListener("click",()=>{
+        offerCate.scrollBy({
+            left: 250,
+            top: 0,
+            behavior: "smooth"
+        });
+    })
+
+    document.querySelector(".hepsi-burada").addEventListener("click",()=>{
+        window.location.href = "index.html"
+    })
+
+
+
+
+    
 }
 
 

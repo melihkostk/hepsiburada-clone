@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="sp">
     <header>
         <div class="header-main-container">
             <div class="links">
@@ -101,6 +101,18 @@
         </div>
     </header>
     <div class="main-container">
+        <div class="added-info" style="visibility: hidden;">
+            <div class="added-info-left">
+                <img src="icons/green-check.png">
+            </div>
+            <div class="added-info-mid">
+                <p>Ürün sepete eklendi</p>
+                <a href="basket.html">Sepete git</a>
+            </div>
+            <div class="added-info-right">
+                <img class="close-added-info" src="icons/cross.png" alt="">
+            </div>
+        </div>
         <div class="color-bar">
             <div class="orange-part"></div>
             <div class="blue-part"></div>
@@ -2488,63 +2500,69 @@
         </div>
         <div class="container">
             <div class="product-category">
+                <div class="ca-li-back">
+                    <img src="icons/arrow-forward.png" alt="">
+                </div>
                 <div class="product-category-links">
-                    <div>
-                        <a href="">Tümü</a>
+                    <div class="ca-li">
+                        <a>Tümü</a>
                     </div>
-                    <div>
-                        <a href="">Ev Elektroniği</a>
+                    <div class="ca-li">
+                        <a>Ev Elektroniği</a>
                     </div>
-                    <div>
-                        <a href="">Ev & Yaşam</a>
+                    <div class="ca-li">
+                        <a>Ev & Yaşam</a>
                     </div>
-                    <div>
-                        <a href="">Hobi</a>
+                    <div class="ca-li">
+                        <a>Hobi</a>
                     </div>
-                    <div>
-                        <a href="">Petshop Ürünleri</a>
+                    <div class="ca-li">
+                        <a>Petshop Ürünleri</a>
                     </div>
-                    <div>
-                        <a href="">Yapı Market, Bahçe, Oto</a>
+                    <div class="ca-li">
+                        <a>Yapı Market, Bahçe, Oto</a>
                     </div>
-                    <div>
-                        <a href="">Spor, Outdoor</a>
+                    <div class="ca-li">
+                        <a>Spor, Outdoor</a>
                     </div>
-                    <div>
-                        <a href="">Saat, Gözlük ve Aksesuar</a>
+                    <div class="ca-li">
+                        <a>Saat, Gözlük ve Aksesuar</a>
                     </div>
-                    <div>
-                        <a href="">Foto Kamera ve Ürünleri</a>
+                    <div class="ca-li">
+                        <a>Foto Kamera ve Ürünleri</a>
                     </div>
-                    <div>
-                        <a href="">Anne, Çocuk</a>
+                    <div class="ca-li">
+                        <a>Anne, Çocuk</a>
                     </div>
-                    <div>
-                        <a href="">Süpermarket</a>
+                    <div class="ca-li">
+                        <a>Süpermarket</a>
                     </div>
-                    <div>
-                        <a href="">Kozmetik, Kişisel Bakım</a>
+                    <div class="ca-li">
+                        <a>Kozmetik, Kişisel Bakım</a>
                     </div>
-                    <div>
-                        <a href="">Beyaz Eşya, Mutfak</a>
+                    <div class="ca-li">
+                        <a>Beyaz Eşya, Mutfak</a>
                     </div>
-                    <div>
-                        <a href="">Ofis ve Kırtasiye Ürünleri</a>
+                    <div class="ca-li">
+                        <a>Ofis ve Kırtasiye Ürünleri</a>
                     </div>
-                    <div>
-                        <a href="">Kitap Film Müzik </a>
+                    <div class="ca-li">
+                        <a>Kitap Film Müzik </a>
                     </div>
-                    <div>
-                        <a href="">Bilgisayar ve Ürünleri</a>
+                    <div class="ca-li">
+                        <a>Bilgisayar ve Ürünleri</a>
                     </div>
-                    <div>
-                        <a href="">Moda, Giyim ve Aksesuar</a>
+                    <div class="ca-li">
+                        <a>Moda, Giyim ve Aksesuar</a>
                     </div>
-                    <div>
-                        <a href="">Telefon</a>
+                    <div class="ca-li">
+                        <a>Telefon</a>
                     </div>
                 </div>
-                <input type="text" placeholder="Ürün, kategori veya marka ara...">
+                <div class="ca-li-forward">
+                    <img src="icons/arrow-forward.png" alt="">
+                </div>
+                <input class = "search-offer-product" type="text" placeholder="Ürün, kategori veya marka ara...">
             </div>
         </div>
         <div class="container">
@@ -4664,5 +4682,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

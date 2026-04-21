@@ -90,7 +90,7 @@
             "name": "Apple 20 W USB-C Güç Adaptörü Hızlı Şarj ile Uyumlu iPhone Modelleri için İdeal Ev Şarjı",
             "price": 299,
             "image": "images/usb.webp",
-            "category": "T-Shirt",
+            "category": ["T-Shirt","Ev Elektroniği"],
             "score":4.7,
             "comment":"(3126)"
         },
@@ -100,7 +100,7 @@
             "price": 499.85,
             "image": "images/zeytin.webp",
             "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "Ceket",
+            "category": ["Ceket","Ev & Yaşam"],
             "score":3,
             "comment":"(2)"
 
@@ -110,7 +110,7 @@
             "name": "Uykusu Gelen Minikler",
             "price": 99.90,
             "image": "images/minikler.webp",
-            "category": "Etek",
+            "category": ["Etek","Hobi"],
             "score":4.8,
             "comment":"(1332)"
 
@@ -120,7 +120,7 @@
             "name": "Maylo Puf Mendil 150'li 6 Paket",
             "price": 290,
             "image": "images/maylo.webp",
-            "category": "Tayt",
+            "category": ["Tayt","Petshop Ürünleri"],
             "score":4.7,
             "comment":"(435)"
 
@@ -132,7 +132,7 @@
             "price": 8459.06,
             "image": "images/redmi.webp",
             "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "Trençkot",
+            "category": ["Trençkot","Yapı Market, Bahçe, Oto"],
             "score":4.2,
             "comment":"(420)"
  
@@ -143,7 +143,7 @@
             "price": 285.21,
             "image": "images/solo.webp",
             "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
-            "category": "Spor Giyim",
+            "category": ["Spor Giyim","Spor, Outdoor"],
             "score":4.7,
             "comment":"(13878)"
     
@@ -153,7 +153,7 @@
             "name": "Philips Sonicare Kompakt Ağız Duşu 2li Yedek Başlık, N2 Comfort, N1 Standart başlık, HX3072/00",
             "price": 799,
             "image": "images/philips.webp",
-            "category": "Hamile Giyim",
+            "category": ["Hamile Giyim","Saat, Gözlük ve Aksesuar"],
             "score":4,
             "comment":"(8)"
         
@@ -163,7 +163,7 @@
             "name": "Yataş Essentials 3'lü El / Yüz / Baş Havlu Seti - 50X90 cm",
             "price": 849.90,
             "image": "images/yataş.webp",
-            "category": "Büyük Beden",
+            "category": ["Büyük Beden","Foto Kamera ve Ürünleri"],
             "score":4.8,
             "comment":"(17)"
     
@@ -173,7 +173,7 @@
             "name": "Torima Bluetooth Hoparlör Rgb Işıklı Mikrofonlu Taşınabilir Speaker D41 Siyah",
             "price": 699,
             "image": "images/torima.webp",
-            "category": "Tesettür Giyim",
+            "category": ["Tesettür Giyim","Anne, Çocuk"],
             "score":4.5,
             "comment":"(253)"
         },
@@ -182,7 +182,7 @@
             "name": "L'Oréal Paris Lumi Blush Likit Allık 627 Glowy Warm Peach Yüksek Pigmentasyon ve Işıltılı Bitiş",
             "price": 629,
             "image": "images/lumi.webp",
-            "category": "İç Giyim",
+            "category": ["İç Giyim","Süpermarket"],
             "score":4.3,
             "comment":"(49)"
         },
@@ -191,7 +191,7 @@
             "name": "Ally M2037 6000R Portatif Vakumlu Üflemeli Mini Araç Süpürgesi - Toz ve Kül Tem - ARL1846-1866",
             "price": 79.50,
             "image": "images/ally.webp",
-            "category": "Plaj Giyim",
+            "category": ["Plaj Giyim","Kozmetik, Kişisel Bakım"],
             "score":3.6,
             "comment":"(13)"
         },
@@ -200,7 +200,7 @@
             "name": "Servet Ala Türk Kahvesi 100g 3'lü Paket",
             "price": 311.20,
             "image": "images/kahve.webp",
-            "category": "Kadın Ev Rahatlığı",
+            "category": ["Kadın Ev Rahatlığı","Beyaz Eşya, Mutfak"],
             "score":4.4,
             "comment":"(4306)"
         },
@@ -209,7 +209,7 @@
             "name": "Yasomi Perimax YV509 Kumandalı Smart Uygulamalı Su Püskürtme...",
             "price": 9.799,
             "image": "images/yasomi.webp",
-            "category": "Kadın Pijama",
+            "category": ["Kadın Pijama","Ofis ve Kırtasiye Ürünleri"],
             "score":4.8,
             "comment":"(191)"
         },
@@ -219,7 +219,7 @@
             "price": 8459.06,
             "image": "images/redmi.webp",
             "description": "Konforlu ve dayanıklı siyah spor ayakkabı, tüm gün kullanım için uygundur.",
-            "category": "Saat",
+            "category": ["Saat","Kitap Film Müzik"],
             "score":4.2,
             "comment":"(420)"
         },
@@ -228,7 +228,7 @@
             "name": "Paw Petrol Sky Nickelodeon Özel Sulu Kalem ile Sihirli Boyama Kitabı",
             "price": 99,
             "image": "images/paw.webp",
-            "category": "Güneş Gözlüğü",
+            "category": ["Güneş Gözlüğü","Bilgisayar ve Ürünleri"],
             "score":4.1,
             "comment":"(1197)"
         },
@@ -237,7 +237,7 @@
             "name": "Ferrero Rocher Çikolata 16'lı",
             "price": 274,
             "image": "images/ferrero.webp",
-            "category": "Takı",
+            "category": ["Takı","Moda, Giyim ve Aksesuar"],
             "score":4.7,
             "comment":"(2397)"
         },
@@ -246,7 +246,7 @@
             "name": "LG StanbyMe 2 27LX6TDGA 27 70 Ekran WebOS Smart Dokunmatik...",
             "price": 42.296,
             "image": "images/lg-stan.webp",
-            "category": "Mücevher",
+            "category": ["Mücevher","Telefon"],
             "score":4.9,
             "comment":"(8)"
         },
