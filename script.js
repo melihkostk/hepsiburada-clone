@@ -164,6 +164,41 @@ if(document.body.className==="ca"){
 
 //HOME PAGE//
 if (document.body.className.includes("hp")) {
+    
+    const locationSelect = document.querySelector(".select-location")
+    let citySelect;
+    let districtSelect;
+    let city;
+    let district;
+    
+    const locationFilter = document.querySelector(".location-filter")
+    locationFilter.addEventListener("click",()=>{
+        locationSelect.style.display = "flex";
+    })
+
+    locationSelect.addEventListener("click",(e)=>{
+
+        if(e.target.className === "close-select-location"){
+            e.stopPropagation();
+            locationSelect.style.display = "none";
+        }
+
+        if(e.target.className === "save-location"){
+            citySelect = document.getElementsByName("city")
+            citySelect.forEach(item=>{
+                city = item.value;
+                
+            })
+
+            districtSelect = document.getElementsByName("ilçe")
+            districtSelect.forEach(item=>{
+                district = item.value;
+                
+            })
+
+            document.querySelector(".location-select").textContent = `${city}/${district}`
+        }
+    })
 
     const searchProduct = document.querySelector(".search-text")
     const searchPopUp = document.querySelector(".search-pop-up")
@@ -182,6 +217,11 @@ if (document.body.className.includes("hp")) {
     bottom.addEventListener("click",(e)=>{
         
         if(e.target.className === "filter-result"){
+            let productName = e.target.textContent;
+            window.location.href = `product-detail.html?name=${productName.trim()}`;
+        }
+
+        else if(e.target.className === "filter-items"){
             let productName = e.target.textContent;
             window.location.href = `product-detail.html?name=${productName.trim()}`;
         }

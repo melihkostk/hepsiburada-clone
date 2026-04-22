@@ -30,7 +30,7 @@ a{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 26rem;
     margin-bottom: -1rem;
 }
@@ -168,6 +168,7 @@ a{
     border-radius: 8px;
     padding: 10px;
     margin-left: -1.5rem;
+    position: relative;
 }
 
 .location-filter:hover{
@@ -787,7 +788,7 @@ a{
     background-color: white;
     position: absolute;
     padding: 20px;
-    top: 12rem;
+    top: 11rem;
     left: 50%;
     transform: translateX(-50%);
     width: 82.5%;
@@ -1175,7 +1176,6 @@ a{
 
 .main-container .popular-products .p-product-container:hover{
     border: 1.5px solid #919191;
-    transition: 1s ease;
 }
 
 .main-container .popular-products .p-product-container .top img{
@@ -9072,6 +9072,56 @@ footer{
 
 .filter-result:hover{
     color:#FF6000
+}
+
+.select-location{
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 16px;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    width: 15rem;
+    border-radius: 8px;
+}
+
+.select-location h3{
+    font-size: 0.875rem;
+    color: #484848;
+}
+
+.select-location p{
+    font-size: 0.75rem;
+    color: #646464;
+    margin-top: 0.5rem;
+}
+
+.select-location select{
+    background-color: rgb(238, 238, 238);
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    color: rgb(155, 155, 155);
+    font-size: 1rem;
+    padding: 10px 14px;
+}
+
+.select-location button{
+    background-color: #FF6000;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 1rem;
+    height: 2.5rem;
+}
+
+.close-select-location{
+    width: 10%;
+    margin-bottom: 1rem;
 }
 
 
