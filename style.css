@@ -956,6 +956,7 @@ a{
     position: relative;
     background-color: #ff6000;
     width: 40%;
+    position: relative;
 }
 
 .main-container .advertising-container .advertising .rek{
@@ -1036,9 +1037,6 @@ a{
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    position: absolute;
-    bottom: 1rem;
-    left: 1.5rem;
     background-color: #fff;
     border-radius: 10px;
     gap: 1rem;
@@ -1047,11 +1045,7 @@ a{
     user-select: none;
     width: 80%;
     height: 60%;
-}
-
-.main-container .advertising-container .product-container:hover{
-    transform: scale(1.050);
-    transition: 0.5s ease;
+    min-width: 333px;
 }
 
 .main-container .advertising-container .product-container .right-part .right-top{
@@ -9122,6 +9116,54 @@ footer{
 .close-select-location{
     width: 10%;
     margin-bottom: 1rem;
+}
+
+.adv-slider{
+    display: flex;
+    margin-top: 3rem;
+    gap: 1rem;
+    max-width: 600px;
+    overflow-x: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    scrollbar-width: none;
+}
+
+.adv-back{
+    position: absolute;
+    top: 45%;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.adv-back img{
+    width: 50%;
+    transform: rotate(180deg);
+}
+
+.adv-forward{
+    position: absolute;
+    right: 1rem;
+    top: 45%;
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.adv-forward img{
+    width: 50%;
 }
 
 

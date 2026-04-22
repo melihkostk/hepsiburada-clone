@@ -200,6 +200,28 @@ if (document.body.className.includes("hp")) {
         }
     })
 
+    const advBack = document.querySelector(".adv-back")
+    const advForward = document.querySelector(".adv-forward")
+    const advSlider = document.querySelector(".adv-slider")
+    const advItem = document.querySelector(".adv-slider .product-container")
+    let advItemWidth = advItem.offsetWidth;
+    
+    advBack.addEventListener("click",()=>{
+        advSlider.scrollBy({
+            top:0,
+            left:-advItemWidth,
+            behavior:"smooth",
+        })
+    })
+
+    advForward.addEventListener("click",()=>{
+        advSlider.scrollBy({
+            top:0,
+            left:advItemWidth,
+            behavior:"smooth",
+        })
+    })
+
     const searchProduct = document.querySelector(".search-text")
     const searchPopUp = document.querySelector(".search-pop-up")
     
