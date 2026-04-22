@@ -566,6 +566,7 @@ if(document.body.className.includes("bp")){
                         <img class="add-quantity" src="icons/add.png">
                     `;
                 }
+
             }
 
             if(e.target.classList.contains("decrease-quantity")){
