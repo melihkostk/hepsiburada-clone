@@ -164,7 +164,101 @@ if(document.body.className==="ca"){
 
 //HOME PAGE//
 if (document.body.className.includes("hp")) {
+
+    const searchProduct = document.querySelector(".search-text")
+    const searchPopUp = document.querySelector(".search-pop-up")
     
+    searchProduct.addEventListener("click",()=>{
+        searchPopUp.style.display = "flex";
+    })
+
+    const closeSearchPopUp = document.querySelector(".search-pop-up-close")
+    
+    closeSearchPopUp.addEventListener("click",()=>{
+        searchPopUp.style.display = "none";
+    })
+
+    const bottom = document.querySelector(".search-pop-up-bottom");
+    bottom.addEventListener("click",(e)=>{
+        
+        if(e.target.className === "filter-result"){
+            let productName = e.target.textContent;
+            window.location.href = `product-detail.html?name=${productName.trim()}`;
+        }
+
+        else{
+            return
+        }
+    })
+
+    const filterSearch = document.querySelector(".search-input");
+    filterSearch.addEventListener("input",()=>{
+        bottom.innerHTML = "";
+        fetch("product.json")
+            .then(res=>res.json())
+            .then(data => {
+                data.products.forEach(item=>{
+                    if(filterSearch.value){
+                        if(item.name.toLowerCase().includes(filterSearch.value.toLowerCase())){
+
+                            bottom.innerHTML += `
+                                <div class = "filter-result">
+                                    ${item.name}
+                                </div>
+                            `;
+                        }
+                    }
+
+                    else{
+                        bottom.innerHTML = `
+                            <h3>Popüler Aramalar</h3>
+                            <div class="filter-items-flex">
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    asılabilir kağıt havlu
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    iphone 17
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    iphone 15
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    lego
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    erkek spor ayakkabısı
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    stanley
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    adidas
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    iphone 16
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    hopfrög
+                                </div>
+                                <div class="filter-items">
+                                    <img src="icons/search-icon.png" alt="">
+                                    iphone 17 pro max
+                                </div>
+                            </div>
+                        `;
+                    }
+                })
+            })
+        })
 
     const fırsat = document.querySelector(".fırsat");
     const backBtn = document.querySelector(".fırsat-back-button button");
