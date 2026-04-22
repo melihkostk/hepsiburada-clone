@@ -363,6 +363,33 @@ if (document.body.className.includes("hp")) {
         })
     })
 
+    let backButton = document.querySelectorAll(".b-b")
+    let forwardButton = document.querySelectorAll(".f-b")
+    let productCard = document.querySelector(".p-product-container")
+    let productCardWidth = productCard.offsetWidth
+
+    backButton.forEach(item=>{
+        item.addEventListener("click",function(){
+            let slider = this.closest(".p-container")
+            slider.scrollBy({
+                top:0,
+                left:-productCardWidth + 3,
+                behavior:"smooth",
+            });
+        })
+    })
+
+    forwardButton.forEach(item=>{
+        item.addEventListener("click",function(){
+            let slider = this.closest(".p-container")
+            slider.scrollBy({
+                top:0,
+                left:productCardWidth + 3,
+                behavior:"smooth",
+            });
+        })
+    })
+
 }
 
 

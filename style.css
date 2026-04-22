@@ -1138,6 +1138,8 @@ a{
     align-items: flex-start;
     margin-top:25px;
     justify-content: center;
+    max-width: 1228.8px;
+    position: relative;
 }
 
 .main-container .popular-products h3{
@@ -1150,7 +1152,11 @@ a{
     justify-content: center;
     gap: 2rem;
     margin: 20px auto 0 auto;
-    max-width: 1228.8px;
+    width: 100%;
+    overflow-x: auto;
+    padding-left: 15rem;
+    scrollbar-width: none;
+
 }
 
 .main-container .popular-products .p-product-container{
@@ -1163,12 +1169,12 @@ a{
     cursor: pointer;
     user-select: none;
     padding: 3px;
+    min-width: 212.400px;
 
 }
 
 .main-container .popular-products .p-product-container:hover{
     border: 1.5px solid #919191;
-    transform: scale(1.1);
     transition: 1s ease;
 }
 
@@ -8345,10 +8351,11 @@ footer{
 }
 
 .pay-cost{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
     color: #3A3A3A;
     margin-bottom: 1rem;
+    
 }
 
 .pay-cost span{
@@ -8935,6 +8942,41 @@ footer{
     align-items: center;
     justify-content: center;
     left: 68%;
+}
+
+.b-b{
+    width: 2rem;
+    height: 2rem;
+    background: #F0F0F0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+
+.b-b img{
+    width: 50%;
+    transform: rotate(180deg);
+}
+
+.f-b{
+    width: 2rem;
+    height: 2rem;
+    background: #F0F0F0;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+}
+
+.f-b img{
+    width: 50%;
 }
 
 

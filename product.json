@@ -46,10 +46,20 @@
             "score":4.7,
             "comment":"(342)"
         },
+
+        {
+            "id": 6,
+            "name": "Bosch 46 Parça Cırcır Tornavidalı Vidalama ve Lokma Uçlu Aksesuar Seti - 2607019504",
+            "price": 522,
+            "image": "images/cırcır.webp",
+            "category": ["Sweatshirt", "Ev Yaşam"],
+            "score":4.7,
+            "comment":"(19537)"
+        },
         
         
         {
-            "id": 6,
+            "id": 7,
             "name": "Melwiss Chocolate Sütlü Tatlı Sosu 330 Gr - Waffle Krep Pankek Sosu",
             "price": 199.90,
             "image": "images/tatlı-sos.webp",
@@ -59,7 +69,7 @@
             "comment":"(1092)"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Gillette Sensor3 Tıraş Makinesi - 3 Bıçaklı, Kayganlaştırıcı Bant ve Oynar Başlık ile, 1 Adet + 6 Yedek Bıçak",
             "price": 219,
             "image": "images/gillette.webp",
@@ -68,7 +78,7 @@
             "comment":"(10064)"  
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Bilgeoğuz Yayınları Kur'an Bana Ne Diyor? Iniş Sırası Üzerinden Açıklamalı Meal",
             "price": 1498,
             "image": "images/kuran.webp",
@@ -77,7 +87,7 @@
             "comment":"(1250)"
         },
         {
-            "id": 9,
+            "id": 10,
             "name": "Familia Plus Natural Penguen Gofrajlı 16'lı Havlu Kağıdı",
             "price": 320,
             "image": "images/familia.webp",
@@ -86,7 +96,7 @@
             "comment":"(2978)"
         },
         {
-            "id": 10,
+            "id": 11,
             "name": "Apple 20 W USB-C Güç Adaptörü Hızlı Şarj ile Uyumlu iPhone Modelleri için İdeal Ev Şarjı",
             "price": 299,
             "image": "images/usb.webp",
@@ -95,7 +105,16 @@
             "comment":"(3126)"
         },
         {
-            "id": 11,
+            "id": 12,
+            "name": "Altınmarka Kakao Tozu Alkalize %10-12 Yağ 1 Kg",
+            "price": 509,
+            "image": "images/kakao.webp",
+            "category": ["T-Shirt","Ev Elektroniği"],
+            "score":4.6,
+            "comment":"(3085)"
+        },
+        {
+            "id": 13,
             "name": "Kavlak Zeytin Kavlak Seçme Siyah",
             "price": 499.85,
             "image": "images/zeytin.webp",
@@ -106,7 +125,7 @@
 
         },
         {
-            "id": 12,
+            "id": 14,
             "name": "Uykusu Gelen Minikler",
             "price": 99.90,
             "image": "images/minikler.webp",
@@ -116,7 +135,7 @@
 
         },
         {
-            "id": 13,
+            "id": 15,
             "name": "Maylo Puf Mendil 150'li 6 Paket",
             "price": 290,
             "image": "images/maylo.webp",
@@ -127,7 +146,7 @@
 
         },
         {
-            "id": 14,
+            "id": 16,
             "name": "Xiamoi Redmi Pad 2 8GB 256GB 11",
             "price": 8459.06,
             "image": "images/redmi.webp",
@@ -138,7 +157,7 @@
  
         },
         {
-            "id": 15,
+            "id": 17,
             "name": "Solo Bambu Kağıtlı Havlu 16'lı",
             "price": 285.21,
             "image": "images/solo.webp",
@@ -149,7 +168,17 @@
     
         },
         {
-            "id": 16,
+            "id": 18,
+            "name": "Bambum Garen - Moka Pot 9 Fincan Su Yeşili",
+            "price": 945,
+            "image": "images/bambum.webp",
+            "description": "Yumuşak pamuklu klasik beyaz t-shirt, günlük kullanım için idealdir.",
+            "category": ["Spor Giyim","Spor, Outdoor"],
+            "score":4.2,
+            "comment":"(945)"
+        },
+        {
+            "id": 19,
             "name": "Philips Sonicare Kompakt Ağız Duşu 2li Yedek Başlık, N2 Comfort, N1 Standart başlık, HX3072/00",
             "price": 799,
             "image": "images/philips.webp",
@@ -159,7 +188,7 @@
         
         },
         {
-            "id": 17,
+            "id": 20,
             "name": "Yataş Essentials 3'lü El / Yüz / Baş Havlu Seti - 50X90 cm",
             "price": 849.90,
             "image": "images/yataş.webp",
@@ -169,7 +198,7 @@
     
         },
         {
-            "id": 18,
+            "id": 21,
             "name": "Torima Bluetooth Hoparlör Rgb Işıklı Mikrofonlu Taşınabilir Speaker D41 Siyah",
             "price": 699,
             "image": "images/torima.webp",
@@ -178,7 +207,7 @@
             "comment":"(253)"
         },
         {
-            "id": 19,
+            "id": 22,
             "name": "L'Oréal Paris Lumi Blush Likit Allık 627 Glowy Warm Peach Yüksek Pigmentasyon ve Işıltılı Bitiş",
             "price": 629,
             "image": "images/lumi.webp",
@@ -187,7 +216,7 @@
             "comment":"(49)"
         },
         {
-            "id": 20,
+            "id": 23,
             "name": "Ally M2037 6000R Portatif Vakumlu Üflemeli Mini Araç Süpürgesi - Toz ve Kül Tem - ARL1846-1866",
             "price": 79.50,
             "image": "images/ally.webp",
@@ -196,7 +225,16 @@
             "comment":"(13)"
         },
         {
-            "id": 21,
+            "id": 24,
+            "name": "Kahve Dünyası Mini Gofrik Sütlü 12,5g * 10 adet Antep Fıstıklı Lezzetli Çikolata",
+            "price": 239,
+            "image": "images/kd.webp",
+            "category": ["Plaj Giyim","Kozmetik, Kişisel Bakım"],
+            "score":4.6,
+            "comment":"(914)"
+        },
+        {
+            "id": 25,
             "name": "Servet Ala Türk Kahvesi 100g 3'lü Paket",
             "price": 311.20,
             "image": "images/kahve.webp",
@@ -205,7 +243,7 @@
             "comment":"(4306)"
         },
         {
-            "id": 22,
+            "id": 26,
             "name": "Yasomi Perimax YV509 Kumandalı Smart Uygulamalı Su Püskürtme...",
             "price": 9.799,
             "image": "images/yasomi.webp",
@@ -214,7 +252,7 @@
             "comment":"(191)"
         },
         {
-            "id": 23,
+            "id": 27,
             "name": "Xiamoi Redmi Pad 2 8GB 256GB 11",
             "price": 8459.06,
             "image": "images/redmi.webp",
@@ -224,7 +262,7 @@
             "comment":"(420)"
         },
         {
-            "id": 24,
+            "id": 28,
             "name": "Paw Petrol Sky Nickelodeon Özel Sulu Kalem ile Sihirli Boyama Kitabı",
             "price": 99,
             "image": "images/paw.webp",
@@ -233,7 +271,7 @@
             "comment":"(1197)"
         },
         {
-            "id": 25,
+            "id": 29,
             "name": "Ferrero Rocher Çikolata 16'lı",
             "price": 274,
             "image": "images/ferrero.webp",
@@ -242,7 +280,16 @@
             "comment":"(2397)"
         },
         {
-            "id": 26,
+            "id": 30,
+            "name": "LTB Kadın  Pembe Atlet",
+            "price": 260,
+            "image": "images/ltb.webp",
+            "category": ["Takı","Moda, Giyim ve Aksesuar"],
+            "score":5,
+            "comment":"(6)"
+        },
+        {
+            "id": 31,
             "name": "LG StanbyMe 2 27LX6TDGA 27 70 Ekran WebOS Smart Dokunmatik...",
             "price": 42.296,
             "image": "images/lg-stan.webp",
@@ -251,7 +298,7 @@
             "comment":"(8)"
         },
         {
-            "id": 27,
+            "id": 32,
             "name": "TCL 50T6C 50 127 Ekran Uydu Alıcılı 4K Ultra HD Google QLED TV",
             "price": 23.999,
             "image": "images/tcl.webp",
@@ -260,7 +307,7 @@
             "comment":"(200)"
         },
         {
-            "id": 28,
+            "id": 33,
             "name": "LG 65QNED70A6A 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart webOS QN...",
             "price": 42.757,
             "image": "images/lg.webp",
@@ -269,7 +316,7 @@
             "comment":"(383)"
         },
         {
-            "id": 29,
+            "id": 34,
             "name": "Onvo 65VQ90F3UA 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart Google Smar...",
             "price": 25.999,
             "image": "images/onvo.webp",
@@ -278,7 +325,7 @@
             "comment":"(371)"
         },
         {
-            "id": 30,
+            "id": 35,
             "name": "iFFALCON 65VQ90F3UA 65 165 Ekran Uydu Alıcılı 4K Ultra HD Smart Google MiniLED TV",
             "price": 55.999,
             "image": "images/iffalcon.webp",
@@ -287,7 +334,16 @@
             "comment":"(155)"
         },
         {
-            "id": 31,
+            "id": 36,
+            "name": "Uno Kartları Için 3D Baskı Dayanıklı Oyun Kart Kutusu - Taşınabilir Saklama Kutusu (Kilitli Kapaklı)",
+            "price": 195,
+            "image": "images/uno.webp",
+            "category": "Şort",
+            "score":4.5,
+            "comment":"(26)"
+        },
+        {
+            "id": 37,
             "name": "Solo Asılabilir Kağıt Havlu 1 Paket = 7 Rulo Hijyenik ve Pratik Kullanım İçin Uygun",
             "price": 249,
             "image": "images/solo2.webp",
@@ -296,7 +352,7 @@
             "comment":"(1418)"
         },
         {
-            "id": 32,
+            "id": 38,
             "name": "Ariel Hepsi1Arada PODS® Kapsül Çamaşır Deterjanı Dağ Esintisi 35 Yıkama Zorlu Lekeleri Giderir",
             "price": 180,
             "image": "images/ariel.webp",
@@ -305,7 +361,7 @@
             "comment":"(146)"
         },
         {
-            "id": 33,
+            "id": 39,
             "name": "Momordica Coconut Mix - 250 ml Şurup, Hindistan Cevizi Aroma ve Doğal Tatlandırıcı İçerir",
             "price": 350,
             "image": "images/momordica.webp",
@@ -314,7 +370,7 @@
             "comment":"(373)"
         },
         {
-            "id": 34,
+            "id": 40,
             "name": "Bebelac Gold Konfor 1 Bebek Sütü 0-6 Ay 800 Gr x 2 Adet 1600 Gr",
             "price": 1479,
             "image": "images/bebelac.webp",
@@ -323,7 +379,7 @@
             "comment":"(2799)"
         },
         {
-            "id": 35,
+            "id": 41,
             "name": "Perwoll Renkliler ve Siyahlar Için Hızlı Yıkama 2l (36 Yıkama)",
             "price": 25.99,
             "image": "images/perwoll.webp",
@@ -332,7 +388,16 @@
             "comment":"(484)"
         },
         {
-            "id": 36,
+            "id": 42,
+            "name": "Golden Goat 400 gr Keçi Bebek Sütü 1 0-6 Ay İçin Ek Gıda Sütlü İçerik ile Sağlıklı Gelişim Destekler",
+            "price": 708,
+            "image": "images/gg.webp",
+            "category": "Pijama",
+            "score":4.6,
+            "comment":"(903)"
+        },
+        {
+            "id": 43,
             "name": "Samsung Galaxy A26 5g 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 14.299,
             "image": "images/a26.webp",
@@ -342,7 +407,7 @@
             
         },
         {
-            "id": 37,
+            "id": 44,
             "name": "Samsung Galaxy A56 5g 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 24.649,
             "image": "images/a56.webp",
@@ -351,7 +416,7 @@
             "comment":"(1437)"
         },
         {
-            "id": 38,
+            "id": 45,
             "name": "Samsung Galaxy S24 256 GB 8 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 32.499,
             "image": "images/s24.webp",
@@ -360,7 +425,7 @@
             "comment":"(1618)"
         },
         {
-            "id": 39,
+            "id": 46,
             "name": "Samsung Galaxy A07 128 GB 4 GB Ram (Samsung Türkiye Garantili) Siyah",
             "price": 7.703,
             "image": "images/a07.webp",
@@ -369,7 +434,7 @@
             "comment":"(256)"
         },
         {
-            "id": 40,
+            "id": 47,
             "name": "HONOR Magic 8 Lite 256 GB 8 GB Ram (Honor Türkiye Garantili) Siyah",
             "price": 19.499,
             "image": "images/magic.webp",
@@ -378,7 +443,16 @@
             "comment":"(399)"
         },
         {
-            "id": 41,
+            "id": 48,
+            "name": "Pro Recipe Kuzu Etli Yetişkin Köpek Maması 15 kg",
+            "price": 1.112,
+            "image": "images/recipe.webp",
+            "category": "Klasik Ayakkabı",
+            "score":4.1,
+            "comment":"(214)"
+        },
+        {
+            "id": 49,
             "name": "Michael Kors Jet Set Çapraz Askılı Kadın Çanta Kahverengi Brown",
             "price": 9.990,
             "image": "images/michael.webp",
@@ -387,7 +461,7 @@
             "comment":"(1)"
         },
         {
-            "id": 42,
+            "id": 50,
             "name": "Kadın Taba Uzun Asklı Nubuk Omuz Çantası 25ABD2105V3",
             "price": 5.249,
             "image": "images/taba.webp",
@@ -396,7 +470,7 @@
             "comment":"(19)"
         },
         {
-            "id": 43,
+            "id": 51,
             "name": "Vakko Mini Boy Zincir Askılı Şık Deri Omuz Çantası | Kadın Çanta Günlük...",
             "price": 800,
             "image": "images/vakko.webp",
@@ -405,7 +479,7 @@
             "comment":"(12)"
         },
         {
-            "id": 44,
+            "id": 52,
             "name": "Mavi Mavi Logo Denim Tote Çanta 1913377-82770",
             "price": 1.295,
             "image": "images/denim.webp",
@@ -414,7 +488,7 @@
             "comment":"(1)"
         },
         {
-            "id": 45,
+            "id": 53,
             "name": "Just Polo Yeni Sezon Kolon Askılı 4 Bölmeli Kadın Omuz Çantası 21x16c...",
             "price": 2.167,
             "image": "images/just.webp",
@@ -423,7 +497,16 @@
             "comment":"(10)"
         },
         {
-            "id": 46,
+            "id": 54,
+            "name": "Learning Fun Marble Run Blok Yapı Seti 194 Parça - Dönme Dolap Macerası",
+            "price": 2.279,
+            "image": "images/learning.webp",
+            "category": "Bot",
+            "score":4.7,
+            "comment":"(18)"
+        },
+        {
+            "id": 55,
             "name": "Muazzam Dünya: Beş Duyunun Ötesine Yolculuk - Ed Yong",
             "price": 426,
             "image": "images/muazzam.webp",
@@ -432,7 +515,7 @@
             "comment":"(2)"
         },
         {
-            "id": 47,
+            "id": 56,
             "name": "ChefTime Paslanmaz Çelik Derin Çırpma ve Karıştırma Kasesi | 24CM",
             "price": 185,
             "image": "images/chef.webp",
@@ -441,7 +524,7 @@
             "comment":"(7)"
         },
         {
-            "id": 48,
+            "id": 57,
             "name": "MEN Erkek Sprey Deodorant Black&White 150ml ve Mini Roll-on Omuz Çantası | Kadın Çanta Günlük...",
             "price": 233,
             "image": "images/nivea.webp",
@@ -450,7 +533,7 @@
             "comment":"(40)"
         },
         {
-            "id": 49,
+            "id": 58,
             "name": "Baby Me Sıvı Bebek Çamaşır Deterjanı Hipoalerjenik Formül 5000 ml",
             "price": 355,
             "image": "images/babyme.webp",
@@ -459,13 +542,22 @@
             "comment":"(1198)"
         },
         {
-            "id": 50,
+            "id": 59,
             "name": "Ttec Smartcharger Gan 45W AVS Pd Seyahat Hızlı Şarj Aleti + Usb-C-Usb...",
             "price": 2.167,
             "image": "images/ttec.webp",
             "category": "Kadın Çanta",
             "score":4.7,
             "comment":"(10)"
+        },
+        {
+            "id": 60,
+            "name": "Einhell 18V PXC Başlangıç Kiti 2,5Ah Akü ve Şarj Cihazı ile Dayanıklı ve Kullanışlı",
+            "price": 1.273,
+            "image": "images/einhell.webp",
+            "category": "Kadın Çanta",
+            "score":4.8,
+            "comment":"(2844)"
         }
     ]
 }
