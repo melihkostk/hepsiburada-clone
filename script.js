@@ -164,6 +164,52 @@ if(document.body.className==="ca"){
 
 //HOME PAGE//
 if (document.body.className.includes("hp")) {
+
+    let addedInfo = document.querySelector(".added-info")
+    let advC = document.querySelectorAll(".adv-slider .product-container")
+    
+    advC.forEach(item => {
+    item.addEventListener("click", (e) => {
+
+        if (e.target.closest(".rb-b")) {
+            let productName = item.querySelector(".ad-na");
+            let productPrice = item.querySelector(".cost")
+            let commentNumber = item.querySelector(".stars p")
+            let productScore = item.querySelectorAll(".stars img")
+            let productImage = item.querySelector(".left-part img")
+
+            let starCount = 0;
+            productScore.forEach(item=>{
+                
+                if (item.src.includes("icons/star.png")) {
+                    starCount++;
+                }
+            })
+
+            let products = JSON.parse(localStorage.getItem("Products")) || [];
+
+            products.push({
+                name: productName.textContent,
+                rating: starCount,
+                price: productPrice.textContent,
+                photo: productImage.src,
+                quantity:1
+                });
+            
+
+            localStorage.setItem("Products", JSON.stringify(products));
+            addedInfo.style.visibility = "visible";
+                    
+            setTimeout(() => {
+                addedInfo.style.visibility = "hidden";
+            }, 3000);
+            
+            
+        }
+    });
+});
+    
+   
     
     const locationSelect = document.querySelector(".select-location")
     let citySelect;
@@ -239,13 +285,14 @@ if (document.body.className.includes("hp")) {
     bottom.addEventListener("click",(e)=>{
         
         if(e.target.className === "filter-result"){
-            let productName = e.target.textContent;
-            window.location.href = `product-detail.html?name=${productName.trim()}`;
+            let productId = e.target.dataset.id;
+            window.location.href = `product-detail.html?id=${productId-1}`;
+            
         }
 
         else if(e.target.className === "filter-items"){
-            let productName = e.target.textContent;
-            window.location.href = `product-detail.html?name=${productName.trim()}`;
+            let productId = e.target.dataset.id;
+            window.location.href = `product-detail.html?id=${productId-1}`;
         }
 
         else{
@@ -262,15 +309,15 @@ if (document.body.className.includes("hp")) {
                 data.products.forEach(item=>{
                     if(filterSearch.value){
                         if(item.name.toLowerCase().includes(filterSearch.value.toLowerCase())){
-
+                            //data-id ekleme fikrini internetten aldım
                             bottom.innerHTML += `
-                                <div class = "filter-result">
+                                <div class = "filter-result" data-id="${item.id}"> 
                                     ${item.name}
                                 </div>
                             `;
                         }
                     }
-
+                    
                     else{
                         bottom.innerHTML = `
                             <h3>Popüler Aramalar</h3>
@@ -384,7 +431,6 @@ if (document.body.className.includes("hp")) {
 
             let shoppingCard = document.querySelectorAll(".shop-card");
             let closeIcon = document.querySelector(".close-added-info")
-            let addedInfo = document.querySelector(".added-info")
 
             let products = JSON.parse(localStorage.getItem("Products")) || [];
             let productNumber = document.querySelector(".total-amount");
@@ -662,20 +708,20 @@ if(document.body.className.includes("bp")){
                 <div class = "overall">
                     <div class = "overall-top">
                         <span class = "selected-products">SEÇİLEN ÜRÜNLER (${pro.length})</span>
-                        <span class = "overall-cost">${overallCost}<span class = "tl">TL</span></span>
+                        <span class = "overall-cost">${overallCost + 100}<span class = "tl">TL</span></span>
                         <button>Alışverişi Tamamla</button>
                     </div>
                     <div class = "overall-mid">
                         <img src="images/premium-new-logo.png">
                         <p>Premium'a geç, kargo bedava ve Hepsipara avantajları ile tasarruf et.</p>
                         <button>
-                            Şimdi Geç
+                            <a href = "premium.html">Şimdi Geç</a>
                         </button>
                     </div>
                     <div class = "overall-bottom">
                         <div class = "bottom-item">
                             <p>Ürünler</p>
-                            <p>300 TL</p>
+                            <p>${overallCost} TL</p>
                         </div>
 
                         <div class = "bottom-item">
@@ -837,8 +883,22 @@ if(document.body.className.includes("pd")){
 
         let formLinksContainer = document.querySelector(".form-links")
         let creditCard = document.querySelector(".credit-carts")
+
+        formLinks = document.querySelectorAll(".form-links a")
+        
+        
         
         formLinksContainer.addEventListener("click",(e)=>{
+
+            formLinks.forEach(item=>{
+                item.classList.remove("clicked")
+            })
+
+            const target = e.target.closest("a");
+
+            if(target){
+                target.classList.add("clicked");
+            }
             
             if(e.target.textContent === "İptal ve İade Koşulları"){
                 creditCard.innerHTML = `
@@ -1641,6 +1701,7 @@ if(document.body.className.includes("buy")){
     let totalPrice = document.querySelector(".pay-cost")
     let addAdressButton = document.querySelector(".add-adress button")
     let adressInput = document.querySelector(".adress-input-area")
+    let productPrice = document.querySelector(".pay-bottom-price");
    
 
     buyedItemContainer.innerHTML = ""
@@ -1667,7 +1728,8 @@ if(document.body.className.includes("buy")){
             overallCost += parseInt(item.price) * parseInt(item.quantity);  
         })
 
-        totalPrice.textContent = overallCost + " TL"
+        totalPrice.textContent = overallCost+100 + " TL"
+        productPrice.textContent = overallCost + " TL"
 
     })
 
@@ -1741,19 +1803,117 @@ if(document.body.className.includes("buy")){
         let bill = document.createElement("div")
         bill.className = "add-bill-container"
             bill.innerHTML = `
-                <button>
-                    <img src = "icons/add.png">
-                    Fatura adresi ekle 
-                </button>
+                <p>
+                Fatura bilgilerim:
+                <span>${userAdress.city} / ${userAdress.district}<span>
+                <p> 
             `;
 
         document.querySelector(".add-adress").appendChild(bill);
+
     }
     
     let editPage = document.querySelector(".edit-adress")
     let edit = document.querySelector(".added-adress-top-right");
     let editLink = document.querySelector(".edit-adress-right")
     let hiddenEdit = document.querySelector(".hidden-edit")
+    let building = document.querySelector(".edit-adress-left .building")
+    let location = document.querySelector(".edit-adress-left .loc")
+
+    building.textContent = userAdress.adressName;
+    location.textContent = userAdress.city + " / " + userAdress.district
+
+    let cardPage = document.querySelector(".card-input")
+    let contract = document.querySelector(".w-contract")
+
+    let finish = document.querySelector(".finish-shopping")
+
+    let cardNumber = document.querySelector(".card-number");
+    let cardYear = document.querySelector(".card-year");
+    let cardCVV = document.querySelector(".card-cvv");
+    let nameSurname = document.querySelector(".name-surname")
+
+
+    let openCardPage = document.querySelector(".add-card");
+    openCardPage.addEventListener("click",()=>{
+        cardPage.style.display = "block"
+    })
+
+    cardPage.addEventListener("click",(e)=>{
+        if(e.target.className === "close-card-input"){
+            cardPage.style.display = "none"
+        }
+
+        if(e.target.className === "finish-shopping"){
+            if(!contract.checked){
+                
+                let notChecked = document.createElement("div");
+                notChecked.className = "checked-error"
+
+                notChecked.innerHTML = `
+                    <p>Hepsipay Cüzdan Sözleşmesi’ni kabul etmelisiniz.</p>
+                `;
+
+                document.querySelector(".card-input-mid").appendChild(notChecked);
+            }
+            else{
+                
+                let userCard = {
+                    number: cardNumber.value,
+                    year: cardYear.value,
+                    CVV: cardCVV.value,
+                    name: nameSurname.value,
+                };
+
+                localStorage.setItem("Card", JSON.stringify(userCard));
+                
+                let card = JSON.parse(localStorage.getItem("Card"))
+
+                let cardContainer = document.querySelector(".card-container")
+                cardContainer.innerHTML = ""
+                cardContainer.innerHTML = `
+                    <div class = "credit-card">
+                        <div class = "credit-top">
+                            <p>${card.number}</p>
+                            <a>Ekle / Değiştir</a>
+                        </div>
+                        <div class = "credit-bottom">
+                            <p>${card.name}</p>
+                        </div>
+                    </div>
+                `;
+
+            }  
+        }  
+    })
+
+    let buy = document.querySelector(".confirm-buy")
+    let shoppingSuccess = document.querySelector(".shopping-success")
+
+    buy.addEventListener("click",()=>{
+        let cardContainer = document.querySelector(".credit-card")
+        let adressContainer = document.querySelector(".added-adress-container")
+        
+        if(cardContainer && adressContainer){
+            shoppingSuccess.style.display = "flex"
+            localStorage.removeItem("Products")
+
+            setInterval(()=>{
+                window.location.href = "index.html"
+            },3000)
+        }
+
+        else{
+            return
+        }
+    })
+
+    shoppingSuccess.addEventListener("click",(e)=>{
+        if(e.target.className === "close-shopping"){
+            shoppingSuccess.style.display = "none"
+        }
+    })
+
     
     edit.addEventListener("click",()=>{
         editPage.style.display = "block"

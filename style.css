@@ -1124,6 +1124,7 @@ a{
 
 .main-container .advertising-container .product-container .right-part button:hover{
     color: #ff6000;
+    border: 2px solid #ff6000;
    
 }
 
@@ -2122,9 +2123,9 @@ a{
 }
 
 .card .card-right-part img{
-    width: 70%;
-
+    width: 30%;
 }
+
 
 .form-links{
     display: flex;
@@ -2144,9 +2145,10 @@ a{
     text-wrap: nowrap;
 }
 
-.form-links .clicked{
+.form-links a.clicked{
     border-bottom: 2px solid #ff6000;
     color: #212121;
+    font-weight: 600;
 }
 
 .form-links a span{
@@ -2321,16 +2323,20 @@ a{
     font-size: 0.5rem;
     text-align: center;
     background: #E3F5E1;
+    display: flex;
+    align-items: center;
 }
 
 .card-container .card .bottom .info-price{
     flex: 4;
     background: #E3F5E1;
     padding: 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-container .card .bottom .info-price img{
-   width: 15%;
+   width: 20%;
 }
 
 .card-container .card .bottom .info-price .price .original-price{
@@ -2358,6 +2364,8 @@ a{
     border-top-right-radius: 16px;
     width:100%;
     min-width: 1228.8px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .popular-searches .top{
@@ -7752,7 +7760,6 @@ footer{
 
 .overall-mid button{
     width: 100%;
-    color: #df0485;
     border: 2px solid #df0485;
     font-size: 0.875rem;
     font-weight: 600;
@@ -7763,11 +7770,36 @@ footer{
     cursor: pointer;
 }
 
+.overall-mid button a{
+    color: #df0485;
+    text-decoration: none;
+}
+
 .overall-mid button:hover{
     background-color: #df0485;
     color: #faeaf0;
     transition: 1s ease;
 }
+
+.overall-mid button:hover a{
+    color: #faeaf0;
+    transition: 1s ease;
+}
+
+.add-bill-container{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.add-bill-container p{
+    color: #666;
+    font-size: 0.75rem;
+}
+
+.add-bill-container p span{
+    color: #FF6000;
+    font-weight: 600;
+} 
 
 
 .selected-products{
@@ -8283,6 +8315,7 @@ footer{
 
 .add-adress{
     padding-left: 2rem;
+    margin-top: 0.5rem;
 }
 
 .select-adress{
@@ -8292,7 +8325,256 @@ footer{
     font-size: 14px;
     font-weight: 600;
     color: #212121;
+    margin-top: 0.5rem;
 }
+
+.card-info-top{
+    display: flex;
+    align-items: center;
+}
+
+.card-info-top img{
+    width: 25%;
+    object-fit: cover;
+}
+
+.card-info{
+    background-color: #fff;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04), 0 1px 3px rgba(0, 0, 0, .08);
+    padding: 10px 16px;
+    margin: 0 0 12px;
+}
+
+.card-info h3{
+    color: #212121;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.card-container{
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info-bottom{
+    margin-top: 0.5rem;
+}
+
+.card-container button{
+    width: 50%;
+    color: #ff6000;
+    border: 2px solid #ff6000;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.card-container button:hover{
+    background-color: #FF6000;
+    color: #fff;
+    transition: 1s ease;
+
+}
+
+.installment-info{
+    font-size: 0.75rem;
+    color: #212121;
+    background-color: #f0f2ff;
+    padding: 8px;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.card-input{
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 500px;
+    display: none;
+    background: #f5f5f5;
+    height: 100%;
+    padding: 40px 30px 40px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .04), 0 1px 3px rgba(0, 0, 0, .08);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.card-input-top img{
+    width: 6%;
+    cursor: pointer;
+}
+
+.card-input-mid h2{
+    font-size: 1.75rem;
+    color: #212121;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.card-input-mid p{
+    font-size: 1rem;
+    color: #212121;
+    line-height: 1.5;
+
+}
+
+.card-input-mid p span{
+    color: #FF6000;
+    font-weight: 600;
+}
+
+.card-input-bottom button{
+    width: 100%;
+    background-color: #FF6000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.checked-error p{
+    font-size: 0.875rem;
+    color: #D8000C;
+	background-color: #FFBABA;
+    margin-top: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.credit-card{
+    border: 1px solid #dadada;
+    margin-bottom: 0.3rem;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    width: 50%;
+}
+
+.credit-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-top p{
+    font-size: 0.875;
+    font-weight: 600;
+}
+
+.credit-top a{
+    color: #FF6000;
+    font-weight: 600;
+}
+
+.shopping-success{
+    position: fixed;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 4;
+    color: #fff;
+    width: 30%;
+    height: 50%;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.shopping-top{
+    background-color: #FF6000;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopping-top .check{
+    width: 10%;
+}
+
+.shopping-top p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.shopping-bottom{
+    color: #212121;
+    font-size: 1.5rem;
+    font-weight: 600;
+    flex: 1;
+    border: 1px solid #212121;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.close-shopping{
+    width: 1.5rem;
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+
+
+
+.save-info{
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-information{
+    margin-top: 1rem;
+}
+
+.card-information input{
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.conf{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.ay-m{
+    margin-top: 1rem;
+}
+
+.card-information input::placeholder{
+    font-size: 1rem;
+    color: #9B9B9B;
+}
+
+.year{
+    display: flex;
+    gap: 0.75rem;
+}
+
+
 
 .buy-header-left{
     color: #FF6000;
@@ -8349,6 +8631,7 @@ footer{
     font-weight: 600;
     color: #3A3A3A;
     margin-bottom: 1rem;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, Arial, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     
 }
 

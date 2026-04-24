@@ -20,6 +20,16 @@
         </div>
     </header>
     <div class="main-container">
+        <div class="shopping-success">
+            <div class = "shopping-top">
+                <img class="close-shopping" src="icons/cross.png" alt="">
+                <img class="check" src="icons/white-check.png" alt="">
+                <p>Başarılı</p>
+            </div>
+            <div class="shopping-bottom">
+                Siparişiniz başarıyla alındı. Teşekkür ederiz!
+            </div>
+        </div>
         <div class="container">
             <div class="buy-product">
                 <div class="buy-product-left">
@@ -38,6 +48,20 @@
                         <div class="select-adress">
                             <input type="checkbox">
                             Hepsimat noktasına gönder
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="card-info-top">
+                            <img src="images/hepsipay-logo.webp" alt="">
+                        </div>
+                        <div class="card-info-bottom">
+                            <h3>Banka / Kredi Kartı</h3>
+                            <div class="card-container">
+                                <button class="add-card">Kart bilgilerini gir</button>
+                                <div class="installment-info">
+                                    Taksit seçenekleri kart bilgini girdikten sonra gösterilecektir.
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="about-to-buy">
@@ -65,12 +89,12 @@
                         <div class = "pay-top">
                             <span class = "pay-cost-title">ÖDENECEK TUTAR</span>
                             <span class = "pay-cost">100<span>TL</span></span>
-                            <button>Siparişi Onayla</button>
+                            <button class="confirm-buy">Siparişi Onayla</button>
                         </div>
                         <div class = "pay-bottom">
                             <div class = "pay-bottom-item">
                                 <p>Ürünler</p>
-                                <p>300 TL</p>
+                                <p class="pay-bottom-price">300 TL</p>
                             </div>
 
                             <div class = "pay-bottom-item">
@@ -79,6 +103,37 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="card-input">
+                <div class="card-input-top">
+                    <img class="close-card-input" src="icons/cross.png" alt="">
+                </div>
+                <div class="card-input-mid">
+                    <h2>Yeni kart</h2>
+                    <div class="card-information">
+                        <input class="card-number" type="text" placeholder="Kart numarası">
+                        <div class="year">
+                            <input class="card-year" type="text" placeholder="Ay / Yıl">
+                            <input class = "card-cvv" type="text" placeholder="CVC / CVV">
+                        </div>
+                        <input class="name-surname" type="text" placeholder="İsim Soyisim">
+                    </div>
+                    <div class="save-info">
+                        <p>Hızlı ve güvenli alışveriş için kartını kaydet!</p>
+                        <div class="conf">
+                            <input type="checkbox">
+                            <p>Kartım alışverişlerim için <span>Hepsiburada</span> ve <span>Hepsipay</span>’de aydınlatma metni kapsamında kaydedilsin.</p>                            
+                        </div>
+                        <div class="conf">
+                            <input class="w-contract" type="checkbox">
+                            <p>Hepsipay Cüzdan Sözleşmesi’ni kabul ediyorum.</p>
+                        </div>
+                        <p class="ay-m">Kişisel verileriniz <span>Hepsipay Aydınlatma Metni</span> kapsamında işlenmektedir.</p>
+                    </div>
+                </div>
+                <div class="card-input-bottom">
+                    <button class="finish-shopping">Devam Et</button>
                 </div>
             </div>
             <div class="adress-input-area">
@@ -164,8 +219,8 @@
                 </div>
                 <div class="edit-adress-bottom">
                     <div class="edit-adress-left">
-                        <p>asdasd (Varsayılan)</p>
-                        <p>asdasd ADALAR / İstanbul</p>
+                        <p class="building">asdasd (Varsayılan)</p>
+                        <p class="loc">asdasd ADALAR / İstanbul</p>
                     </div>
                     <div class="edit-adress-right">
                         <img class="edit-icon" src="icons/more.png" alt="">
