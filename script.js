@@ -395,14 +395,19 @@ if (document.body.className.includes("hp")) {
 
     backBtn.addEventListener("click", () => {
         fırsat.scrollBy({ left: -727, behavior: "smooth" });
-        pageValue = Number(pageValue) - 1;
-        currentPage.textContent = pageValue
+        if(pageValue > 1){
+            pageValue = Number(pageValue) - 1;
+            currentPage.textContent = pageValue
+        }
     });
 
     forwardBtn.addEventListener("click", () => {
         fırsat.scrollBy({ left: 727, behavior: "smooth" });
-        pageValue = Number(pageValue) + 1;
-        currentPage.textContent = pageValue
+
+        if(pageValue < totalPage.textContent){
+            pageValue = Number(pageValue) + 1;
+            currentPage.textContent = pageValue
+        }
        
     });
 
