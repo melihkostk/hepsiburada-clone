@@ -372,18 +372,38 @@ if (document.body.className.includes("hp")) {
     const fırsat = document.querySelector(".fırsat");
     const backBtn = document.querySelector(".fırsat-back-button button");
     const forwardBtn = document.querySelector(".fırsat-forward-button button");
+    const currentPage = document.querySelector(".current-page");
+    const totalPage = document.querySelector(".page-number");
+    const images = document.querySelectorAll(".a-img")
+    let pageValue = currentPage.textContent;
+
+    totalPage.textContent = images.length;
+
 
     setInterval(() => {
         fırsat.scrollBy({ left: 727, behavior: "smooth" });
+        pageValue = Number(pageValue) + 1;
+        
+        if(pageValue <= images.length){
+            currentPage.textContent = pageValue
+        }
+        else{
+            return
+        }
     }, 5000);
    
 
     backBtn.addEventListener("click", () => {
         fırsat.scrollBy({ left: -727, behavior: "smooth" });
+        pageValue = Number(pageValue) - 1;
+        currentPage.textContent = pageValue
     });
 
     forwardBtn.addEventListener("click", () => {
         fırsat.scrollBy({ left: 727, behavior: "smooth" });
+        pageValue = Number(pageValue) + 1;
+        currentPage.textContent = pageValue
+       
     });
 
    let productContainers = document.querySelectorAll(".p-product-container");
@@ -1645,6 +1665,7 @@ if(document.body.className==="cap"){
 
     let productNumber = document.querySelector(".product-number");
     
+
     returnHome.addEventListener("click",()=>{
         window.location.href = "index.html";
     })
@@ -1659,7 +1680,7 @@ if(document.body.className==="cap"){
                 
                 if (item.category.includes(productCategory)) {
 
-                    cateName.textContent = `${item.category}`;
+                    cateName.textContent = `${productCategory}`;
 
                     cateProduct.innerHTML += `
                     <div class="p-product-container">
@@ -1680,6 +1701,10 @@ if(document.body.className==="cap"){
                 }
 
             });
+
+            let p = document.querySelectorAll(".en-container .p-product-container")
+            let pNumber = p.length;
+            productNumber.textContent = `(${pNumber} Ürün)`
         });
 
         const brandSliderContainer = document.querySelector(".b-slider");
