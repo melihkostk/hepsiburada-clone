@@ -8352,7 +8352,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.card-container{
+.card-credit{
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
@@ -8362,7 +8362,7 @@ footer{
     margin-top: 0.5rem;
 }
 
-.card-container button{
+.card-credit button{
     width: 50%;
     color: #ff6000;
     border: 2px solid #ff6000;
@@ -8373,7 +8373,7 @@ footer{
     padding: 8px;
 }
 
-.card-container button:hover{
+.card-credit button:hover{
     background-color: #FF6000;
     color: #fff;
     transition: 1s ease;

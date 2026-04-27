@@ -1193,35 +1193,37 @@ if(document.body.className.includes("pd")){
                     qForm.style.display = "none"
                 })
 
-                const submitQuestion = document.querySelector(".a-seller-bottom button")
-                
-                submitQuestion.addEventListener("click",()=>{
-                    let qInput = document.querySelector(".a-seller-mid input")
+                document.querySelector(".asked-question-container").innerHTML = ""
+                document.querySelector(".gived-answer-container").innerHTML = ""
+
+                const submitQuestion = document.querySelector(".a-seller-bottom button");
+
+                submitQuestion.addEventListener("click", () => {
+                    let qInput = document.querySelector(".a-seller-mid input");
                     let userQ = qInput.value;
+
                     let questions = JSON.parse(localStorage.getItem("Question")) || [];
 
                     questions.push({
-                        content:userQ,
-                        
+                        content: userQ,
                     });
 
-                    localStorage.setItem("Question", JSON.stringify(questions))
-                    
+                    localStorage.setItem("Question", JSON.stringify(questions));
+
                     const question = document.createElement("div");
-                    
-                    question.classList.add("asked-question-container");
-                    questions.forEach(item=>{
-                        question.innerHTML += `
+                    question.classList.add("asked-question");
+
+                    question.innerHTML = `
                         <h5>Soru</h5>
                         <div class="asked-questions">
-                            ${item.content}
+                            ${userQ}
                         </div>
                     `;
-                    })
-                    
 
                     document.querySelector(".asked-question-container").appendChild(question);
-                })
+
+                    qInput.value = ""; 
+                });
 
                 let likeButton = document.querySelector(".like")
                 let likeNumber = document.querySelector(".like-number")
@@ -1869,7 +1871,7 @@ if(document.body.className.includes("buy")){
                 
                 let card = JSON.parse(localStorage.getItem("Card"))
 
-                let cardContainer = document.querySelector(".card-container")
+                let cardContainer = document.querySelector(".card-credit")
                 cardContainer.innerHTML = ""
                 cardContainer.innerHTML = `
                     <div class = "credit-card">
