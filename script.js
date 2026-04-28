@@ -382,9 +382,9 @@ if (document.body.className.includes("hp")) {
 
     setInterval(() => {
         fırsat.scrollBy({ left: 727, behavior: "smooth" });
-        pageValue = Number(pageValue) + 1;
         
         if(pageValue <= images.length){
+            pageValue = Number(pageValue) + 1;
             currentPage.textContent = pageValue
         }
         else{
@@ -1675,6 +1675,16 @@ if(document.body.className==="cap"){
         window.location.href = "index.html";
     })
 
+    const brandSliderContainer = document.querySelector(".b-slider");
+    const backButton = brandSliderContainer.querySelector(".back-button button");
+    const forwardButton = brandSliderContainer.querySelector(".forward-button button")
+    const brandSlider = document.querySelector(".s-items")
+    brandSlider.innerHTML = ""
+    const brandFilter = document.querySelector(".brand-filter")
+    brandFilter.innerHTML = ""
+    const filter = document.querySelector(".p-filter-left")
+    const colorFilter = document.querySelector(".color-filter")
+    const filterItem = document.querySelectorAll(".with-sale")
     
     fetch("product.json")
         .then(res => res.json())
@@ -1707,16 +1717,58 @@ if(document.body.className==="cap"){
 
             });
 
+            data.categories.forEach(item=>{
+                if(item.name === productCategory.trim()){
+                    item.brands.forEach(brand=>{
+  
+                        brandSlider.innerHTML += `
+                            <a>${brand}</a>
+                        `;
+
+                        brandFilter.innerHTML += `
+                            <div class="brand-item">
+                                <input type="checkbox">
+                                <p>${brand}</p>
+                            </div>
+                        `;
+                    })
+
+                    item.size.forEach(size=>{
+                        
+                    })
+
+                    item.color.forEach(color=>{
+                        
+                    })
+
+                    item.arm.forEach(arm=>{
+                        
+                    })
+
+                    item.material.forEach(material=>{
+                        
+                    })
+
+                    item.collar.forEach(collar=>{
+                        
+                    })
+                    
+                }
+            })
+
+
             let p = document.querySelectorAll(".en-container .p-product-container")
             let pNumber = p.length;
             productNumber.textContent = `(${pNumber} Ürün)`
+
+            let brandText = document.querySelectorAll(".brand-item")
+            brandText.forEach(item=>{
+                item.addEventListener("click",()=>{
+                    console.log(item.textContent.trim())
+                })
+            })
         });
 
-        const brandSliderContainer = document.querySelector(".b-slider");
-        const backButton = brandSliderContainer.querySelector(".back-button button");
-        const forwardButton = brandSliderContainer.querySelector(".forward-button button")
-        const brandSlider = document.querySelector(".s-items")
-        
         backButton.addEventListener("click",()=>{
             brandSlider.scrollBy(-700,0)
         })
