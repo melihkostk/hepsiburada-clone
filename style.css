@@ -6674,13 +6674,15 @@ footer{
 
 .with-sale{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     border-bottom: 1px solid #dadada;
     padding: 18px 16px 18px 16px;
     font-size: 0.75rem;
     color: #484848;
     font-weight: 600;
+    position: relative; 
 }
 
 .with-sale button{
@@ -6812,7 +6814,7 @@ footer{
     margin-left: 0.1rem;
 }
 
-.product-variety,.color,.price-range,.comment-point,.name-of-seller{
+.product-variety,.color,.price-range,.name-of-seller{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9262,6 +9264,7 @@ footer{
     align-items: center;
     justify-content: center;
     left: 0;
+    cursor: pointer;
 }
 
 .b-b img{
@@ -9280,6 +9283,303 @@ footer{
     align-items: center;
     justify-content: center;
     right: 0;
+    cursor: pointer;
+}
+
+.with-sale-menu{
+    width: 100%;
+    background: white;
+    display: flex; 
+    flex-direction: column;
+    align-self: flex-end;
+
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.with-sale-menu a{
+    font-size: 0.75rem;
+    color: #484848;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.display-color{
+    width: 0.938rem;
+    height: 0.938rem;
+    border-radius: 50%;
+    border: 0.5px solid #dadada;
+}
+
+.with-sale-menu :hover{
+    background-color: #F5F5F5;
+}
+
+.with-sale-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.color{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.color-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.color-menu{
+    width: 100%;
+    background: white;
+    display: flex; 
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.color-menu-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.color-menu-item:hover{
+    background-color: #F5F5F5;
+}
+
+.product-variety{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.product-variety-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-variety-menu{
+    width: 100%;
+    background: white;
+    display: flex; 
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.product-variety-menu-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.product-variety-menu-item:hover{
+    background-color: #F5F5F5;
+}
+
+.size{
+    padding: 18px 16px 18px 16px;
+    border-bottom: 1px solid #dadada;
+}
+
+.size-top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #484848;
+    font-weight: 600;
+}
+
+.size-menu{
+    width: 100%;
+    background: white;
+    display: flex; 
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.size-menu-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.size-menu-item:hover{
+    background-color: #F5F5F5;
+}
+
+.size-menu-item a{
+    font-size: 0.75rem;
+    color: #484848;
+}
+
+.comment-point{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadada;
+    padding: 18px 16px 18px 16px;
+    font-size: 0.75rem;
+    color: #484848;
+    font-weight: 600;
+    position: relative;
+}
+
+.comment-point-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.comment-point-menu{
+    width: 100%;
+    background: white;
+    display: flex; 
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.comment-menu-item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 8px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.comment-menu-item:hover{
+    background-color: #F5F5F5;
+}
+
+.comment-menu-item img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.price-filter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #dadada;
+    padding: 18px 16px 18px 16px;
+    font-size: 0.75rem;
+    color: #484848;
+    font-weight: 600;
+    position: relative;
+}
+
+.price-filter-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.price-filter-menu{
+    width: 100%;
+    background: white;
+    display: flex; 
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.price-filter-inputs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.price-filter-inputs input{
+    width: 60px;
+    height: 2rem;
+    max-height: 32px;
+    padding: 8px;
+    font-size: 12px;
+    background: #fff;
+    border:2px solid #e5e5e5;
+    border-radius: 8px;
+}
+
+.price-filter-inputs button{
+    background-color: #cccccc;
+    border: none;
+    border-radius: 8px;
+    min-width: 32px;
+    height: 32px;
+    max-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-filter-inputs button img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.price-filter-select{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-filter-select-item{
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    gap: 0.5rem;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+}
+
+.price-filter-select-item:hover{
+    background: #F5F5F5;
 }
 
 .f-b img{

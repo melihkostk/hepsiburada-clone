@@ -1685,6 +1685,22 @@ if(document.body.className==="cap"){
     const filter = document.querySelector(".p-filter-left")
     const colorFilter = document.querySelector(".color-filter")
     const filterItem = document.querySelectorAll(".with-sale")
+
+    const colorMap = new Map([
+        ["Siyah","#000000"],
+        ["Gri","#9b9b9b"],
+        ["Krem","#ffccaf"],
+        ["Kahverengi","#690000"],
+        ["Kırmızı","#ed242c"],
+        ["Yeşil","#5ad363"],
+        ["Mavi","#53bfe6"],
+        ["Sarı","#f3a027"],
+        ["Turuncu","#ff6000"],
+        ["Beyaz","#ffffff"],
+        ["Turkuaz","#00CED1"],
+        ["Bordo","#8B0000"],
+        ["Lacivert","#00008B"]
+    ]);
     
     fetch("product.json")
         .then(res => res.json())
@@ -1734,28 +1750,52 @@ if(document.body.className==="cap"){
                     })
 
                     item.size.forEach(size=>{
-                        
+                        document.querySelector(".size-menu").innerHTML += `
+                            <div class = "size-menu-item">
+                                <input type = "checkbox">
+                                <a>${size}</a>
+                            </div>
+                        `;
                     })
 
                     item.color.forEach(color=>{
-                        
+                        document.querySelector(".color-menu").innerHTML += `
+                            <div class = "color-menu-item">
+                                <input type = "checkbox">
+                                <div class = "display-color">
+                                </div>
+                                <a>${color}</a>
+                            </div>
+                        `; 
                     })
 
-                    item.arm.forEach(arm=>{
-                        
-                    })
+                    
 
                     item.material.forEach(material=>{
                         
                     })
 
-                    item.collar.forEach(collar=>{
-                        
+                    
+
+                    item.style.forEach(type=>{
+                        document.querySelector(".product-variety-menu").innerHTML += `
+                            <div class = "product-variety-menu-item">
+                                <input type = "checkbox">
+                                <a>${type}</a>
+                            </div>
+                        `; 
                     })
                     
                 }
             })
 
+            let colorDisplayer = document.querySelectorAll(".color-menu-item a");
+            let colorShow = document.querySelectorAll(".display-color");
+
+            colorDisplayer.forEach((item, index) => {
+                let color = colorMap.get(item.textContent);
+                colorShow[index].style.backgroundColor = color;
+            });
 
             let p = document.querySelectorAll(".en-container .p-product-container")
             let pNumber = p.length;
@@ -1776,6 +1816,7 @@ if(document.body.className==="cap"){
         forwardButton.addEventListener("click",()=>{
             brandSlider.scrollBy(700,0)
         })
+
 }
 
 //BUY//

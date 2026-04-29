@@ -568,7 +568,7 @@
             "name":"Elbise",
             "brands":["Mango","adL","Ipekyol","Koton","DeFacto","LC Waikiki","Etiler Collection","La Mode Istanbul","Alinn Butikk","FRM","Moderie Butik","Ersefa","Gökyüzü Moda","PayBuy","Tiana"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Klasik","Trend","Yazlık","Tesettür","Ofis","Düz","Kloş","Regular","Business","Sportif"],
             "arm":["Kolsuz","Kısa Kol","Uzun Kol","Yarım Kol"],
             "type":["Slip Elbise","Triko Elbise","T-Shirt Elbise","Tank Elbise"],
@@ -580,7 +580,7 @@
             "name":"Triko",
             "brands":["a","adL","Ipekyol","Koton","DeFacto","LC Waikiki","Etiler Collection","La Mode Istanbul","Alinn Butikk","FRM","Moderie Butik","Ersefa","Gökyüzü Moda","PayBuy","Tiana"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+           "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Casual","Trend","Basic","Abiye","Klasik","Kışlık","Gece","Modern","Yazlık","Nostaljik"],
             "arm":["Kolsuz","Kısa Kol","Uzun Kol","Yarım Kol"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -591,7 +591,7 @@
             "name":"Kaban, Mont",
             "brands":["NG Style","Koton","U.S. Polo Assn.","DeFacto","HE-QA","Only","Bolivente","Derimod","Love The Wind","Mango","Barbora","1Tarz","Dewberry","Olcay","Desen Triko"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Şişme","Manto","Kürk","Parka","Yakası Kürklü","Pardösü","Çoban"],
             "arm":["Kolsuz","Truvakar Kol","Uzun Kol","Kısa Kol","3/4 Kollu"],
             "measure":["Uzun","Midi","Mini","Maxi","Kısa","Standart","Regular"],
@@ -604,7 +604,7 @@
             "name":"Sweatshirt",
             "brands":["U.S. Polo Assn.","Mavi","Grimelange","DeFacto","Koton","Penti","LTB","Gap","Ethiquet","Calvin Klein","Qivi","Ankhises","Anetos","Tshirthane","Colermi"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Hoddie","Trend","Şardonlu","Cepli","Klasik","Spor","Baskılı"],
             "arm":["Kolsuz","Truvakar Kol","Uzun Kol","Kısa Kol","3/4 Kollu"],
             "material":["3 İplik","Örme","2 İplik","Pamuk","Dokuma","Kumaş","Denim","Polyester"],
@@ -616,7 +616,7 @@
             "name":"Bluz",
             "brands":["U.S. Polo Assn.","Mavi","Grimelange","DeFacto","Koton","Penti","LTB","Gap","Ethiquet","Calvin Klein","Qivi","Ankhises","Anetos","Tshirthane","Colermi"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Kolsuz","Truvakar Kol","Yarım Kol","Tek Omuz","Tam","Düşük Omuz","Tek Askılı"],
             "material":["Dokuma","Polyester","Polyester Karışımlı","Pamuk","Viskon","Şifon","Akrilik","Penye"],
@@ -627,7 +627,7 @@
             "name":"Gömlek",
             "brands":["Mango","adL","Koton","Dilvin","Babokah","LC Waikiki","Ersefa","FRM","Etiler Collection","Çamaşır Kenti","La Mode Istanbul","DRGY","Moderie Butik","Hiccup","Beruflic"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Polyester","Şifon","Pamuk","Saten","Viskon","İpek","Keten"],
@@ -639,7 +639,7 @@
             "name":"Pantolon",
             "brands":["DeFacto","Hazel","Mango","Koton","BS Hood","LC Waikiki","Jimmy Key","U.S. Polo Assn.","Haka Giyim","Ritnice","Sateen","Ekol","Etiler Collection","ROMAN","Jument"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "waist":["Normal Bel","Yüksek Bel","Standart Bel","Lastikli"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Viskon"],
@@ -651,7 +651,7 @@
             "name":"Kot Etek, Kadın Kot Ceket",
             "brands":["Koton","DeFacto","Vellichor","Herton","Ekol","Gülseli","Fabienn","Jack & Jones","Mavi","Auralis Studio","Busa","CGA","Enga Vera","Gamze Alptekin","Gümüş Collection"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -663,7 +663,7 @@
             "name":"T-Shirt",
             "brands":["DeFacto","Tommy Hilfiger","Presmono","Tarz Sokak","Cakkey","LC Waikiki","Shoprise","Anetos","Buzagi","Lord T-Shirt","Mercoledi","Colermi","Tshirthane","Caddekombin","Tarz Yeri"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -675,7 +675,7 @@
             "name":"Ceket",
             "brands":["Armonika","DeFacto","Wkm","Bolivente","NG Style","Dilvin","Önder Özsoy","Benerly","Deri Work","Jument","Najmaddin","Shahiqa","Arben Boutique","1Tarz","Manuka"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -686,9 +686,9 @@
             "id":11,
             "name":"Etek",
             "brands":["Suud Collection","Koton","Mango","DeFacto","Minaaise","Hiccup","Lela","bebekokusu","MiraLive","Marsilyan","Societa","Vitrin","Byb Moda Tasarım","Kazax","Bigdart"],
-            "size":["XS","S","M","L","XL","2XL"],
+            "size":["XS","S","M","L","XL","2XL","3XL","4XL","35","36","37","38","39","40"],
             "measure":["Uzun","Midi","Mini","Maxi","Kısa","Standart","Regular"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "waist":["Normal Bel","Yüksek Bel","Standart Bel","Lastikli"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -699,7 +699,7 @@
             "name":"Tayt",
             "brands":["Los Ojos","NBB","Penti","Tommy Life","Özkan Underwear","Koton","Herita","Tutku","Lismina","Beruflic","Momslab","Bugasy","Derya Kurşun","Yeni İnci","Catpati"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "waist":["Normal Bel","Yüksek Bel","Standart Bel","Lastikli"]
         },
         {
@@ -707,7 +707,7 @@
             "name":"Trençkot",
             "brands":["DeFacto","Pastelastore","Bolivente","TUTveAL Collection","Bigdart","Alinda","Pierre Cardin","D1fference","Vibeys Collection","Antioch","Dericlub","Sahra Afra","İLVİ","Wazze","Famoda"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "collar":["Bisiklet Yaka","V Yaka","Kare Yaka","Boyundan Bağlamalı Yaka","Gömlek Yaka","Dik Yaka"],
@@ -718,7 +718,7 @@
             "name":"Spor Giyim",
             "brands":["Nike","adidas","Puma","Under Armour","Hummel","Skechers","New Balance","Slazenger","Reebok","Lismina","Maraton","Jerf","Aesco","Lumberjack","Kinetix"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "gender":["Erkek","Kadın"]
         },
         {
@@ -726,7 +726,7 @@
             "name":"Hamile Giyim",
             "brands":["Effort","Arma Yıldız","Busa","Lorian's","DeFacto","Dagi","NBB","peri tower","Likapa","Suwen","İlk El Grup","Emay","MiraLive","Sistina","Feyza Design"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "pattern":["Regular Fit","Normal Kalıp","Oversize Fit","Oversize","Tam Beden","Comfort","Slim Fit","Fitted","Klasik Fit"]
         },
@@ -735,7 +735,7 @@
             "name":"Büyük Beden",
             "brands":["Abiyefon","Modayız","Vetre","Brendon","Stil Diva","No48","Şans","FERACE","Işıltı Abiye","Melsay","Disentis Modest","Rmg","Myline","Moda Berray","Superlife"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "measure":["Uzun","Midi","Mini","Maxi","Kısa","Standart","Regular"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
@@ -748,7 +748,7 @@
             "name":"Tesettür Giyim",
             "brands":["İmaj Butik","DeFacto","Amine Hüma","Armine","Giza Store","Ayşe Melek Tasarım","Olcay","Sefa Merve","Lamelif","Plistre","Moda Morfo","Lêvi D'or","Nisum Moda","Ecardin Bone","Tesettür Diyarı"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -760,7 +760,7 @@
             "name":"İç Giyim",
             "brands":["Suwen","Penti","Tutku","Katia & Bony","Koza İç Giyim","Bella Notte","NBB","Kompedan","Mistirik","Beruflic","Marsilyan","MiraLive","MTM My The Mall","Royaleks","Hobilinka"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "collar":["Bisiklet Yaka","V Yaka","Kare Yaka","Boyundan Bağlamalı Yaka","Gömlek Yaka","Dik Yaka"],
@@ -771,14 +771,14 @@
             "name":"Plaj Giyim",
             "brands":["Penti","Suwen","Kom","Bella Notte","Dagi","Koton","Angelsin","Pierre Cardin","Louren","Ayyıldız","Moderie Butik","Aquella","Endeep","Eros","Zeki"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"]
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"]
         },
         {
             "id":19,
             "name":"Kadın Ev Rahatlığı",
             "brands":["Penti","Baykar","Dagi","NBB","Şahinler","don-x","Suwen","Flz","Dowry","Alperi","Anıt","Hobilinka","Piworld","Emay","Kota"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "collar":["Bisiklet Yaka","V Yaka","Kare Yaka","Boyundan Bağlamalı Yaka","Gömlek Yaka","Dik Yaka"]
@@ -788,7 +788,7 @@
             "name":"Kadın Pijama",
             "brands":["Kompedan","Bella Notte","Pijama Evi","Ersefa","Sevim","Vienetta","Tudik Collection","Bie's","Remsa","Pjs","Amora Secret","Nightlove","Estiva","Ang Butik","Moda Serdem"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "collar":["Bisiklet Yaka","V Yaka","Kare Yaka","Boyundan Bağlamalı Yaka","Gömlek Yaka","Dik Yaka"]
@@ -798,7 +798,7 @@
             "name":"Saat",
             "brands":["Casio","Seiko","Guess","Nacar","Daniel Klein","Fossil","Swatch","Ferrucci","Freelook","Essence","Momentus","Lee Cooper","Slazenger","Dice Kayek","Santa Barbara Polo & Racquet Club"],
             "cord":["Metal","Deri","Hasır","Silikon","Altın","İyon","Ahşap"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "gender":["Erkek","Kadın"],
             "radius":["30 mm","32 mm","34 mm","36 mm","38 mm","40 mm","42 mm","44 mm"],
             "style":["Yuvarlak","Dikdörtgen","Oval","Kare","Köşeli","Dörtgen"]
@@ -808,7 +808,7 @@
             "name":"Güneş Gözlüğü",
             "brands":["Ray-Ban","Vogue","Prada","Miu Miu","Osse","Michael Kors","Gucci","By Harmony","Guess","Hawk","Despada","Hermossa","Tom Ford","Versace","Burberry"],
             "glass":["Organik","UV 400","Degrade","Mineral","Polikarbon","Mat"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "gender":["Erkek","Kadın"],
             "drawer":["50 mm","51 mm","52 mm","53 mm","54 mm","55 mm"]
     
@@ -817,7 +817,7 @@
             "id":22,
             "name":"Takı",
             "brands":["Fiyonk Kuyumculuk","Aurrari","Nereze","So CHIC","Cinderella","Söğütlü Silver","Bilezikci","Merano Design","Yavuz Kuyumculuk","Sacce Scarves & Accessories","Tabitela","Clariss","Skygo","Lisinya","Pileli Store"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Altın","Gümüş","Çelik","Ahşap","Doğal Taş","Metal","Altın Kaplama","Zirkon"],
             "gender":["Erkek","Kadın"],
             "measure":["40 mm","45 mm","50 mm","55 mm","60 mm"]
@@ -826,7 +826,7 @@
             "id":23,
             "name":"Mücevher",
             "brands":["Fiyonk Kuyumculuk","Aurrari","Nereze","So CHIC","Cinderella","Söğütlü Silver","Bilezikci","Merano Design","Yavuz Kuyumculuk","Sacce Scarves & Accessories","Tabitela","Clariss","Skygo","Lisinya","Pileli Store"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Altın","Gümüş","Çelik","Ahşap","Doğal Taş","Metal","Altın Kaplama","Zirkon"],
             "gender":["Erkek","Kadın"],
             "measure":["40 mm","45 mm","50 mm","55 mm","60 mm"]
@@ -836,7 +836,7 @@
             "name":"Yağmurluk",
             "brands":["Nike","Lumberjack","Level High","Stil Kombin","Damga","Çerçici","Comstar","By Srt Giyim","Comstarmoda","Lushen","T Rain","First Stops","Mood Agenda","Tezzgelsin","Yakamor"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "pattern":["Regular Fit","Normal Kalıp","Oversize Fit","Oversize","Tam Beden","Comfort","Slim Fit","Fitted","Klasik Fit"]
         },
         {
@@ -844,7 +844,7 @@
             "name":"Eşofman",
             "brands":["adidas","Nike","Puma","U.S. Polo Assn.","Lumberjack","Mavi","Trendypassion","Amor Man","Madmext","Superlife","POSEIDON STORM","Yakamel","Giovane Gentile","Big Sam","Marco Ferry"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "trotter":["Lastikli Paça","Ribanalı Paça","Boru Paça","Bol Paça","Standart","Dar Paça","Geniş Paça"],
             "waist":["Normal Bel","Yüksek Bel","Düşük Bel"]
@@ -855,7 +855,7 @@
             "name":"Polo T-shirt",
             "brands":["Mavi","U.S. Polo Assn.","Tommy Hilfiger","Jack & Jones","Lufian","Buratti","Tudors","Pierre Cardin","Madmext","Boss","Altınyıldız Classics","FullaModa","Giovane Gentile","Desen Triko","Nautica"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -867,7 +867,7 @@
             "name":"Şort",
             "brands":["adidas","Nike","Jack & Jones","POSEIDON STORM","DeFacto","Black Steel","Ctoy","Amor Man","Air Jones","Tommy Life","Nautica","FullaModa","Loft","Grimelange","Marks & Spencer"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "pattern":["Regular Fit","Normal Kalıp","Oversize Fit","Oversize","Tam Beden","Comfort","Slim Fit","Fitted","Klasik Fit"],
             "waist":["Normal Bel","Yüksek Bel","Standart Bel","Lastikli","Bağcıklı","Bağlamalı Bel","Kemerli"]
@@ -877,7 +877,7 @@
             "name":"Takım Elbise",
             "brands":["Süvari","D'S Damat","Fabio Cassel","Merdia Kids","Kip","Morven","tinytrends","Fc Plus","MCR","Terzi Adem Altun","Jan Carlucci","Ysf","Presto","Wessi","İmza"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "pattern":["Regular Fit","Normal Kalıp","Oversize Fit","Oversize","Tam Beden","Comfort","Slim Fit","Fitted","Klasik Fit"],
             "drop":["Dropsuz","1 Drop","4 Drop","6 Drop","8 Drop","10 Drop"]
@@ -887,7 +887,7 @@
             "name":"Erkek Kot Gömlek, Erkek Denim Pantolonlar",
             "brands":["Pierre Cardin","Mavi","AVVA","D'S Damat","Tudors","MCR","Eren Style","Cacharel","Giesto","Loft","Antioch","Kamer","Buratti","Eliş Şile Bezi","Lee Cooper"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Abiye","Trend","Basic","Casual","Klasik","Spor","Linen","Sokak"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
@@ -900,7 +900,7 @@
             "brands":["Salomon","Columbia","The North Face","Merrell","adidas","Jack Wolfskin","Ghassy Co.","Helly Hansen","Decathlon","YDS","Buffalo","Quiksilver","E-Taktik","Bandanax","Blackspade"],
             "size":["XS","S","M","L","XL","2XL"],
             "gender":["Erkek","Kadın"],
-            "color":["black","grey","cream","brown","red","green","blue","white"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["long","short","half","none"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "pattern":["Regular Fit","Normal Kalıp","Oversize Fit","Oversize","Tam Beden","Comfort","Slim Fit","Fitted","Klasik Fit"],
@@ -911,7 +911,7 @@
             "name":"Klasik Giyim",
             "brands":["Süvari","D'S Damat","Fabio Cassel","Merdia Kids","Kip","Morven","Fc Plus","MCR","Terzi Adem Altun","Jan Carlucci","Ysf","Wessi","Presto","Cengiz İnler","Cacharel"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "pattern":["Regular Fit","Normal Kalıp","Oversize Fit","Oversize","Tam Beden","Comfort","Slim Fit","Fitted","Klasik Fit"],
             "drop":["Dropsuz","1 Drop","4 Drop","6 Drop","8 Drop","10 Drop"]
@@ -921,7 +921,7 @@
             "name":"Pijama",
             "brands":["Pierre Cardin","U.S. Polo Assn.","Koza İç Giyim","elemge","Kompedan","Dagi","Kly","Hazego","Beruflic","Street Beauty","NemereSoft","LYYN","Alfa Aksesuar 03","Cenen","Bie's"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["Uzun Kol","Truvakar Kol","Kısa Kol","Standart Kol","Kısa Kollu","Balon Kol","Bilek Üstü"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "collar":["Bisiklet Yaka","V Yaka","Kare Yaka","Boyundan Bağlamalı Yaka","Gömlek Yaka","Dik Yaka"]
@@ -930,7 +930,7 @@
             "id":33,
             "name":"Aksesuar",
             "brands":["Zippo","Cobra","CLİPPER","Mr.Eds","Cohiba","Newstore Home","Nargile Store","Saatse","Carry Me Case","Kefo","Miawiki","Miaju","Zero","Storemax","SHC4200"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Metal","Ahşap","Abanoz","Suni Deri","Deri","Pirinç","Ahlat Ağacı","Plastik"],
             "dimensions":["1 cm x 5 cm","1 cm x 4 cm","1 x 3 cm","1.5 cm","1.5 x 7","1.5 x 8 cm","1.7 cm"]
         },
@@ -939,7 +939,7 @@
             "name":"Kadın Ayakkabı",
             "brands":["Skechers","Lumberjack","U.S. Polo Assn.","DGN","Fox Shoes","Bambi","Mammamia","Ayakmod","Venüs","Erbilden","Shemard","Kazax","Elle","Enoch","Luvi"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Spor","Yürüyüş","Babet","Loafer","Klasik","Sandelet","Koşu","Bot"],
             "material":["Suni Deri","Deri","Süet","Rugan","Eva","Saten","Kumaş","Nubuk"]
         },
@@ -948,7 +948,7 @@
             "name":"Günlük Ayakkabı",
             "brands":["Marjin","Dilimler Ayakkabı","Lumberjack","Tamdabu Ayakkabı","Konfores","Mammamia","Fast Step","Derimod","Ispartalılar","Muggo","Bambi","Venüs","Elle","Ccway","Voyager"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Loafer","Espadril","Spor","Klasik","Babet","Yürüyüş","Oxford"],
             "material":["Suni Deri","Deri","Süet","Rugan","Eva","Saten","Kumaş","Nubuk"]
         },
@@ -957,7 +957,7 @@
             "name":"Spor Ayakkabı",
             "brands":["adidas","Nike","Skechers","Puma","New Balance","Asics","Reebok","Lumberjack","Hummel","Kinetix","Vans","Converse","Guja","Joma","Jump"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Koşu","Krampon","Yürüyüş","Standart","Tenis","Basketbol","Voleybol","Futbol"],
             "material":["Tekstil","Sentetik","Silikon","Kauçuk","PVC","Rugan","Keten","File"]
         },
@@ -966,7 +966,7 @@
             "name":"Klasik Ayakkabı",
             "brands":["Erkan Saçmacı","Gloriys Ayakkabı & Çanta","Bay Armedon","Parparastil","Trendy Anka","Luvi","DGN","Letafia","Kiara Store","PayBuy","Ayakkabı Ateşi","Pazarcan","Mimy Shoes","Topukla","Çnr&Dvs"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "heel":["3 cm","4 cm","5 cm","6 cm","7 cm","8 cm","9 cm","10 cm"],
             "style":["İnce","Stiletto","Platform","Kalın","İnce Topuklu","Dolgu","Düz","Yüksek"]
         },
@@ -975,7 +975,7 @@
             "name":"Topuklu Ayakkabı",
             "brands":["Marjin","Limoya","Muggo","Lutvelizade","Mio Gusto","Moda Adam","Fox Shoes","Enoch","Shemard","Shoeberry","Dagoster","Birikon","Laminta","Tamer Tanca","Kindep"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "heel":["3 cm","4 cm","5 cm","6 cm","7 cm","8 cm","9 cm","10 cm"],
             "style":["İnce","Stiletto","Platform","Kalın","İnce Topuklu","Dolgu","Düz","Yüksek"]
         },
@@ -984,7 +984,7 @@
             "name":"Kadın Çizme, Kadın Bot",
             "brands":["UGG","Harley Davidson","Camper","Tamer Tanca","Cat","Hunter","Greyder","Shemard","Hammer Jack","Zerenyus","Guja","Bueno Shoes","Çiğdem Kundura","Castle Black","Togo"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Suni Deri","Deri","Nubuk","Rugan","Süet","Tekstil","Gore-Tex","Dalgıç Kumaş"]
         },
         {
@@ -992,7 +992,7 @@
             "name":"Kadın Sandalet, Kadın Terlik",
             "brands":["Muya","Bambi","Manijero","Neon Shoes","Havaianas","Marjin","Twigy","Nine West","Aziz Şahin Shoes","Liger","Capone Outfitters","Aryan","Papuçcity","ALDO","Shemard"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Ev","Sabo","Parmak Arası","Casual / Günlük","Plaj","Business"],
             "material":["Suni Deri","Deri","Nubuk","Rugan","Süet","Tekstil","Gore-Tex","Dalgıç Kumaş"],
             "heel":["3 cm","4 cm","5 cm","6 cm","7 cm","8 cm","9 cm","10 cm"]
@@ -1002,7 +1002,7 @@
             "name":"Erkek Ayakkabı",
             "brands":["Lumberjack","Greyder","Marcomen","Cabani","Chekich","Gezer","Tamer Tanca","BOA","Libero","Deery","Guja","Fast Step","Tergan","Enoch","Kuback"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Suni Deri","Deri","Nubuk","Rugan","Süet","Tekstil","Gore-Tex","Dalgıç Kumaş"],
             "style":["Yürüyüş","Klasik","Koşu","Loafer","Bot","Bootie","Çizme"]
         },
@@ -1011,14 +1011,14 @@
             "name":"Outdoor Ayakkabı",
             "brands":["Lumberjack","Dockers by Gerli","Lowa","Darkwood","Hammer Jack","Scarpa","Avignon","Columbia","Mondeox","The North Face"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"]
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"]
         },
         {
             "id":44,
             "name":"Bot",
             "brands":["Scooter","Timberland","Harley Davidson","Camper","Gezer","Hammer Jack","Letoon","Marcomen","Chekich","Papuccu","Costo Shoes","Bpm","Sail Laker's","Bulldozer","Ceyker"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Bot","Günlük","Kışlık Bot","Loafer","Çizme","Kar Botu","Yağmur Çizmesi"],
             "material":["Suni Deri","Deri","Nubuk","Rugan","Süet","Tekstil","Gore-Tex","Dalgıç Kumaş"],
             "heel":["3 cm","4 cm","5 cm","6 cm","7 cm","8 cm","9 cm","10 cm"]
@@ -1028,7 +1028,7 @@
             "name":"Erkek Sandalet, Erkek Terlik",
             "brands":["Gezer","Qramed","Ceyo","Sermoda","Adımist","Lumberjack","Twigy","Muya","Akınalbella","Birkenstock","Ronanna","Zerhan","Liger","Chirpy","Gc Terlik"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Ev","Sabo","Parmak Arası","Plaj","Deniz Ayakkabası","Homewear"]
         },
         {
@@ -1036,7 +1036,7 @@
             "name":"Sneaker",
             "brands":["Puma","New Balance","Reebok","Kinetix","Vans","Slazenger","Converse","Jump","Lescon","Ayk's","Pepino","DMR Elegance","Fresco Scarfs","Kappa","Khi-Zai"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Spor","Outdoor","Koşu","Standart","Basketbol","Yürüme","Casual/Günlük"],
             "material":["Suni Deri","Deri","Nubuk","Rugan","Süet","Tekstil","Gore-Tex","Dalgıç Kumaş"]
         },
@@ -1045,7 +1045,7 @@
             "name":"Koşu Ayakkabısı",
             "brands":["Skechers","New Balance","Asics","Joma","Kinetix","Hummel","Under Armour","Mizuno","Slazenger","Brooks","King Paolo","Proshot","ON","M.P.","Fila"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Spor","Spor-Koşu","Günlük","Sneakers","Indoor","Halı Saha","Tenis","Bot"]
         },
         {
@@ -1053,7 +1053,7 @@
             "name":"Kadın Çanta",
             "brands":["Guess","Calvin Klein","Hotiç","İnci","Fossil","United Colors Of Benetton","Desa","David Jones","Bagmori","Marie Claire","Bevitton","Kipling","Love Moschino","Cengiz Pakel","Humuts"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "material":["Tekstil","Suni Deri","Deri","Polimer","Hasır","Hakiki Deri","Pamuk","Bez"],
             "dimensions":["10 cm x 10 cm","10 cm x 11 cm","10 x 12 cm","10 cm x 13 cm","10 cm x 14 cm","10 cm x 15 cm","10 cm x 16 cm"]
 
@@ -1063,7 +1063,7 @@
             "name":"Erkek Çanta",
             "brands":["Newish Polo","Derimod","Adelina Bags","Byhakan","West Polo","Newish","Derise Club","Laorentou","Tergan","Fabrika","National Geographic","Kiğılı","Eastpak","Polo W Club","Twin Store"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Casual / Günlük","Gündüz / Gece","Beachwear","Back to School","Günlük ve Spor","Seyahat"],
             "material":["Tekstil","Suni Deri","Deri","Polimer","Hasır","Hakiki Deri","Pamuk","Bez"],
             "dimensions":["10 cm x 10 cm","10 cm x 11 cm","10 x 12 cm","10 cm x 13 cm","10 cm x 14 cm","10 cm x 15 cm","10 cm x 16 cm"]
@@ -1073,7 +1073,7 @@
             "name":"Valiz",
             "brands":["United Colors Of Benetton","Ççs","MÇS","Fossil","Madame Coco","Polo&Sky","My Valice","Louisiana Polo","GROUND","Zeplin","Saddlebag","Cotpoly Home","American Tourister","Keo-Plus","Discovery"],
             "size":["50 cm","60 cm","70 cm","80 cm","90 cm","100 cm","Kabin Boy","Orta Boy","Büyük Boy"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Üçlü Set","İkili Set","Dörtlü Set","Valiz Aksesuar"],
             "material":["ABS","Polikarbon","PP Kağıt","Pamuk","Polyester","Çelik","Deri","Teflon Kumaş"],
             "wheels":["Var","Yok"]
@@ -1084,7 +1084,7 @@
             "name":"Kız Çocuk",
             "brands":["Vicco","Luna di Cotone","Cigit","Toontoy","Mayoral","Civil Girls","Kiko Kids","Breeze","Nk Kids","Ende Store","Sinrez","Lafaba","FullaModa","Crassi","RolyPoly"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Günlük","Casual / Günlük","Trend","Basic","Sandelet","Sportif","Yazlık"],
             "arm":["Uzun Kol","Kısa Kol","Kolsuz","3/4 Kol"],
             "material":["Dokuma","Örme","Triko","Pamuk","Dantel","Tül","Keten","Süprem"],
@@ -1096,7 +1096,7 @@
             "name":"Erkek Çocuk",
             "brands":["U.S. Polo Assn.","Nike","Presmono","Qivi","Kendim Seçtim","Lord T-Shirt","Sedirli","Zepplin Giyim","Mayoral","Civil Boys","Vicco","Efendioğlu Design","Alfa Tshirt","Igor","Muggkuppa"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["Uzun Kol","Kısa Kol","Kolsuz","3/4 Kol"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "collar":["Bisiklet Yaka","V Yaka","Kare Yaka","Boyundan Bağlamalı Yaka","Gömlek Yaka","Dik Yaka"],
@@ -1107,7 +1107,7 @@
             "name":"Bebek",
             "brands":["HelloBaby","DeFacto","Cigit","Carter's","Civil Baby","Limon","Beruflic","Tuğba Baby","İlkyaz Fashion","NW NessiWorld","Nurcan Bebe","Bebetto","Diji Baby","Royaleks","Overoz"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "arm":["Uzun Kol","Kısa Kol","Kolsuz","3/4 Kol"],
             "material":["Dokuma","Örme","Triko","Pamuk","Denim","Scuba","Keten","Penye"],
             "gender":["Kız","Erkek","Unisex"],
@@ -1118,7 +1118,7 @@
             "name":"Erkek Çocuk Ayakkabısı",
             "brands":["Lumberjack","Vicco","Tonny Black","Kiko Kids","Cool","Rakerplus","Superfit","Şiringenç","Raker","EM Trend","Fort","Nubebe","ARZEN","Celira","Ceyo"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Sandelet","Günlük","Bot","Spor","Sneakers","Çizme","Kışlık Bot","Babet"],
             "material":["Suni Deri","Deri","Nubuk","Rugan","Süet","Tekstil","Gore-Tex","Dalgıç Kumaş"]
             
@@ -1128,7 +1128,7 @@
             "name":"Kız Çocuk Ayakkabısı",
             "brands":["Lumberjack","Vicco","Tonny Black","Kiko Kids","Cool","Rakerplus","Superfit","Şiringenç","Raker","EM Trend","Fort","Nubebe","ARZEN","Celira","Ceyo"],
             "size":["36","36.6","37","37.5","38","38.5","39","39.5","40","40.5","41"],
-            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Beyaz"],
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"],
             "style":["Sandelet","Günlük","Bot","Spor","Sneakers","Çizme","Kışlık Bot","Babet"],
             "material":["Suni Deri","Deri","Nubuk","Rugan","Süet","Tekstil","Gore-Tex","Dalgıç Kumaş"]
         },
@@ -1137,7 +1137,7 @@
             "name":"Bebek Ayakkabısı",
             "brands":["Hopfrög","Vicco","Kaptan Junior","Hodore","Yummy Kids","Ella Bonna","MARSHETTA","Minissa Baby Kids","Rakerplus","Baby of City","Mayoral","Morgedan","Freesure","GB Baby","Kitikate"],
             "size":["XS","S","M","L","XL","2XL"],
-            "color":["black","grey","cream","brown","red","green","blue","white"]  
+            "color":["Siyah","Gri","Krem","Kahverengi","Kırmızı","Yeşil","Mavi","Sarı","Turuncu","Beyaz","Turkuaz","Bordo","Lacivert"]
         }
     ]
 }
